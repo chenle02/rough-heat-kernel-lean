@@ -9,3 +9,4 @@ import RoughHeatKernel.ChenDalang
 import RoughHeatKernel.SquareKernel
 import RoughHeatKernel.FlowSemigroup
 import RoughHeatKernel.Doubled
+import RoughHeatKernel.SpatialEnvelope

@@ -8,18 +8,18 @@ determines every hypothesis and quantifier; each receipt covers only its named
 scientific content. A version number alone does not establish verification.
 
 Required context:
-- [README and verification authority](README.md#verification-at-a-glance)
-- [Clone contract](AGENTS.md)
-- [Mathematical scope](docs/status.html)
-- [Exact reusable API](docs/api.html)
-- [Trust model](docs/trust.html)
-- [Claims](claims.yaml)
-- [Public theorem inventory](THEOREM_INVENTORY.txt)
-- [Contribution guidance](CONTRIBUTING.md)
+- [README and verification authority](https://github.com/chenle02/rough-heat-kernel-lean/blob/main/README.md#verification-at-a-glance)
+- [Clone contract](source/AGENTS.md)
+- [Mathematical scope](status.html)
+- [Exact reusable API](api.html)
+- [Trust model](trust.html)
+- [Claims](source/claims.yaml)
+- [Public theorem inventory](source/THEOREM_INVENTORY.txt)
+- [Contribution guidance](source/CONTRIBUTING.md)
 
 Use lean-toolchain and lake-manifest.json unchanged in a frozen replay.
 Do not infer full-paper SPDE well-posedness or remove theorem hypotheses.
 
-Historical attribution: [Earlier development resources](docs/citation.html#historical-compute). Current release executors and checked scope are recorded by the source-bound receipts.
+Historical attribution: [Earlier development resources](citation.html#historical-compute). Current release executors and checked scope are recorded by the source-bound receipts.
 
 New deterministic APIs: joint positive-time continuity for positive and signed Gaussian-tempered heat flows; uniform quarter-Holder Gaussian kernel increments with universal constant 2*exp(1). No time-zero continuity, stochastic sample modification or SPDE claim. Current-source full verification is pending; prior 0.7 receipts remain bound to cc5a8dba012b.
