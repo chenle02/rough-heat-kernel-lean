@@ -27,6 +27,15 @@ status:
     positive and signed Jordan-pair data, finite SignedMeasure bridge, joint positive-time continuity,
     a uniform quarter-Holder Gaussian envelope, and Chen-Dalang/doubled-profile bounds. Excludes continuity
     at time zero, weak initial trace, stochastic integration and SPDE well-posedness.
+  sorry_count: 0
+  axioms:
+  - Classical.choice
+  - Quot.sound
+  - propext
+  evidence:
+    commit: 133f3aec2c12e927ab11c4d0ffbe88a7485aee00
+    gate_receipt: .lean-receipts/133f3aec2c12-systemd-user-rough-heat-kernel-v080-local2-20261019.service-d4ab772670254edebd6c0c1b12db247f-h-24e00fc5da6c.json
+    comparator_receipt: .lean-receipts/133f3aec2c12-comparator.json
   main_results:
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_convolution_heatKernel

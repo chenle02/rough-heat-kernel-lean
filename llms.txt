@@ -22,4 +22,4 @@ Do not infer full-paper SPDE well-posedness or remove theorem hypotheses.
 
 Historical attribution: [Earlier development resources](docs/citation.html#historical-compute). Current release executors and checked scope are recorded by the source-bound receipts.
 
-New deterministic APIs: joint positive-time continuity for positive and signed Gaussian-tempered heat flows; uniform quarter-Holder Gaussian kernel increments with universal constant 2*exp(1). No time-zero continuity, stochastic sample modification or SPDE claim. Current-source full verification is pending; prior 0.7 receipts remain bound to cc5a8dba012b.
+New deterministic APIs: joint positive-time continuity for positive and signed Gaussian-tempered heat flows; uniform quarter-Holder Gaussian kernel increments with universal constant 2*exp(1). No time-zero continuity, stochastic sample modification or SPDE claim. Current-source full verification and independent three-kernel comparison passed at 133f3aec2c12; prior 0.7 receipts remain historical.
