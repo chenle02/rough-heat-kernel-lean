@@ -1,0 +1,212 @@
+{
+  "build_provenance": {
+    "cache_reused": 12,
+    "compiled": false,
+    "modules_built": 0,
+    "prebuilt": true,
+    "source": "Prior failed official-preparation wrapper d1b4ae9e completed25actual fresh Home-Dell source builds successfully; reuse SAME independently built200files, no recopy/rebuild/cold retry."
+  },
+  "commit": "cc5a8dba012b74be4d8d8a8ee09608239fbf5b08",
+  "configs": [
+    {
+      "challenge_module": "Challenge",
+      "definition_names": [],
+      "log": ".lean-receipts/cc5a8dba012b-comparator-comparator.log",
+      "log_sha256": "642a0cadaa977ef4e68ebd25c9615b0fa0766298fa8905da663feb530600e6e2",
+      "path": "comparator.json",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "result": "pass",
+      "sha256": "e9b64329a7abb7bcad75162c5d2fbe512e8dfbed6c4428409f41dde64bfbd136",
+      "solution_module": "Solution",
+      "theorem_names": [
+        "RoughHeatKernel.heatKernel_convolution_heatKernel",
+        "RoughHeatKernel.eLpNorm_heatKernel",
+        "RoughHeatKernel.continuous_heatFlow",
+        "RoughHeatKernel.integrable_exp_mul_heatFlow_rpow",
+        "RoughHeatKernel.exists_sqrt_mul_heatFlow_le",
+        "RoughHeatKernel.ofReal_heatFlow",
+        "RoughHeatKernel.RoughMeasure.abs_heatFlow_le",
+        "RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure",
+        "RoughHeatKernel.heatKernel_eq_gaussianPDFReal",
+        "RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel",
+        "RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure",
+        "RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral",
+        "RoughHeatKernel.RoughMeasure.totalVariation_ofTempered",
+        "RoughHeatKernel.integral_abs_heatKernel_sub_sub_le",
+        "RoughHeatKernel.integral_abs_heatKernel_add_sub_le",
+        "RoughHeatKernel.hasDerivAt_heatKernel_time",
+        "RoughHeatKernel.lintegral_enorm_sub_le_lintegral",
+        "RoughHeatKernel.integral_sq_mul_heatKernel",
+        "RoughHeatKernel.lintegral_sq_lheatFlow_conv_le",
+        "RoughHeatKernel.heatKernel_mul_heatKernel_eq",
+        "RoughHeatKernel.heatKernel_le_sqrt_div_mul",
+        "RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure",
+        "RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le",
+        "RoughHeatKernel.heatKernel_sq_eq",
+        "RoughHeatKernel.lintegral_arcsine",
+        "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow",
+        "RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow",
+        "RoughHeatKernel.heatKernel_add_le_sqrt_two_mul",
+        "RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul",
+        "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul",
+        "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le",
+        "RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le",
+        "RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le"
+      ],
+      "units": [
+        {
+          "log_sha256": "1f9b5ec43c67995b2907371850a604986bddc897be31897d4a301d35e6caa71a",
+          "slots": [
+            "RoughHeatKernel.heatKernel_convolution_heatKernel"
+          ]
+        },
+        {
+          "log_sha256": "4dde98417b0d79d20f9e6c32ed017accf15190bedd80ed06f0c850af329940e2",
+          "slots": [
+            "RoughHeatKernel.eLpNorm_heatKernel"
+          ]
+        },
+        {
+          "log_sha256": "cb08550c1a043c70c9468c7b695966e7d399de3096f0f34acaa9b29511c64e04",
+          "slots": [
+            "RoughHeatKernel.continuous_heatFlow"
+          ]
+        },
+        {
+          "log_sha256": "c3d702c42aed04c78da18d612235dd3e721a9b8ec0646a2685c64701cf10e2c2",
+          "slots": [
+            "RoughHeatKernel.integrable_exp_mul_heatFlow_rpow"
+          ]
+        },
+        {
+          "log_sha256": "f19fc4668ef398ce26aa527fc0018c847dbc5d9183c3851c0ba298905f994598",
+          "slots": [
+            "RoughHeatKernel.exists_sqrt_mul_heatFlow_le"
+          ]
+        },
+        {
+          "log_sha256": "51b2eaf7b04abd40aac38b7b728a15e2905caac34f8c2c22e81d5faa38d22dfb",
+          "slots": [
+            "RoughHeatKernel.ofReal_heatFlow",
+            "RoughHeatKernel.heatKernel_eq_gaussianPDFReal",
+            "RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel",
+            "RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral",
+            "RoughHeatKernel.RoughMeasure.totalVariation_ofTempered",
+            "RoughHeatKernel.integral_abs_heatKernel_sub_sub_le",
+            "RoughHeatKernel.integral_abs_heatKernel_add_sub_le",
+            "RoughHeatKernel.hasDerivAt_heatKernel_time",
+            "RoughHeatKernel.lintegral_enorm_sub_le_lintegral",
+            "RoughHeatKernel.integral_sq_mul_heatKernel",
+            "RoughHeatKernel.lintegral_sq_lheatFlow_conv_le",
+            "RoughHeatKernel.heatKernel_mul_heatKernel_eq",
+            "RoughHeatKernel.heatKernel_le_sqrt_div_mul",
+            "RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le",
+            "RoughHeatKernel.heatKernel_sq_eq",
+            "RoughHeatKernel.lintegral_arcsine",
+            "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow",
+            "RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow",
+            "RoughHeatKernel.heatKernel_add_le_sqrt_two_mul",
+            "RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul",
+            "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul",
+            "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le",
+            "RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le",
+            "RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le"
+          ]
+        },
+        {
+          "log_sha256": "d55384a8c33773c67ded62ed7874e6a7047e031762ecfaea24b0be714cadef92",
+          "slots": [
+            "RoughHeatKernel.RoughMeasure.abs_heatFlow_le"
+          ]
+        },
+        {
+          "log_sha256": "c263bf1b5217f1714937265d3421d7939e09c87274705768e63e74dc491167a5",
+          "slots": [
+            "RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure"
+          ]
+        },
+        {
+          "log_sha256": "e57bb6de23a88128206e3143498e7fa1e733a578719a409ddeb1bb00917776c2",
+          "slots": [
+            "RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure"
+          ]
+        },
+        {
+          "log_sha256": "a0813fc5052c8d6971aee6bd580ce64564d52fdc037c0ed6a15ce469efd254f3",
+          "slots": [
+            "RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure"
+          ]
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-10-19T15:47:07+00:00",
+  "host": "h-f985343177f7",
+  "host_label": "h-f985343177f7",
+  "host_policy": "host h-f985343177f7 listed in COMPARATOR_RECEIPT_ALLOWED_HOSTS",
+  "job_id": "local-h-f985343177f7-1155324-20261019T154707Z",
+  "judges": 1,
+  "lean_threads": 1,
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "mechanism": "toolchain",
+  "olean_manifest": {
+    "captured": "build",
+    "files": 25,
+    "lake_manifest_sha256": "33928f37ec692b2b06a4da70ee2d832c381b1ed04218618fa3bccaf73a248494",
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "schema": "olean-manifest/1",
+    "sha256": "790c0a825972577b0571f7d70828773bde0327ce76fa919136d64ae3f9291c52"
+  },
+  "result": "pass",
+  "resumed_slots": 9,
+  "schema": "comparator-receipt/2",
+  "stack_limit": {
+    "hard_kb": "unlimited",
+    "soft_kb": "unlimited",
+    "source": "COMPARATOR_RECEIPT_STACK"
+  },
+  "stages": [
+    {
+      "exit": 0,
+      "stage": "checkout",
+      "status": "prepared",
+      "wall_s": 5.127
+    },
+    {
+      "exit": 0,
+      "stage": "cache-get",
+      "status": "prepared",
+      "wall_s": 4.005
+    },
+    {
+      "exit": 0,
+      "stage": "build",
+      "status": "prepared",
+      "wall_s": 2.831
+    },
+    {
+      "exit": 0,
+      "stage": "comparator",
+      "status": "ok",
+      "wall_s": 202.466
+    }
+  ],
+  "toolchain_resolution": {
+    "lake": "<elan>/bin/lake",
+    "source": "elan",
+    "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)"
+  },
+  "tools": {
+    "con-ron_sha256": "60f4ca9fb9436c323789fa49aae33af6dcd1b9b54b43a66b461779ce79fd8eec",
+    "lake_sha256": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "leanexport_sha256": "f6a6483d518a11b323c28b9bac176d2220df0e9fc3230833815db9586669c074",
+    "nanoda_bin_sha256": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "unit_size": null
+}

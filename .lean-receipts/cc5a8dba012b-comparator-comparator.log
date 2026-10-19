@@ -1,0 +1,490 @@
+== unit: slots 1 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/3d7e081824b2b9b2.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2935] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2935] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2935] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2935] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.heatKernel_convolution_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3066] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.heatKernel_convolution_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 45995 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 2 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/68c5c1325bd42021.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2976] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2976] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2976] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2976] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.eLpNorm_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3092] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.eLpNorm_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 46007 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 3 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/6e91b300266c42ec.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2930] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2930] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2930] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2930] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.continuous_heatFlow, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3046] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.continuous_heatFlow, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 24948 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 4 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/9c65fe898926ebec.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2974] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2974] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2974] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2974] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3228/3230] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3230] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.integrable_exp_mul_heatFlow_rpow, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3034] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.integrable_exp_mul_heatFlow_rpow, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 45336 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 5 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/dee774e668a12366.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2921] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2921] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2921] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2921] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.exists_sqrt_mul_heatFlow_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3046] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.exists_sqrt_mul_heatFlow_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 25136 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 6,9-10,12-21,23-33 (24 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/f57e26b5fb5af368.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2947] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2947] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2947] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2947] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.ofReal_heatFlow, RoughHeatKernel.heatKernel_eq_gaussianPDFReal, RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel, RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral, RoughHeatKernel.RoughMeasure.totalVariation_ofTempered, RoughHeatKernel.integral_abs_heatKernel_sub_sub_le, RoughHeatKernel.integral_abs_heatKernel_add_sub_le, RoughHeatKernel.hasDerivAt_heatKernel_time, RoughHeatKernel.lintegral_enorm_sub_le_lintegral, RoughHeatKernel.integral_sq_mul_heatKernel, RoughHeatKernel.lintegral_sq_lheatFlow_conv_le, RoughHeatKernel.heatKernel_mul_heatKernel_eq, RoughHeatKernel.heatKernel_le_sqrt_div_mul, RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le, RoughHeatKernel.heatKernel_sq_eq, RoughHeatKernel.lintegral_arcsine, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.heatKernel_add_le_sqrt_two_mul, RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le, RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le, RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3104] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.ofReal_heatFlow, RoughHeatKernel.heatKernel_eq_gaussianPDFReal, RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel, RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral, RoughHeatKernel.RoughMeasure.totalVariation_ofTempered, RoughHeatKernel.integral_abs_heatKernel_sub_sub_le, RoughHeatKernel.integral_abs_heatKernel_add_sub_le, RoughHeatKernel.hasDerivAt_heatKernel_time, RoughHeatKernel.lintegral_enorm_sub_le_lintegral, RoughHeatKernel.integral_sq_mul_heatKernel, RoughHeatKernel.lintegral_sq_lheatFlow_conv_le, RoughHeatKernel.heatKernel_mul_heatKernel_eq, RoughHeatKernel.heatKernel_le_sqrt_div_mul, RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le, RoughHeatKernel.heatKernel_sq_eq, RoughHeatKernel.lintegral_arcsine, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.heatKernel_add_le_sqrt_two_mul, RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le, RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le, RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 50212 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 7 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/4ab88905c152a21d.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/3054] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/3054] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/3054] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/3054] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/2879] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 25617 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 8 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/ebe2007d8afe5977.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/2994] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/2994] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/2994] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/2994] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3054] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 25665 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 11 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/e55618209e71084f.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/3070] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/3070] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/3070] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/3070] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3004] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3213/3225] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3223/3225] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3225] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 17759 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 22 (1 names)
+skipping lake exe cache get (VERIFY_COMPARATOR_SKIP_CACHE_GET=1: no Mathlib dependency)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/0c0cb567588c6d3b.json
+Resolving dependencies
+Building Challenge
+⚠ [2866/3090] Replayed Challenge.Reference.RoughHeatKernel.Kernel
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Challenge/Reference/RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2868/3090] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:157:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [2870/3090] Replayed Challenge.Reference.RoughHeatKernel.SquareKernel
+warning: Challenge/Reference/RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2882/3090] Replayed Challenge.Reference.RoughHeatKernel.Finite
+warning: Challenge/Reference/RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3229/3232] Replayed Challenge.Reference.RoughHeatKernel.Gaussian
+warning: Challenge/Reference/RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3230/3232] Replayed Challenge.Reference.RoughHeatKernel.Increments
+warning: Challenge/Reference/RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3232 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [2866/3076] Replayed RoughHeatKernel.Kernel
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: RoughHeatKernel/Kernel.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3214/3233] Replayed RoughHeatKernel.Gaussian
+warning: RoughHeatKernel/Gaussian.lean: imports `Mathlib.Probability.Distributions.Gaussian.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3224/3233] Replayed RoughHeatKernel.Finite
+warning: RoughHeatKernel/Finite.lean: imports `Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3225/3233] Replayed RoughHeatKernel.Increments
+warning: RoughHeatKernel/Increments.lean: imports `Mathlib.Probability.Moments.Variance` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3226/3233] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:158:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3228/3233] Replayed RoughHeatKernel.SquareKernel
+warning: RoughHeatKernel/SquareKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (3233 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 19783 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

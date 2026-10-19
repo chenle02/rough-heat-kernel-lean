@@ -1,0 +1,122 @@
+{
+  "schema": "supplementary-native-evidence/1",
+  "scientific_commit": "cc5a8dba012b74be4d8d8a8ee09608239fbf5b08",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib_rev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "scope": "Actual cold complete owned-declaration audit of production/positive-test and proved-reference cones, plus exact selected-module LeanChecker replay. Supplementary evidence, not a canonical lower receipt or independent comparator certificate.",
+  "canonical_lower_receipt_report_sha256": "3a866637bf5c40548805a7cc6e20c6bb7aada325030945ffdf14ffa848d63b71",
+  "native_reports": {
+    "production": {
+      "file": "production.json.gz",
+      "compressed_bytes": 61475,
+      "compressed_sha256": "dca58247561059abeaaf93a57a25ef371fa62273c7607ad8633bc2539cc898c0",
+      "uncompressed_bytes": 1631072,
+      "uncompressed_sha256": "3e83995a865d471143d52ca103f8638a29f94c4db2862c154e3db890030a55e6",
+      "owned_declarations": 206,
+      "module_count": 27,
+      "exact_leanchecker_modules": [
+        "RoughHeatKernel.ChenDalang",
+        "RoughHeatKernel.Doubled",
+        "RoughHeatKernel.Finite",
+        "RoughHeatKernel.FlowSemigroup",
+        "RoughHeatKernel.Gaussian",
+        "RoughHeatKernel.Increments",
+        "RoughHeatKernel.Kernel",
+        "RoughHeatKernel.Lq",
+        "RoughHeatKernel.RoughMeasure",
+        "RoughHeatKernel.SquareKernel",
+        "RoughHeatKernel.Tempered",
+        "RoughHeatKernelTest.AxiomCheck",
+        "RoughHeatKernelTest.Counterexamples",
+        "RoughHeatKernelTest.Examples",
+        "RoughHeatKernelTest.NegArcsineWitness",
+        "RoughHeatKernelTest.NegDoubledSemigroupWitness",
+        "RoughHeatKernelTest.NegFlowSemigroupWitness",
+        "RoughHeatKernelTest.NegGaussianMeanWitness",
+        "RoughHeatKernelTest.NegIncrementWitness",
+        "RoughHeatKernelTest.NegMassWitness",
+        "RoughHeatKernelTest.NegProductIdentityWitness",
+        "RoughHeatKernelTest.NegSemigroupProductWitness",
+        "RoughHeatKernelTest.NegTemperedWitness",
+        "RoughHeatKernelTest.TypeCheck"
+      ],
+      "zero_owned_import_only_modules": [
+        "RoughHeatKernel",
+        "RoughHeatKernelTest",
+        "Solution"
+      ],
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "compression_ratio": 26.532281415209436,
+      "gzip_decoded_identity_verified": true
+    },
+    "reference": {
+      "file": "reference.json.gz",
+      "compressed_bytes": 55440,
+      "compressed_sha256": "8d077ff6154519e746ed8145d16f99b114ea003101e59249f7ef293f46be64dc",
+      "uncompressed_bytes": 1470106,
+      "uncompressed_sha256": "ab49c36033375cef88990fda0d7df19703a225d9bf7d7da595b7d1c3db13a573",
+      "owned_declarations": 183,
+      "module_count": 12,
+      "exact_leanchecker_modules": [
+        "Challenge.Reference.RoughHeatKernel.ChenDalang",
+        "Challenge.Reference.RoughHeatKernel.Doubled",
+        "Challenge.Reference.RoughHeatKernel.Finite",
+        "Challenge.Reference.RoughHeatKernel.FlowSemigroup",
+        "Challenge.Reference.RoughHeatKernel.Gaussian",
+        "Challenge.Reference.RoughHeatKernel.Increments",
+        "Challenge.Reference.RoughHeatKernel.Kernel",
+        "Challenge.Reference.RoughHeatKernel.Lq",
+        "Challenge.Reference.RoughHeatKernel.RoughMeasure",
+        "Challenge.Reference.RoughHeatKernel.SquareKernel",
+        "Challenge.Reference.RoughHeatKernel.Tempered"
+      ],
+      "zero_owned_import_only_modules": [
+        "Challenge"
+      ],
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "compression_ratio": 26.517063492063492,
+      "gzip_decoded_identity_verified": true
+    }
+  },
+  "compiled_escape_controls": [
+    {
+      "module": "EscapePositive",
+      "compile_exit": 0,
+      "audit_exit": 0,
+      "forbidden_axioms": []
+    },
+    {
+      "module": "EscapeNegative",
+      "compile_exit": 0,
+      "audit_exit": 1,
+      "forbidden_axioms": [
+        "EscapeNegative.injected",
+        "sorryAx"
+      ]
+    },
+    {
+      "module": "EscapeNative",
+      "compile_exit": 0,
+      "audit_exit": 1,
+      "forbidden_axioms": [
+        "EscapeNative.nativeTrue._native.native_decide.ax_1_1"
+      ]
+    }
+  ],
+  "strict_control_pairs": 9,
+  "strict_diagnostics_publication": "Raw strict compiler streams are retained privately and independently reparsed; public summary records outcomes only.",
+  "limitations": [
+    "High-trust compiled environment inspection checks the project-wide forbidden-axiom union. Per-declaration axiom lists may undercount cyclic dependency clusters and are not canonical individual fingerprints.",
+    "Serialized type expressions are full elaborated Lean types, not proof-body equivalence certificates or validation of explanatory prose.",
+    "LeanChecker replays modules with the pinned Lean implementation; independent supported comparator evidence is separate.",
+    "Negative escape fixtures deliberately contain rejected escapes; zero-hole claims apply to production/reference/positive cones, not the raw fixture syntax."
+  ]
+}
