@@ -1,0 +1,258 @@
+schema: claims/1
+package: rough-heat-kernel
+claims:
+  - id: rough-heat-kernel/heat-kernel-semigroup
+    decl: RoughHeatKernel.heatKernel_convolution_heatKernel
+    kind: theorem
+    summary: "Semigroup identity p_t * p_s = p_{t+s} for the 1-d heat kernel, as functions via Mathlib's convolution, for s,t > 0."
+    file: RoughHeatKernel/Kernel.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, semigroup, convolution]
+  - id: rough-heat-kernel/heat-kernel-lq-norm
+    decl: RoughHeatKernel.eLpNorm_heatKernel
+    kind: theorem
+    summary: "Exact L^q norm of the heat kernel for every q in [1, infinity]: C_q t^{-(1-1/q)/2} with an explicit constant."
+    file: RoughHeatKernel/Lq.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, lp-norm]
+  - id: rough-heat-kernel/heat-flow-continuous
+    decl: RoughHeatKernel.continuous_heatFlow
+    kind: theorem
+    summary: "For a Gaussian-tempered positive measure (possibly of infinite mass) and t > 0, the heat flow x -> int p_t(x-y) nu(dy) is continuous."
+    file: RoughHeatKernel/Tempered.lean
+    status: reusable
+    keywords: [heat-flow, rough-initial-data, measure, continuity]
+  - id: rough-heat-kernel/heat-flow-weighted-lp
+    decl: RoughHeatKernel.integrable_exp_mul_heatFlow_rpow
+    kind: theorem
+    summary: "Weighted bound for the heat flow of a Gaussian-tempered measure: e^{-a x^2} (heat flow)^p is integrable for a, t > 0, p >= 1."
+    file: RoughHeatKernel/Tempered.lean
+    status: reusable
+    keywords: [heat-flow, rough-initial-data, weighted-lp]
+  - id: rough-heat-kernel/heat-flow-local-sup
+    decl: RoughHeatKernel.exists_sqrt_mul_heatFlow_le
+    kind: theorem
+    summary: "Local small-time bound: sqrt(s) times the heat flow of a Gaussian-tempered measure is bounded uniformly on s in (0,T], |y| <= R."
+    file: RoughHeatKernel/Tempered.lean
+    status: reusable
+    keywords: [heat-flow, rough-initial-data, small-time]
+  - id: rough-heat-kernel/ennreal-heat-flow
+    decl: RoughHeatKernel.ofReal_heatFlow
+    kind: theorem
+    summary: "For a Gaussian-tempered measure and t > 0, the extended-real heat flow lheatFlow equals ofReal of the real heat flow (and is finite)."
+    file: RoughHeatKernel/Tempered.lean
+    status: reusable
+    keywords: [heat-flow, ennreal, measure]
+  - id: rough-heat-kernel/rough-measure-heat-flow-bound
+    decl: RoughHeatKernel.RoughMeasure.abs_heatFlow_le
+    kind: theorem
+    summary: "For a signed measure with Gaussian-tempered total variation (Jordan pair), |heat flow of mu| <= heat flow of |mu|."
+    file: RoughHeatKernel/RoughMeasure.lean
+    status: reusable
+    keywords: [heat-flow, signed-measure, rough-initial-data]
+  - id: rough-heat-kernel/finite-measure-heat-flow-bound
+    decl: RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure
+    kind: theorem
+    summary: "For a finite signed measure, |heat flow| <= (2 pi t)^{-1/2} |mu|(R) at every point."
+    file: RoughHeatKernel/Finite.lean
+    status: reusable
+    keywords: [heat-flow, finite-measure]
+  - id: rough-heat-kernel/gaussian-bridge
+    decl: RoughHeatKernel.heatKernel_eq_gaussianPDFReal
+    kind: theorem
+    summary: "The heat kernel is Mathlib's centred Gaussian density: heatKernel t = gaussianPDFReal 0 t.toNNReal for every real t."
+    file: RoughHeatKernel/Gaussian.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, bridge, gaussian-pdf]
+  - id: rough-heat-kernel/gaussian-real-integral
+    decl: RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel
+    kind: theorem
+    summary: "Integration against the normal law gaussianReal x t equals integration against heatKernel t (x - y), for t != 0."
+    file: RoughHeatKernel/Gaussian.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, bridge, gaussian-real]
+  - id: rough-heat-kernel/signed-measure-bridge
+    decl: RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure
+    kind: theorem
+    summary: "A Mathlib SignedMeasure on R becomes a RoughMeasure via its Jordan decomposition; positive minus negative part recovers s, and the total variation is s.totalVariation."
+    file: RoughHeatKernel/Finite.lean
+    status: reusable
+    keywords: [signed-measure, jordan-decomposition, bridge]
+  - id: rough-heat-kernel/lheat-flow-gaussian-weight
+    decl: RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral
+    kind: theorem
+    summary: "For every measure and every real t, the extended-real heat flow equals ofReal((2 pi t)^{-1/2}) times the lower integral of exp(-(x-y)^2/(2t))."
+    file: RoughHeatKernel/Tempered.lean
+    status: reusable
+    keywords: [heat-flow, ennreal, gaussian-weight]
+  - id: rough-heat-kernel/rough-measure-of-tempered
+    decl: RoughHeatKernel.RoughMeasure.totalVariation_ofTempered
+    kind: theorem
+    summary: "A Jordan pair whose total variation pos + neg is Gaussian-tempered is a RoughMeasure (single-condition form of the class), with that total variation."
+    file: RoughHeatKernel/RoughMeasure.lean
+    status: reusable
+    keywords: [rough-measure, jordan-decomposition, gaussian-tempered]
+  - id: rough-heat-kernel/heat-kernel-spatial-increment
+    decl: RoughHeatKernel.integral_abs_heatKernel_sub_sub_le
+    kind: theorem
+    summary: "Spatial L^1 increment of the 1-d heat kernel: int |p_t(x-y) - p_t(z-y)| dy <= min(2, |x-z|/sqrt t) for t > 0."
+    file: RoughHeatKernel/Increments.lean
+    status: reusable
+    keywords: [heat-kernel, increment, l1, spatial-regularity, gaussian]
+  - id: rough-heat-kernel/heat-kernel-time-increment
+    decl: RoughHeatKernel.integral_abs_heatKernel_add_sub_le
+    kind: theorem
+    summary: "Time L^1 increment of the 1-d heat kernel: int |p_{t+e}(x-y) - p_t(x-y)| dy <= min(2, e/t) for t > 0, e >= 0."
+    file: RoughHeatKernel/Increments.lean
+    status: reusable
+    keywords: [heat-kernel, increment, l1, time-regularity, gaussian]
+  - id: rough-heat-kernel/heat-kernel-derivatives
+    decl: RoughHeatKernel.hasDerivAt_heatKernel_time
+    kind: theorem
+    summary: "Time derivative of the heat kernel: d/dt p_t(x) = (x^2 - t)/(2 t^2) p_t(x) for t > 0 (the spatial one, -(x/t) p_t(x), is hasDerivAt_heatKernel)."
+    file: RoughHeatKernel/Increments.lean
+    status: reusable
+    keywords: [heat-kernel, derivative, heat-equation, gaussian]
+  - id: rough-heat-kernel/l1-mean-value-inequality
+    decl: RoughHeatKernel.lintegral_enorm_sub_le_lintegral
+    kind: theorem
+    summary: "L^1 mean-value inequality: if F has derivative F' in theta on [a,b], F' is continuous in theta for each y and jointly measurable, then int |F(b,y)-F(a,y)| dy <= int_a^b int |F'(theta,y)| dy dtheta (lower integrals)."
+    file: RoughHeatKernel/Increments.lean
+    status: reusable
+    keywords: [fundamental-theorem-of-calculus, tonelli, l1, increment]
+  - id: rough-heat-kernel/heat-kernel-moments
+    decl: RoughHeatKernel.integral_sq_mul_heatKernel
+    kind: theorem
+    summary: "Gaussian moments of the heat kernel: int x^2 p_t(x) dx = t, and int |x| p_t(x) dx <= sqrt t (integral_abs_mul_heatKernel_le), for t > 0."
+    file: RoughHeatKernel/Increments.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, moment, variance]
+  - id: rough-heat-kernel/chen-dalang-convolution
+    decl: RoughHeatKernel.lintegral_sq_lheatFlow_conv_le
+    kind: theorem
+    summary: "Chen-Dalang estimate (Gaussian case): for s-finite nu, t > 0, measurable h >= 0, int_0^t int J(s,y)^2 p_{(t-s)/2}(x-y) h(t-s) dy ds <= 2 sqrt t J(2t,x)^2 int_0^t h(t-s)/sqrt s ds, J = lheatFlow nu (lower integrals)."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [heat-kernel, chen-dalang, convolution, rough-initial-data, stochastic-heat-equation]
+  - id: rough-heat-kernel/gaussian-product-identity
+    decl: RoughHeatKernel.heatKernel_mul_heatKernel_eq
+    kind: theorem
+    summary: "Gaussian product identity: p_t(y-z1) p_t(y-z2) = p_{2t}(z1-z2) p_{t/2}(y-(z1+z2)/2) for t > 0."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, product-identity]
+  - id: rough-heat-kernel/heat-kernel-comparison
+    decl: RoughHeatKernel.heatKernel_le_sqrt_div_mul
+    kind: theorem
+    summary: "Heat-kernel comparison across times: p_a(x) <= sqrt(b/a) p_b(x) for 0 < a <= b."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, comparison]
+  - id: rough-heat-kernel/tempered-locally-finite
+    decl: RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure
+    kind: theorem
+    summary: "A Gaussian-tempered measure on R is locally finite (finite on bounded sets), hence sigma-finite."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [gaussian-tempered, locally-finite, sigma-finite, measure]
+  - id: rough-heat-kernel/white-noise-convolution
+    decl: RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le
+    kind: theorem
+    summary: "White-noise Chen-Dalang bound: for s-finite nu and t > 0, int_0^t int J(s,y)^2 p_{t-s}(x-y)^2 dy ds <= sqrt(pi) sqrt(t) J(2t,x)^2 with J = lheatFlow nu, as lower integrals."
+    file: RoughHeatKernel/SquareKernel.lean
+    status: reusable
+    keywords: [heat-kernel, chen-dalang, white-noise, stochastic-heat-equation, rough-initial-data]
+  - id: rough-heat-kernel/heat-kernel-square
+    decl: RoughHeatKernel.heatKernel_sq_eq
+    kind: theorem
+    summary: "Squared heat kernel: p_r(z)^2 = p_{r/2}(z) (4 pi r)^{-1/2} for r > 0; hence int p_r^2 = (4 pi r)^{-1/2} (integral_heatKernel_sq)."
+    file: RoughHeatKernel/SquareKernel.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, square, l2-norm]
+  - id: rough-heat-kernel/arcsine-integral
+    decl: RoughHeatKernel.lintegral_arcsine
+    kind: theorem
+    summary: "The arcsine integral: int_0^t ds / sqrt(s (t - s)) = pi for t > 0, as a lower Lebesgue integral."
+    file: RoughHeatKernel/SquareKernel.lean
+    status: reusable
+    keywords: [arcsine, beta-integral, singular-integral]
+  - id: rough-heat-kernel/heat-flow-semigroup
+    decl: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow
+    kind: theorem
+    summary: "Heat-flow semigroup: for s-finite nu and 0 < s < t, int p_{t-s}(x-y) J(s,y) dy = J(t,x) with J = lheatFlow nu, as a lower integral."
+    file: RoughHeatKernel/FlowSemigroup.lean
+    status: reusable
+    keywords: [heat-flow, semigroup, rough-initial-data]
+  - id: rough-heat-kernel/heat-flow-time-integral
+    decl: RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow
+    kind: theorem
+    summary: "Time-integrated heat-flow semigroup: for s-finite nu, int_0^t int p_{t-s}(x-y) J(s,y) dy ds = t J(t,x) with J = lheatFlow nu, as lower integrals."
+    file: RoughHeatKernel/FlowSemigroup.lean
+    status: reusable
+    keywords: [heat-flow, semigroup, drift, volterra]
+  - id: rough-heat-kernel/heat-kernel-doubling
+    decl: RoughHeatKernel.heatKernel_add_le_sqrt_two_mul
+    kind: theorem
+    summary: For t > 0 and 0 <= s <= t, p_(t+s)(x) <= sqrt(2) p_(2t)(x).
+    file: RoughHeatKernel/Doubled.lean
+    status: reusable
+    keywords:
+    - heat-kernel
+    - doubling
+    - gaussian
+  - id: rough-heat-kernel/heat-flow-doubling
+    decl: RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul
+    kind: theorem
+    summary: For every positive measure nu, t > 0 and 0 <= s <= t, J(t+s,x) <= sqrt(2)
+      J(2t,x), with J = lheatFlow nu.
+    file: RoughHeatKernel/Doubled.lean
+    status: reusable
+    keywords:
+    - heat-flow
+    - doubling
+    - rough-initial-data
+  - id: rough-heat-kernel/doubled-heat-flow-semigroup
+    decl: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul
+    kind: theorem
+    summary: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)
+      J(2s,y) equals J(t+s,x).
+    file: RoughHeatKernel/Doubled.lean
+    status: reusable
+    keywords:
+    - heat-flow
+    - semigroup
+    - doubling
+  - id: rough-heat-kernel/doubled-heat-flow-linear-bound
+    decl: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le
+    kind: theorem
+    summary: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)
+      J(2s,y) is at most sqrt(2) J(2t,x).
+    file: RoughHeatKernel/Doubled.lean
+    status: reusable
+    keywords:
+    - heat-flow
+    - convolution
+    - doubling
+  - id: rough-heat-kernel/doubled-gaussian-product-bound
+    decl: RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le
+    kind: theorem
+    summary: For 0 < s < t, the lower integral of p_(2s)(y-z1) p_(2s)(y-z2) p_((t-s)/2)(x-y)
+      is at most sqrt(2t/s) p_(2t)(x-z1) p_(2t)(x-z2).
+    file: RoughHeatKernel/Doubled.lean
+    status: reusable
+    keywords:
+    - heat-kernel
+    - gaussian
+    - product-identity
+  - id: rough-heat-kernel/doubled-heat-flow-quadratic-bound
+    decl: RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le
+    kind: theorem
+    summary: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)^2
+      J(2s,y)^2 is at most sqrt(t)/(sqrt(2*pi)*sqrt(s*(t-s))) J(2t,x)^2.
+    file: RoughHeatKernel/Doubled.lean
+    status: reusable
+    keywords:
+    - heat-flow
+    - convolution
+    - doubling
+    - l2-norm

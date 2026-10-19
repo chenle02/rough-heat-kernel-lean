@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegFlowSemigroupWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ (ν : Measure ℝ) [SFinite ν] (t x : ℝ), (∫⁻ s in Set.Ioo 0 t, ∫⁻ y, ENNReal.ofReal (heatKernel (t-s) (x-y)) * lheatFlow ν s y) = lheatFlow ν t x := by
+  rw [RoughHeatKernelTest.NegFlowSemigroup.mutated_claim_iff_false]

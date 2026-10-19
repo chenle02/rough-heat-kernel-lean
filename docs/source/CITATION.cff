@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: 'RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4'
+type: software
+authors:
+- family-names: Chen
+  given-names: Le
+  affiliation: Auburn University
+license: Apache-2.0
+repository-code: https://github.com/chenle02/rough-heat-kernel-lean
+version: 0.7.0
+keywords:
+- Lean 4
+- Mathlib
+- heat kernel
+- heat equation
+- rough initial data

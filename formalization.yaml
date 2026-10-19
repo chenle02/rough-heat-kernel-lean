@@ -1,0 +1,35 @@
+project:
+  name: rough-heat-kernel
+  description: Gaussian heat kernels and heat flow for rough positive and signed measures.
+  authors:
+  - Le Chen
+  license: Apache-2.0
+sources:
+- title: Gaussian heat kernels and rough-measure heat flow
+  relationship: formalizes
+  note: Formalization of known mathematical results with explicit hypotheses; no mathematical novelty
+    is asserted.
+related_formalizations:
+- id: https://github.com/leanprover-community/mathlib4
+  relationship: builds-on
+  note: pinned in lake-manifest.json
+status:
+  scope: One-dimensional Gaussian kernel normalization, semigroup, Lq norms and increments; Gaussian-tempered
+    positive and signed Jordan-pair data, finite SignedMeasure bridge, fixed-time spatial continuity,
+    and Chen-Dalang/doubled-profile bounds. Excludes joint time-space heat-flow continuity, weak initial
+    trace, stochastic integration and SPDE well-posedness.
+automation:
+  methods:
+  - method: other
+  notes: Development and release preparation used AI assistance under the author’s direction. Exact
+    source-bound mechanical verification is recorded in canonical receipts; this metadata does not
+    assert independent human review.
+review:
+  status: unchecked
+  notes: No independent human review is asserted. Mechanical verification and AI-assisted source review
+    are distinct forms of evidence.
+version: v0.4
+acknowledgements: Developed and verified with lean-pkg (https://github.com/lean-pkg/lean-pkg, doi:10.5281/zenodo.23272098).
+  This work was completed in part with resources provided by the Auburn University Easley Cluster
+  (https://hpc.auburn.edu/hpc/docs/hpcdocs/build/html/easley/intro.html). Historical verification
+  used Easley; current release execution is identified by its own receipts.

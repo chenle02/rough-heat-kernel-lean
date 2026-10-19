@@ -1,0 +1,24 @@
+RoughHeatKernel
+Copyright 2026 Le Chen
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+This library formalizes standard heat-kernel and rough-initial-measure analysis.
+Its rough-data framework and Chen–Dalang convolution estimates are attributed to:
+Le Chen and Robert C. Dalang, Moments and growth indices for the nonlinear
+stochastic heat equation with rough initial conditions, Annals of Probability
+43 (2015), 3006–3051.
+
+Mathlib supplies imported Gaussian, measure-theoretic and functional-analytic
+results. Mathlib is separately distributed under Apache-2.0. Existing source
+copyright and author notices are retained. This mathematical attribution does
+not imply that the reference authors endorse this software.
+
+The compiled-environment inspection tool in tools/axiom-audit includes
+leanprover-community/axiom-audit source at commit
+46024e005996495c65ef609368e11ab39c4222e3, licensed Apache-2.0.
+Its upstream LICENSE is retained in tools/axiom-audit/LICENSE; UPSTREAM.md
+documents local driver adaptations and the collector's limits.
+
+Build-log validation reuses lean-pkg 0.18.0 lake_hygiene.py unchanged, under
+Apache-2.0. See scripts/LEAN-PKG-UPSTREAM.md and tools/lean-pkg/LICENSE.

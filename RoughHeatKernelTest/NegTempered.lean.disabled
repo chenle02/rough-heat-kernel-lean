@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegTemperedWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ ν : Measure ℝ, IsGaussianTempered ν := by
+  rw [RoughHeatKernelTest.NegTempered.mutated_claim_iff_false]

@@ -1,0 +1,106 @@
+import RoughHeatKernel
+
+/-! Usage examples, compiled by `verify.sh`. -/
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The heat flow of Lebesgue measure (infinite total mass) is identically `1`.
+example {t : ℝ} (ht : 0 < t) (x : ℝ) : RoughMeasure.lebesgue.heatFlow t x = 1 :=
+  RoughMeasure.heatFlow_lebesgue ht x
+
+-- A finite measure is Gaussian-tempered, so its heat flow is continuous in `x`.
+example (ν : Measure ℝ) [IsFiniteMeasure ν] {t : ℝ} (ht : 0 < t) :
+    Continuous (heatFlow ν t) :=
+  continuous_heatFlow (isGaussianTempered_of_isFiniteMeasure ν) ht
+
+-- The extended-real flow in "prefactor × Gaussian weight" form, for every measure.
+example (ν : Measure ℝ) (t x : ℝ) :
+    lheatFlow ν t x = ENNReal.ofReal (1 / Real.sqrt (2 * Real.pi * t)) *
+      ∫⁻ y, ENNReal.ofReal (Real.exp (-(x - y) ^ 2 / (2 * t))) ∂ν :=
+  lheatFlow_eq_ofReal_mul_lintegral ν t x
+
+-- Integrating against `N(x, t)` is integrating against the kernel.
+example {t : NNReal} (ht : t ≠ 0) (x : ℝ) (f : ℝ → ℝ) :
+    ∫ y, f y ∂ProbabilityTheory.gaussianReal x t = ∫ y, heatKernel t (x - y) * f y :=
+  integral_gaussianReal_eq_integral_heatKernel ht x f
+
+-- The `L²` norm of the kernel, from the general `L^q` formula.
+example {t : ℝ} (ht : 0 < t) :
+    eLpNorm (heatKernel t) 2 volume =
+      ENNReal.ofReal (heatLqConst 2 * t ^ (-(1 - (2 : ℝ≥0∞)⁻¹.toReal) / 2)) :=
+  eLpNorm_heatKernel (by norm_num) ht
+
+-- Spatial increment of the kernel, with the trivial bound 2 and the derivative bound.
+example {t : ℝ} (ht : 0 < t) (x z : ℝ) :
+    ∫ y, |heatKernel t (x - y) - heatKernel t (z - y)| ≤ min 2 (|x - z| / Real.sqrt t) :=
+  integral_abs_heatKernel_sub_sub_le ht x z
+
+-- Time increment of the kernel.
+example {t ε : ℝ} (ht : 0 < t) (hε : 0 ≤ ε) (x : ℝ) :
+    ∫ y, |heatKernel (t + ε) (x - y) - heatKernel t (x - y)| ≤ min 2 (ε / t) :=
+  integral_abs_heatKernel_add_sub_le ht hε x
+
+-- The second moment of the kernel is its variance `t`.
+example {t : ℝ} (ht : 0 < t) : ∫ x, x ^ 2 * heatKernel t x = t :=
+  integral_sq_mul_heatKernel ht
+
+-- The Chen–Dalang estimate for a Gaussian-tempered measure (possibly of infinite mass):
+-- tempered measures are locally finite, hence σ-finite, so Tonelli applies.
+example (ν : Measure ℝ) (hν : IsGaussianTempered ν) {t : ℝ} (ht : 0 < t) (x : ℝ)
+    {h : ℝ → ℝ≥0∞} (hh : Measurable h) :
+    ∫⁻ s in Set.Ioo 0 t, ∫⁻ y, lheatFlow ν s y ^ 2 *
+        ENNReal.ofReal (heatKernel ((t - s) / 2) (x - y)) * h (t - s) ≤
+      ENNReal.ofReal (2 * Real.sqrt t) * lheatFlow ν (2 * t) x ^ 2 *
+        ∫⁻ s in Set.Ioo 0 t, h (t - s) * ENNReal.ofReal (1 / Real.sqrt s) := by
+  haveI := hν.isLocallyFiniteMeasure
+  exact lintegral_sq_lheatFlow_conv_le ν ht x hh
+
+-- The Gaussian product identity.
+example {t : ℝ} (ht : 0 < t) (y z₁ z₂ : ℝ) :
+    heatKernel t (y - z₁) * heatKernel t (y - z₂) =
+      heatKernel (2 * t) (z₁ - z₂) * heatKernel (t / 2) (y - (z₁ + z₂) / 2) :=
+  heatKernel_mul_heatKernel_eq ht y z₁ z₂
+
+-- The arcsine integral.
+example {t : ℝ} (ht : 0 < t) :
+    ∫⁻ s in Set.Ioo 0 t, ENNReal.ofReal (1 / Real.sqrt (s * (t - s))) =
+      ENNReal.ofReal Real.pi :=
+  lintegral_arcsine ht
+
+-- The white-noise bound for a Gaussian-tempered measure.
+example (ν : Measure ℝ) (hν : IsGaussianTempered ν) {t : ℝ} (ht : 0 < t) (x : ℝ) :
+    ∫⁻ s in Set.Ioo 0 t, ∫⁻ y, lheatFlow ν s y ^ 2 *
+        ENNReal.ofReal (heatKernel (t - s) (x - y) ^ 2) ≤
+      ENNReal.ofReal (Real.sqrt Real.pi * Real.sqrt t) * lheatFlow ν (2 * t) x ^ 2 := by
+  have := hν.isLocallyFiniteMeasure
+  exact lintegral_sq_lheatFlow_mul_heatKernel_sq_le ν ht x
+
+-- The semigroup property of the heat flow, integrated in time: `∫_0^t ∫ p_{t-s} J(s) = t J(t)`.
+example (ν : Measure ℝ) [SFinite ν] (t x : ℝ) :
+    ∫⁻ s in Set.Ioo 0 t, ∫⁻ y, ENNReal.ofReal (heatKernel (t - s) (x - y)) * lheatFlow ν s y =
+      ENNReal.ofReal t * lheatFlow ν t x :=
+  lintegral_lintegral_heatKernel_mul_lheatFlow ν t x
+
+-- The time-resolved quadratic bound against the doubled heat-flow profile.
+example (ν : Measure ℝ) [SFinite ν] {s t : ℝ} (hs : 0 < s) (hst : s < t) (x : ℝ) :
+    ∫⁻ y, ENNReal.ofReal (heatKernel (t - s) (x - y) ^ 2) * lheatFlow ν (2 * s) y ^ 2 ≤
+      ENNReal.ofReal (1 / Real.sqrt (2 * Real.pi) * (Real.sqrt t / Real.sqrt (s * (t - s)))) *
+        lheatFlow ν (2 * t) x ^ 2 :=
+  lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le ν hs hst x
+
+-- The signed datum is genuinely nonzero: its heat flow is negative at x = 1.
+example {t : ℝ} (ht : 0 < t) :
+    RoughMeasure.diracZeroSubDiracOne.heatFlow t 1 < 0 :=
+  RoughMeasure.heatFlow_diracZeroSubDiracOne_one_neg ht
+
+-- The SAME concrete datum has infinite total variation and a nonzero finite heat flow.
+example {t : ℝ} (ht : 0 < t) (x : ℝ) :
+    RoughMeasure.lebesgue.totalVariation Set.univ = ⊤ ∧
+      RoughMeasure.lebesgue.heatFlow t x = 1 :=
+  ⟨RoughMeasure.lebesgue_totalVariation_univ, RoughMeasure.heatFlow_lebesgue ht x⟩
+
+-- Finite signed input preserves Mathlib's own total variation.
+example (s : SignedMeasure ℝ) :
+    (RoughMeasure.ofSignedMeasure s).totalVariation = s.totalVariation :=
+  RoughMeasure.totalVariation_ofSignedMeasure s

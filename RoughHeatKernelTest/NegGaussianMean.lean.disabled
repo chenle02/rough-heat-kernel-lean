@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegGaussianMeanWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ (t x : ℝ), heatKernel t x = ProbabilityTheory.gaussianPDFReal 1 t.toNNReal x := by
+  rw [RoughHeatKernelTest.NegGaussianMean.mutated_claim_iff_false]

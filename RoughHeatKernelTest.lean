@@ -1,0 +1,15 @@
+import RoughHeatKernelTest.AxiomCheck
+import RoughHeatKernelTest.Counterexamples
+import RoughHeatKernelTest.Examples
+import RoughHeatKernelTest.NegArcsineWitness
+import RoughHeatKernelTest.NegDoubledSemigroupWitness
+import RoughHeatKernelTest.NegFlowSemigroupWitness
+import RoughHeatKernelTest.NegGaussianMeanWitness
+import RoughHeatKernelTest.NegIncrementWitness
+import RoughHeatKernelTest.NegMassWitness
+import RoughHeatKernelTest.NegProductIdentityWitness
+import RoughHeatKernelTest.NegSemigroupProductWitness
+import RoughHeatKernelTest.NegTemperedWitness
+import RoughHeatKernelTest.TypeCheck
+
+/-! Positive verification fixtures. Expected-failure sources are deliberately excluded. -/

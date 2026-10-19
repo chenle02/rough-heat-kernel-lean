@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegProductIdentityWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ (t : ℝ), 0 < t → ∀ y z₁ z₂ : ℝ, heatKernel t (y-z₁) * heatKernel t (y-z₂) = heatKernel t (z₁-z₂) * heatKernel (t/2) (y-(z₁+z₂)/2) := by
+  rw [RoughHeatKernelTest.NegProductIdentity.mutated_claim_iff_false]

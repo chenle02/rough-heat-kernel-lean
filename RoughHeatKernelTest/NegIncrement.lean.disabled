@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegIncrementWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ (t : ℝ), 0 < t → (∫ y : ℝ, |heatKernel (t + 1) (0 - y) - heatKernel t (0 - y)|) ≤ 0 := by
+  rw [RoughHeatKernelTest.NegIncrement.mutated_claim_iff_false]

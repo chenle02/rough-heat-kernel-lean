@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegSemigroupProductWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ (s t : ℝ), 0 < s → 0 < t → ∀ x : ℝ, (∫ y, heatKernel t (x - y) * heatKernel s y) = heatKernel (t * s) x := by
+  rw [RoughHeatKernelTest.NegSemigroupProduct.mutated_claim_iff_false]

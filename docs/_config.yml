@@ -1,0 +1,8 @@
+title: RoughHeatKernel
+description: The one-dimensional heat kernel and rough measure initial data in Lean 4.
+theme: jekyll-theme-minimal
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true

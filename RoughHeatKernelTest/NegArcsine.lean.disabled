@@ -1,0 +1,8 @@
+import RoughHeatKernelTest.NegArcsineWitness
+
+open RoughHeatKernel MeasureTheory
+open scoped ENNReal
+
+-- The unchanged mathematical mutation, universally closed, reduces to the sole goal False.
+example : ∀ (t : ℝ), 0 < t → (∫⁻ s in Set.Ioo 0 t, ENNReal.ofReal (1 / Real.sqrt (s * (t - s)))) = ENNReal.ofReal (Real.pi / 2) := by
+  rw [RoughHeatKernelTest.NegArcsine.mutated_claim_iff_false]
