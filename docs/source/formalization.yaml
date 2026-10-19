@@ -25,17 +25,8 @@ related_formalizations:
 status:
   scope: One-dimensional Gaussian kernel normalization, semigroup, Lq norms and increments; Gaussian-tempered
     positive and signed Jordan-pair data, finite SignedMeasure bridge, joint positive-time continuity,
-    a uniform quarter-Holder Gaussian envelope, and Chen-Dalang/doubled-profile bounds. Excludes
-    continuity at time zero, weak initial trace, stochastic integration and SPDE well-posedness.
-  sorry_count: 0
-  axioms:
-  - Classical.choice
-  - Quot.sound
-  - propext
-  evidence:
-    commit: cc5a8dba012b74be4d8d8a8ee09608239fbf5b08
-    gate_receipt: .lean-receipts/cc5a8dba012b-systemd-user-rough-heat-kernel-v070-local-20261019.service-f5cb65709f744525b784bcd5917d86e7-h-24e00fc5da6c.json
-    comparator_receipt: .lean-receipts/cc5a8dba012b-comparator.json
+    a uniform quarter-Holder Gaussian envelope, and Chen-Dalang/doubled-profile bounds. Excludes continuity
+    at time zero, weak initial trace, stochastic integration and SPDE well-posedness.
   main_results:
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_convolution_heatKernel
@@ -167,6 +158,22 @@ status:
     challenge_file: Challenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_sq_le_local
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.continuousAt_heatFlow_joint
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.SpatialEnvelope.quarter_increment
     file: Solution.lean
     challenge_file: Challenge.lean
 automation:
@@ -441,6 +448,38 @@ alignment:
     status: reusable
     note: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)^2 J(2s,y)^2 is at most
       sqrt(t)/(sqrt(2*pi)*sqrt(s*(t-s))) J(2t,x)^2.
+  - source: null
+    lean: RoughHeatKernel.heatKernel_sq_le_local
+    module: RoughHeatKernel/Kernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-local-domination
+    status: reusable
+    note: Local Gaussian-square domination on a positive-time neighborhood with bounded output displacement;
+      an explicit integrable envelope for continuity arguments.
+  - source: null
+    lean: RoughHeatKernel.continuousAt_heatFlow_joint
+    module: RoughHeatKernel/Tempered.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-joint-continuity
+    status: reusable
+    note: Joint time-space continuity of the heat flow at every positive time for any Gaussian-tempered
+      positive measure, including infinite mass.
+  - source: null
+    lean: RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint
+    module: RoughHeatKernel/RoughMeasure.lean
+    kind: theorem
+    claim: rough-heat-kernel/signed-heat-flow-joint-continuity
+    status: reusable
+    note: Joint time-space continuity at every positive time for signed Jordan data with Gaussian-tempered
+      total variation; no finite-total-variation assumption.
+  - source: null
+    lean: RoughHeatKernel.SpatialEnvelope.quarter_increment
+    module: RoughHeatKernel/SpatialEnvelope.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-quarter-spatial-envelope
+    status: reusable
+    note: 'Uniform quarter-Hölder Gaussian envelope: for every r>0 and u,v, |p_r(u)-p_r(v)| is bounded
+      by 2 exp(1) |u-v|^(1/4) r^(-1/8) times p_(2r)(u)+p_(2r)(v).'
 acknowledgements: Developed and verified with lean-pkg (https://github.com/lean-pkg/lean-pkg, doi:10.5281/zenodo.23272098).
   This work was completed in part with resources provided by the Auburn University Easley Cluster (https://hpc.auburn.edu/hpc/docs/hpcdocs/build/html/easley/intro.html).
   Historical verification used Easley; current release execution is identified by its own receipts.
