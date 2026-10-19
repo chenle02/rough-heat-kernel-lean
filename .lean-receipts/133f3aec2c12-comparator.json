@@ -1,0 +1,130 @@
+{
+  "build_provenance": {
+    "cache_reused": 14,
+    "compiled": false,
+    "modules_built": 0,
+    "prebuilt": true,
+    "source": "Exactly216 frozen own artifacts reused from27 actual cold independent builds at133f in prior failed-cache-get invocation d1b7468a6dec4c7b99d49691e71c401b; no cold rebuild in this recovery"
+  },
+  "commit": "133f3aec2c12e927ab11c4d0ffbe88a7485aee00",
+  "configs": [
+    {
+      "challenge_module": "Challenge",
+      "definition_names": [],
+      "log": ".lean-receipts/133f3aec2c12-comparator-comparator.log",
+      "log_sha256": "1204c3c466cc9c749e04399cddde74d15234514da3b77eec2257fc0ccd5823e5",
+      "path": "comparator.json",
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ],
+      "result": "pass",
+      "sha256": "c876949ed68ea59aad933092e332f6be12b6336fd9af954810a0271d9881fbf1",
+      "solution_module": "Solution",
+      "theorem_names": [
+        "RoughHeatKernel.heatKernel_convolution_heatKernel",
+        "RoughHeatKernel.eLpNorm_heatKernel",
+        "RoughHeatKernel.continuous_heatFlow",
+        "RoughHeatKernel.integrable_exp_mul_heatFlow_rpow",
+        "RoughHeatKernel.exists_sqrt_mul_heatFlow_le",
+        "RoughHeatKernel.ofReal_heatFlow",
+        "RoughHeatKernel.RoughMeasure.abs_heatFlow_le",
+        "RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure",
+        "RoughHeatKernel.heatKernel_eq_gaussianPDFReal",
+        "RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel",
+        "RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure",
+        "RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral",
+        "RoughHeatKernel.RoughMeasure.totalVariation_ofTempered",
+        "RoughHeatKernel.integral_abs_heatKernel_sub_sub_le",
+        "RoughHeatKernel.integral_abs_heatKernel_add_sub_le",
+        "RoughHeatKernel.hasDerivAt_heatKernel_time",
+        "RoughHeatKernel.lintegral_enorm_sub_le_lintegral",
+        "RoughHeatKernel.integral_sq_mul_heatKernel",
+        "RoughHeatKernel.lintegral_sq_lheatFlow_conv_le",
+        "RoughHeatKernel.heatKernel_mul_heatKernel_eq",
+        "RoughHeatKernel.heatKernel_le_sqrt_div_mul",
+        "RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure",
+        "RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le",
+        "RoughHeatKernel.heatKernel_sq_eq",
+        "RoughHeatKernel.lintegral_arcsine",
+        "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow",
+        "RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow",
+        "RoughHeatKernel.heatKernel_add_le_sqrt_two_mul",
+        "RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul",
+        "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul",
+        "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le",
+        "RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le",
+        "RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le",
+        "RoughHeatKernel.heatKernel_sq_le_local",
+        "RoughHeatKernel.continuousAt_heatFlow_joint",
+        "RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint",
+        "RoughHeatKernel.SpatialEnvelope.quarter_increment"
+      ]
+    }
+  ],
+  "generated_at": "2026-10-19T18:59:47+00:00",
+  "host": "h-f985343177f7",
+  "host_label": "h-f985343177f7",
+  "host_policy": "host h-f985343177f7 listed in COMPARATOR_RECEIPT_ALLOWED_HOSTS",
+  "job_id": "local-h-f985343177f7-1565605-20261019T185947Z",
+  "judges": 1,
+  "lean_threads": 1,
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "mechanism": "toolchain",
+  "olean_manifest": {
+    "captured": "build",
+    "files": 27,
+    "lake_manifest_sha256": "33928f37ec692b2b06a4da70ee2d832c381b1ed04218618fa3bccaf73a248494",
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "schema": "olean-manifest/1",
+    "sha256": "dbeba468a7e750586227cf8e81127681ab07d86bad244840e4b34a778c9f845a"
+  },
+  "result": "pass",
+  "schema": "comparator-receipt/2",
+  "stack_limit": {
+    "hard_kb": "unlimited",
+    "soft_kb": "unlimited",
+    "source": "COMPARATOR_RECEIPT_STACK"
+  },
+  "stages": [
+    {
+      "exit": 0,
+      "stage": "checkout",
+      "status": "prepared",
+      "wall_s": 8.388
+    },
+    {
+      "exit": 0,
+      "stage": "cache-get",
+      "status": "prepared",
+      "wall_s": 3.805
+    },
+    {
+      "exit": 0,
+      "stage": "build",
+      "status": "prepared",
+      "wall_s": 4.384
+    },
+    {
+      "exit": 0,
+      "stage": "comparator",
+      "status": "ok",
+      "wall_s": 218.275
+    }
+  ],
+  "toolchain_resolution": {
+    "lake": "<elan>/bin/lake",
+    "source": "elan",
+    "version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)"
+  },
+  "tools": {
+    "con-ron_sha256": "60f4ca9fb9436c323789fa49aae33af6dcd1b9b54b43a66b461779ce79fd8eec",
+    "lake_sha256": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "leanchecker_sha256": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "leanexport_sha256": "f6a6483d518a11b323c28b9bac176d2220df0e9fc3230833815db9586669c074",
+    "nanoda_bin_sha256": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5"
+  },
+  "unit_size": null
+}

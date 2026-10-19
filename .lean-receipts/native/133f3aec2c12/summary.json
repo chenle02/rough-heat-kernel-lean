@@ -1,0 +1,128 @@
+{
+  "canonical_lower_receipt_report_sha256": "fa89c08648cada265bbe7f99d3b1cf3a358a8aaea8dc0990a6e5cd04962c745b",
+  "compiled_escape_controls": [
+    {
+      "audit_exit": 0,
+      "compile_exit": 0,
+      "forbidden_axioms": [],
+      "module": "EscapePositive"
+    },
+    {
+      "audit_exit": 1,
+      "compile_exit": 0,
+      "forbidden_axioms": [
+        "EscapeNegative.injected",
+        "sorryAx"
+      ],
+      "module": "EscapeNegative"
+    },
+    {
+      "audit_exit": 1,
+      "compile_exit": 0,
+      "forbidden_axioms": [
+        "EscapeNative.nativeTrue._native.native_decide.ax_1_1"
+      ],
+      "module": "EscapeNative"
+    }
+  ],
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "limitations": [
+    "High-trust compiled environment inspection checks the project-wide forbidden-axiom union. Per-declaration axiom lists may undercount cyclic dependency clusters and are not canonical individual fingerprints.",
+    "Serialized type expressions are full elaborated Lean types, not proof-body equivalence certificates or validation of explanatory prose.",
+    "LeanChecker replays modules with the pinned Lean implementation; independent supported comparator evidence is separate.",
+    "Negative escape fixtures deliberately contain rejected escapes; zero-hole claims apply to production/reference/positive cones, not the raw fixture syntax."
+  ],
+  "mathlib_rev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "native_reports": {
+    "production": {
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "compressed_bytes": 73966,
+      "compressed_sha256": "c2723be3e48c1dc3aba9d8a79a670080bd7f8e1d80abf438a602e13d22598fe5",
+      "compression_ratio": 27.60203336668199,
+      "core_scientific_owned_declarations": 221,
+      "exact_leanchecker_modules": [
+        "RoughHeatKernel.ChenDalang",
+        "RoughHeatKernel.Doubled",
+        "RoughHeatKernel.Finite",
+        "RoughHeatKernel.FlowSemigroup",
+        "RoughHeatKernel.Gaussian",
+        "RoughHeatKernel.Increments",
+        "RoughHeatKernel.Kernel",
+        "RoughHeatKernel.Lq",
+        "RoughHeatKernel.RoughMeasure",
+        "RoughHeatKernel.SpatialEnvelope",
+        "RoughHeatKernel.SquareKernel",
+        "RoughHeatKernel.Tempered",
+        "RoughHeatKernelTest.AxiomCheck",
+        "RoughHeatKernelTest.Counterexamples",
+        "RoughHeatKernelTest.Examples",
+        "RoughHeatKernelTest.NegArcsineWitness",
+        "RoughHeatKernelTest.NegDoubledSemigroupWitness",
+        "RoughHeatKernelTest.NegFlowSemigroupWitness",
+        "RoughHeatKernelTest.NegGaussianMeanWitness",
+        "RoughHeatKernelTest.NegIncrementWitness",
+        "RoughHeatKernelTest.NegJointTimeConstancyWitness",
+        "RoughHeatKernelTest.NegMassWitness",
+        "RoughHeatKernelTest.NegProductIdentityWitness",
+        "RoughHeatKernelTest.NegSemigroupProductWitness",
+        "RoughHeatKernelTest.NegSignedFlowAbsoluteWitness",
+        "RoughHeatKernelTest.NegTemperedWitness",
+        "RoughHeatKernelTest.TypeCheck"
+      ],
+      "file": "production.json.gz",
+      "gzip_decoded_identity_verified": true,
+      "module_count": 30,
+      "owned_declarations": 250,
+      "uncompressed_bytes": 2041612,
+      "uncompressed_sha256": "ce487c45e71f4e71790f39de8029918e5bb6fa965e4b0717a3a731865b9dc411",
+      "zero_owned_import_only_modules": [
+        "RoughHeatKernel",
+        "RoughHeatKernelTest",
+        "Solution"
+      ]
+    },
+    "reference": {
+      "axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "compressed_bytes": 66331,
+      "compressed_sha256": "25c2eca95f829d0d26c50f38b1412345a582b308a1f8d5cb3e500614d2e64745",
+      "compression_ratio": 27.823280215886992,
+      "core_scientific_owned_declarations": 221,
+      "exact_leanchecker_modules": [
+        "Challenge.Reference.RoughHeatKernel.ChenDalang",
+        "Challenge.Reference.RoughHeatKernel.Doubled",
+        "Challenge.Reference.RoughHeatKernel.Finite",
+        "Challenge.Reference.RoughHeatKernel.FlowSemigroup",
+        "Challenge.Reference.RoughHeatKernel.Gaussian",
+        "Challenge.Reference.RoughHeatKernel.Increments",
+        "Challenge.Reference.RoughHeatKernel.Kernel",
+        "Challenge.Reference.RoughHeatKernel.Lq",
+        "Challenge.Reference.RoughHeatKernel.RoughMeasure",
+        "Challenge.Reference.RoughHeatKernel.SpatialEnvelope",
+        "Challenge.Reference.RoughHeatKernel.SquareKernel",
+        "Challenge.Reference.RoughHeatKernel.Tempered"
+      ],
+      "file": "reference.json.gz",
+      "gzip_decoded_identity_verified": true,
+      "module_count": 13,
+      "owned_declarations": 221,
+      "uncompressed_bytes": 1845546,
+      "uncompressed_sha256": "120dab3d0d37667448e6070d24c04d0a1f25ed40be88e046b64b30538f5bcd94",
+      "zero_owned_import_only_modules": [
+        "Challenge"
+      ]
+    }
+  },
+  "schema": "supplementary-native-evidence/1",
+  "scientific_commit": "133f3aec2c12e927ab11c4d0ffbe88a7485aee00",
+  "scope": "Actual cold complete owned-declaration audit of production/positive-test and proved-reference cones, plus exact selected-module LeanChecker replay. Supplementary evidence, not a canonical lower receipt or independent comparator certificate.",
+  "strict_control_pairs": 11,
+  "strict_diagnostics_publication": "Raw strict compiler streams are retained privately and independently reparsed; public summary records outcomes only."
+}
