@@ -1,3 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+# Rendered by `lean-pkg formalization <name>` from the lean-pkg registry and the package
+# repository at HEAD (formalization.yaml v0.4, mathlib-initiative). Paths are
+# repository-relative. Derived keys are regenerated on every run: version, project.name,
+# project.license, automation.notes, status.sorry_count, status.axioms, status.evidence,
+# status.main_results, and alignment when claims.yaml is tracked. Every other key is kept
+# from this file. A value starting "[PLACEHOLDER]" is data the registry does not hold:
+# fill it in by hand (it is kept) or set the registry field it names.
+version: v0.4
 project:
   name: rough-heat-kernel
   description: Gaussian heat kernels and heat flow for rough positive and signed measures.
@@ -18,18 +27,420 @@ status:
     positive and signed Jordan-pair data, finite SignedMeasure bridge, fixed-time spatial continuity,
     and Chen-Dalang/doubled-profile bounds. Excludes joint time-space heat-flow continuity, weak initial
     trace, stochastic integration and SPDE well-posedness.
+  sorry_count: 0
+  axioms:
+  - Classical.choice
+  - Quot.sound
+  - propext
+  evidence:
+    commit: cc5a8dba012b74be4d8d8a8ee09608239fbf5b08
+    gate_receipt: .lean-receipts/cc5a8dba012b-systemd-user-rough-heat-kernel-v070-local-20261019.service-f5cb65709f744525b784bcd5917d86e7-h-24e00fc5da6c.json
+    comparator_receipt: .lean-receipts/cc5a8dba012b-comparator.json
+  main_results:
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_convolution_heatKernel
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.eLpNorm_heatKernel
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.continuous_heatFlow
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.integrable_exp_mul_heatFlow_rpow
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.exists_sqrt_mul_heatFlow_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.ofReal_heatFlow
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.RoughMeasure.abs_heatFlow_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_eq_gaussianPDFReal
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.RoughMeasure.totalVariation_ofTempered
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.integral_abs_heatKernel_sub_sub_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.integral_abs_heatKernel_add_sub_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.hasDerivAt_heatKernel_time
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_enorm_sub_le_lintegral
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.integral_sq_mul_heatKernel
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_sq_lheatFlow_conv_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_mul_heatKernel_eq
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_le_sqrt_div_mul
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_sq_eq
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_arcsine
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.heatKernel_add_le_sqrt_two_mul
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
 automation:
   methods:
   - method: other
-  notes: Development and release preparation used AI assistance under the author’s direction. Exact
-    source-bound mechanical verification is recorded in canonical receipts; this metadata does not
-    assert independent human review.
+  notes: Development and release preparation used AI assistance under Le Chen’s direction. Source-bound
+    receipts record mechanical verification; no independent human review is asserted.
 review:
   status: unchecked
   notes: No independent human review is asserted. Mechanical verification and AI-assisted source review
     are distinct forms of evidence.
-version: v0.4
+alignment:
+  generated_from: claims.yaml
+  statements:
+  - source: null
+    lean: RoughHeatKernel.heatKernel_convolution_heatKernel
+    module: RoughHeatKernel/Kernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-semigroup
+    status: reusable
+    note: Semigroup identity p_t * p_s = p_{t+s} for the 1-d heat kernel, as functions via Mathlib's convolution,
+      for s,t > 0.
+  - source: null
+    lean: RoughHeatKernel.eLpNorm_heatKernel
+    module: RoughHeatKernel/Lq.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-lq-norm
+    status: reusable
+    note: 'Exact L^q norm of the heat kernel for every q in [1, infinity]: C_q t^{-(1-1/q)/2} with an
+      explicit constant.'
+  - source: null
+    lean: RoughHeatKernel.continuous_heatFlow
+    module: RoughHeatKernel/Tempered.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-continuous
+    status: reusable
+    note: For a Gaussian-tempered positive measure (possibly of infinite mass) and t > 0, the heat flow
+      x -> int p_t(x-y) nu(dy) is continuous.
+  - source: null
+    lean: RoughHeatKernel.integrable_exp_mul_heatFlow_rpow
+    module: RoughHeatKernel/Tempered.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-weighted-lp
+    status: reusable
+    note: 'Weighted bound for the heat flow of a Gaussian-tempered measure: e^{-a x^2} (heat flow)^p is
+      integrable for a, t > 0, p >= 1.'
+  - source: null
+    lean: RoughHeatKernel.exists_sqrt_mul_heatFlow_le
+    module: RoughHeatKernel/Tempered.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-local-sup
+    status: reusable
+    note: 'Local small-time bound: sqrt(s) times the heat flow of a Gaussian-tempered measure is bounded
+      uniformly on s in (0,T], |y| <= R.'
+  - source: null
+    lean: RoughHeatKernel.ofReal_heatFlow
+    module: RoughHeatKernel/Tempered.lean
+    kind: theorem
+    claim: rough-heat-kernel/ennreal-heat-flow
+    status: reusable
+    note: For a Gaussian-tempered measure and t > 0, the extended-real heat flow lheatFlow equals ofReal
+      of the real heat flow (and is finite).
+  - source: null
+    lean: RoughHeatKernel.RoughMeasure.abs_heatFlow_le
+    module: RoughHeatKernel/RoughMeasure.lean
+    kind: theorem
+    claim: rough-heat-kernel/rough-measure-heat-flow-bound
+    status: reusable
+    note: For a signed measure with Gaussian-tempered total variation (Jordan pair), |heat flow of mu|
+      <= heat flow of |mu|.
+  - source: null
+    lean: RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure
+    module: RoughHeatKernel/Finite.lean
+    kind: theorem
+    claim: rough-heat-kernel/finite-measure-heat-flow-bound
+    status: reusable
+    note: For a finite signed measure, |heat flow| <= (2 pi t)^{-1/2} |mu|(R) at every point.
+  - source: null
+    lean: RoughHeatKernel.heatKernel_eq_gaussianPDFReal
+    module: RoughHeatKernel/Gaussian.lean
+    kind: theorem
+    claim: rough-heat-kernel/gaussian-bridge
+    status: reusable
+    note: 'The heat kernel is Mathlib''s centred Gaussian density: heatKernel t = gaussianPDFReal 0 t.toNNReal
+      for every real t.'
+  - source: null
+    lean: RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel
+    module: RoughHeatKernel/Gaussian.lean
+    kind: theorem
+    claim: rough-heat-kernel/gaussian-real-integral
+    status: reusable
+    note: Integration against the normal law gaussianReal x t equals integration against heatKernel t
+      (x - y), for t != 0.
+  - source: null
+    lean: RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure
+    module: RoughHeatKernel/Finite.lean
+    kind: theorem
+    claim: rough-heat-kernel/signed-measure-bridge
+    status: reusable
+    note: A Mathlib SignedMeasure on R becomes a RoughMeasure via its Jordan decomposition; positive minus
+      negative part recovers s, and the total variation is s.totalVariation.
+  - source: null
+    lean: RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral
+    module: RoughHeatKernel/Tempered.lean
+    kind: theorem
+    claim: rough-heat-kernel/lheat-flow-gaussian-weight
+    status: reusable
+    note: For every measure and every real t, the extended-real heat flow equals ofReal((2 pi t)^{-1/2})
+      times the lower integral of exp(-(x-y)^2/(2t)).
+  - source: null
+    lean: RoughHeatKernel.RoughMeasure.totalVariation_ofTempered
+    module: RoughHeatKernel/RoughMeasure.lean
+    kind: theorem
+    claim: rough-heat-kernel/rough-measure-of-tempered
+    status: reusable
+    note: A Jordan pair whose total variation pos + neg is Gaussian-tempered is a RoughMeasure (single-condition
+      form of the class), with that total variation.
+  - source: null
+    lean: RoughHeatKernel.integral_abs_heatKernel_sub_sub_le
+    module: RoughHeatKernel/Increments.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-spatial-increment
+    status: reusable
+    note: 'Spatial L^1 increment of the 1-d heat kernel: int |p_t(x-y) - p_t(z-y)| dy <= min(2, |x-z|/sqrt
+      t) for t > 0.'
+  - source: null
+    lean: RoughHeatKernel.integral_abs_heatKernel_add_sub_le
+    module: RoughHeatKernel/Increments.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-time-increment
+    status: reusable
+    note: 'Time L^1 increment of the 1-d heat kernel: int |p_{t+e}(x-y) - p_t(x-y)| dy <= min(2, e/t)
+      for t > 0, e >= 0.'
+  - source: null
+    lean: RoughHeatKernel.hasDerivAt_heatKernel_time
+    module: RoughHeatKernel/Increments.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-derivatives
+    status: reusable
+    note: 'Time derivative of the heat kernel: d/dt p_t(x) = (x^2 - t)/(2 t^2) p_t(x) for t > 0 (the spatial
+      one, -(x/t) p_t(x), is hasDerivAt_heatKernel).'
+  - source: null
+    lean: RoughHeatKernel.lintegral_enorm_sub_le_lintegral
+    module: RoughHeatKernel/Increments.lean
+    kind: theorem
+    claim: rough-heat-kernel/l1-mean-value-inequality
+    status: reusable
+    note: 'L^1 mean-value inequality: if F has derivative F'' in theta on [a,b], F'' is continuous in
+      theta for each y and jointly measurable, then int |F(b,y)-F(a,y)| dy <= int_a^b int |F''(theta,y)|
+      dy dtheta (lower integrals).'
+  - source: null
+    lean: RoughHeatKernel.integral_sq_mul_heatKernel
+    module: RoughHeatKernel/Increments.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-moments
+    status: reusable
+    note: 'Gaussian moments of the heat kernel: int x^2 p_t(x) dx = t, and int |x| p_t(x) dx <= sqrt t
+      (integral_abs_mul_heatKernel_le), for t > 0.'
+  - source: null
+    lean: RoughHeatKernel.lintegral_sq_lheatFlow_conv_le
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/chen-dalang-convolution
+    status: reusable
+    note: 'Chen-Dalang estimate (Gaussian case): for s-finite nu, t > 0, measurable h >= 0, int_0^t int
+      J(s,y)^2 p_{(t-s)/2}(x-y) h(t-s) dy ds <= 2 sqrt t J(2t,x)^2 int_0^t h(t-s)/sqrt s ds, J = lheatFlow
+      nu (lower integrals).'
+  - source: null
+    lean: RoughHeatKernel.heatKernel_mul_heatKernel_eq
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/gaussian-product-identity
+    status: reusable
+    note: 'Gaussian product identity: p_t(y-z1) p_t(y-z2) = p_{2t}(z1-z2) p_{t/2}(y-(z1+z2)/2) for t >
+      0.'
+  - source: null
+    lean: RoughHeatKernel.heatKernel_le_sqrt_div_mul
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-comparison
+    status: reusable
+    note: 'Heat-kernel comparison across times: p_a(x) <= sqrt(b/a) p_b(x) for 0 < a <= b.'
+  - source: null
+    lean: RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/tempered-locally-finite
+    status: reusable
+    note: A Gaussian-tempered measure on R is locally finite (finite on bounded sets), hence sigma-finite.
+  - source: null
+    lean: RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le
+    module: RoughHeatKernel/SquareKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/white-noise-convolution
+    status: reusable
+    note: 'White-noise Chen-Dalang bound: for s-finite nu and t > 0, int_0^t int J(s,y)^2 p_{t-s}(x-y)^2
+      dy ds <= sqrt(pi) sqrt(t) J(2t,x)^2 with J = lheatFlow nu, as lower integrals.'
+  - source: null
+    lean: RoughHeatKernel.heatKernel_sq_eq
+    module: RoughHeatKernel/SquareKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-square
+    status: reusable
+    note: 'Squared heat kernel: p_r(z)^2 = p_{r/2}(z) (4 pi r)^{-1/2} for r > 0; hence int p_r^2 = (4
+      pi r)^{-1/2} (integral_heatKernel_sq).'
+  - source: null
+    lean: RoughHeatKernel.lintegral_arcsine
+    module: RoughHeatKernel/SquareKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/arcsine-integral
+    status: reusable
+    note: 'The arcsine integral: int_0^t ds / sqrt(s (t - s)) = pi for t > 0, as a lower Lebesgue integral.'
+  - source: null
+    lean: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow
+    module: RoughHeatKernel/FlowSemigroup.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-semigroup
+    status: reusable
+    note: 'Heat-flow semigroup: for s-finite nu and 0 < s < t, int p_{t-s}(x-y) J(s,y) dy = J(t,x) with
+      J = lheatFlow nu, as a lower integral.'
+  - source: null
+    lean: RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow
+    module: RoughHeatKernel/FlowSemigroup.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-time-integral
+    status: reusable
+    note: 'Time-integrated heat-flow semigroup: for s-finite nu, int_0^t int p_{t-s}(x-y) J(s,y) dy ds
+      = t J(t,x) with J = lheatFlow nu, as lower integrals.'
+  - source: null
+    lean: RoughHeatKernel.heatKernel_add_le_sqrt_two_mul
+    module: RoughHeatKernel/Doubled.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-doubling
+    status: reusable
+    note: For t > 0 and 0 <= s <= t, p_(t+s)(x) <= sqrt(2) p_(2t)(x).
+  - source: null
+    lean: RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul
+    module: RoughHeatKernel/Doubled.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-doubling
+    status: reusable
+    note: For every positive measure nu, t > 0 and 0 <= s <= t, J(t+s,x) <= sqrt(2) J(2t,x), with J =
+      lheatFlow nu.
+  - source: null
+    lean: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul
+    module: RoughHeatKernel/Doubled.lean
+    kind: theorem
+    claim: rough-heat-kernel/doubled-heat-flow-semigroup
+    status: reusable
+    note: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y) J(2s,y) equals J(t+s,x).
+  - source: null
+    lean: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le
+    module: RoughHeatKernel/Doubled.lean
+    kind: theorem
+    claim: rough-heat-kernel/doubled-heat-flow-linear-bound
+    status: reusable
+    note: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y) J(2s,y) is at most sqrt(2)
+      J(2t,x).
+  - source: null
+    lean: RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le
+    module: RoughHeatKernel/Doubled.lean
+    kind: theorem
+    claim: rough-heat-kernel/doubled-gaussian-product-bound
+    status: reusable
+    note: For 0 < s < t, the lower integral of p_(2s)(y-z1) p_(2s)(y-z2) p_((t-s)/2)(x-y) is at most sqrt(2t/s)
+      p_(2t)(x-z1) p_(2t)(x-z2).
+  - source: null
+    lean: RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le
+    module: RoughHeatKernel/Doubled.lean
+    kind: theorem
+    claim: rough-heat-kernel/doubled-heat-flow-quadratic-bound
+    status: reusable
+    note: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)^2 J(2s,y)^2 is at most
+      sqrt(t)/(sqrt(2*pi)*sqrt(s*(t-s))) J(2t,x)^2.
 acknowledgements: Developed and verified with lean-pkg (https://github.com/lean-pkg/lean-pkg, doi:10.5281/zenodo.23272098).
-  This work was completed in part with resources provided by the Auburn University Easley Cluster
-  (https://hpc.auburn.edu/hpc/docs/hpcdocs/build/html/easley/intro.html). Historical verification
-  used Easley; current release execution is identified by its own receipts.
+  This work was completed in part with resources provided by the Auburn University Easley Cluster (https://hpc.auburn.edu/hpc/docs/hpcdocs/build/html/easley/intro.html).
+  Historical verification used Easley; current release execution is identified by its own receipts.
