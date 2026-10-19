@@ -34,7 +34,11 @@
     "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul",
     "RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le",
     "RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le",
-    "RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le"
+    "RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le",
+    "RoughHeatKernel.heatKernel_sq_le_local",
+    "RoughHeatKernel.continuousAt_heatFlow_joint",
+    "RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint",
+    "RoughHeatKernel.SpatialEnvelope.quarter_increment"
   ],
   "definition_names": [],
   "permitted_axioms": [

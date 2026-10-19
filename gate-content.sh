@@ -122,7 +122,7 @@ for neg in RoughHeatKernelTest/*.lean.disabled; do
   bash scripts/lake_guard.sh negative-control "$neg" "$artifacts/$(basename "$base")-negative.log" "$nexit" "$module"
   count=$((count + 1))
 done
-[ "$count" -eq 9 ] || { echo "expected exactly nine strict controls, found $count" >&2; exit 1; }
+[ "$count" -eq 11 ] || { echo "expected exactly eleven strict controls, found $count" >&2; exit 1; }
 echo "negative controls: PASS ($count strict sole-False mutations with compiled witnesses)"
 
 # All compiled production/test/reference owners, exact first providers, three

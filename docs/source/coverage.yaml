@@ -166,3 +166,19 @@ rows:
   - rough-heat-kernel/doubled-heat-flow-quadratic-bound
   statement: For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)^2 J(2s,y)^2 is at
     most sqrt(t)/(sqrt(2*pi)*sqrt(s*(t-s))) J(2t,x)^2.
+- title: Local positive-time Gaussian domination
+  claims:
+  - rough-heat-kernel/heat-kernel-local-domination
+  statement: "Local Gaussian-square domination on a positive-time neighborhood with bounded output displacement; an explicit integrable envelope for continuity arguments."
+- title: Joint positive-time heat-flow continuity
+  claims:
+  - rough-heat-kernel/heat-flow-joint-continuity
+  statement: "Joint time-space continuity of the heat flow at every positive time for any Gaussian-tempered positive measure, including infinite mass."
+- title: Joint positive-time signed heat-flow continuity
+  claims:
+  - rough-heat-kernel/signed-heat-flow-joint-continuity
+  statement: "Joint time-space continuity at every positive time for signed Jordan data with Gaussian-tempered total variation; no finite-total-variation assumption."
+- title: Uniform quarter-Hölder Gaussian envelope
+  claims:
+  - rough-heat-kernel/heat-kernel-quarter-spatial-envelope
+  statement: "For all r>0 and u,v, |p_r(u)-p_r(v)| <= 2 exp(1) |u-v|^(1/4) r^(-1/8) (p_(2r)(u)+p_(2r)(v)); one numerical constant precedes all variables."

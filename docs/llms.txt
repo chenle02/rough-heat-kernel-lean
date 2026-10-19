@@ -1,29 +1,25 @@
-# RoughHeatKernel — source API 0.7.0
+# RoughHeatKernel
 
-Gaussian kernels and heat flow for positive and signed Gaussian-tempered measures, including data of infinite mass.
+Source API 0.8.0 (unreleased). Public repository interface:
+https://github.com/chenle02/rough-heat-kernel-lean
 
-Mathematical capsule:
-- One-dimensional Gaussian kernel: mass, semigroup, exact Lq norms, derivatives and L1 increments.
-- Gaussian-tempered positive measures: convergent heat flow, fixed-time spatial continuity and weighted bounds.
-- Signed Jordan-pair data: total-variation domination, finite SignedMeasure interoperability and nontrivial examples.
-- Chen–Dalang, squared-kernel, heat-flow semigroup and doubled-profile convolution estimates.
-
-Not established:
-- Joint time-space heat-flow continuity and weak convergence to the initial datum.
-- Higher dimensions, higher derivatives, Fourier estimates and stochastic integration.
-- Stochastic PDE well-posedness or a general converse from rough measures to finite SignedMeasure.
-
-Verification authority: https://github.com/chenle02/rough-heat-kernel-lean/blob/main/README.md#verification-at-a-glance
-Canonical receipts: https://github.com/chenle02/rough-heat-kernel-lean/tree/main/.lean-receipts
-These static docs do not assert live release/CI/acceptance state. Each receipt covers only its named scientific content.
+Read the exact Lean statement before using a result. The source declaration
+determines every hypothesis and quantifier; each receipt covers only its named
+scientific content. A version number alone does not establish verification.
 
 Required context:
-- [Scope Markdown](source/README.md)
-- [Status authority](status.html)
-- [Trust](trust.html)
-- [Exact declaration index](api.html)
-- [Clone contract](source/AGENTS.md)
-- [Claims](source/claims.yaml)
-- [Contribution guidance](source/CONTRIBUTING.md)
+- [README and verification authority](README.md#verification-at-a-glance)
+- [Clone contract](AGENTS.md)
+- [Mathematical scope](docs/status.html)
+- [Exact reusable API](docs/api.html)
+- [Trust model](docs/trust.html)
+- [Claims](claims.yaml)
+- [Public theorem inventory](THEOREM_INVENTORY.txt)
+- [Contribution guidance](CONTRIBUTING.md)
 
-Historical attribution: [Earlier development resources](citation.html#historical-compute). Current release executors and checked scope are recorded by the source-bound receipts.
+Use lean-toolchain and lake-manifest.json unchanged in a frozen replay.
+Do not infer full-paper SPDE well-posedness or remove theorem hypotheses.
+
+Historical attribution: [Earlier development resources](docs/citation.html#historical-compute). Current release executors and checked scope are recorded by the source-bound receipts.
+
+New deterministic APIs: joint positive-time continuity for positive and signed Gaussian-tempered heat flows; uniform quarter-Holder Gaussian kernel increments with universal constant 2*exp(1). No time-zero continuity, stochastic sample modification or SPDE claim. Current-source full verification is pending; prior 0.7 receipts remain bound to cc5a8dba012b.

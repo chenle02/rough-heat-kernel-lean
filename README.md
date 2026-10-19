@@ -12,25 +12,25 @@ The one-dimensional heat kernel and the heat flow of rough positive and signed m
 
 This library treats measures with Gaussian-tempered total variation: they may have infinite total mass, but their integral against every decaying Gaussian is finite. Dirac masses, finite signed measures and Lebesgue measure are examples. The results are standard analysis; no new mathematics is claimed.
 
-**Source API 0.7.0.** This source contains 87 public theorems across 11 library modules and 33 curated reusable claims. Read [status](docs/status.md) for scope and the generated verification record below for exact source-bound evidence.
+**Source API 0.8.0 (unreleased).** This source contains 104 public theorem/lemma declarations across 12 library modules and 37 curated reusable claims. New APIs give joint positive-time continuity and a uniform quarter-Hölder Gaussian envelope. Fresh complete verification and independent comparison for this source are pending; earlier receipts apply only to their named historical source.
 
 ## What is proved
 
 | Area | Results |
 |---|---|
 | Gaussian heat kernel | Positivity, mass one, convolution semigroup, Gaussian-density bridge, exact Lq norms including the supremum norm |
-| Rough positive data | Absolute convergence, spatial continuity at fixed positive time, Gaussian growth, Gaussian-weighted integrability and local small-time bounds |
+| Rough positive data | Absolute convergence, joint positive-time continuity, Gaussian growth, Gaussian-weighted integrability and local small-time bounds |
 | Signed data | Jordan-pair rough measures, domination by total variation, Dirac and genuinely signed examples, finite Mathlib SignedMeasure interoperability |
-| Kernel regularity | First spatial and time derivatives, Gaussian moments, spatial and forward-time L1 increment bounds |
+| Kernel regularity | First spatial and time derivatives, Gaussian moments, spatial and forward-time L1 increments, uniform quarter-Hölder Gaussian envelope |
 | Convolution estimates | Chen–Dalang Gaussian quadratic bound, squared-kernel and arcsine identities, heat-flow semigroup, doubled-profile linear and quadratic bounds |
 
-The [API guide](docs/modules.md) maps these results to modules. The [declaration index](docs/declarations.md) lists every public theorem, and [claims.yaml](claims.yaml) describes the reusable results currently registered.
+The [API guide](docs/modules.md) maps these results to modules. The [declaration index](docs/declarations.md) lists every public theorem, and [claims.yaml](claims.yaml) describes the curated reusable source claims; registry acceptance is separate.
 
 ## Scope and assumptions
 
 The kernel has variance `t`, so its heat equation has diffusion coefficient `1/2`. Analytic statements assume positive time; at nonpositive times its definition has the junk value zero. Real-valued heat flows use Bochner integration and require the stated integrability hypotheses. Extended-real lower integrals are defined for arbitrary measures and may be infinite.
 
-Heat-flow continuity here is spatial continuity for each fixed positive time. Joint time-space continuity, weak convergence to initial data, higher dimensions, higher derivatives, Fourier estimates and stochastic integration are outside this release. The finite SignedMeasure bridge goes into RoughMeasure; there is no general converse API yet. No stochastic PDE well-posedness theorem is claimed.
+Heat-flow continuity is joint in time and space at every strictly positive time, for positive and signed Gaussian-tempered data. The quarter-Hölder kernel envelope has the universal constant `2 * exp(1)`, before all positive times and spatial points. Continuity at time zero, weak convergence to initial data, higher dimensions, higher derivatives, Fourier estimates and stochastic integration remain outside this release. The finite SignedMeasure bridge goes into RoughMeasure; there is no general converse API yet. No stochastic PDE well-posedness theorem is claimed.
 
 ## Build and use
 
@@ -46,7 +46,7 @@ Use `import RoughHeatKernel`, or a narrower module such as `import RoughHeatKern
 
 ## Verification
 
-Source `cc5a8dba012b` passed the complete local verifier and independent three-kernel comparison for all 33 curated claims. The verifier checks the exact 87-theorem inventory, compiler-owned declaration axiom dependencies (including private/generated helpers), elaborated types, examples and nine strict negative fixtures with separately compiled witnesses. Its permitted axioms are `Classical.choice`, `Quot.sound` and `propext`. The [trust guide](docs/trust.md) explains the scope of each check. The generated record below retains the scientific source snapshot’s earlier staging summary and reports the current receipt-backed results. Proof checking does not validate this prose or remove hypotheses from a theorem.
+This unreleased source has local compile and control pilots; its fresh complete gate and independent 37-claim comparison remain pending. Historical 0.7.0 source `cc5a8dba012b` passed the complete local verifier and independent three-kernel comparison for all 33 then-curated claims. That historical verifier checked the exact 87-theorem inventory, compiler-owned declaration axiom dependencies (including private/generated helpers), elaborated types, examples and nine strict negative fixtures with separately compiled witnesses. Its permitted axioms are `Classical.choice`, `Quot.sound` and `propext`. The [trust guide](docs/trust.md) explains the scope of each check. The record below applies only to its named source. The current verifier requires all 104 public propositions and eleven strict fixtures; historical evidence is not transferred to new scientific content. Proof checking does not validate this prose or remove hypotheses from a theorem.
 
 ## Attribution and AI assistance
 

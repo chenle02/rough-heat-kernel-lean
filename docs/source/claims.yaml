@@ -256,3 +256,31 @@ claims:
     - convolution
     - doubling
     - l2-norm
+  - id: rough-heat-kernel/heat-kernel-local-domination
+    decl: RoughHeatKernel.heatKernel_sq_le_local
+    kind: theorem
+    summary: "Local Gaussian-square domination on a positive-time neighborhood with bounded output displacement; an explicit integrable envelope for continuity arguments."
+    file: RoughHeatKernel/Kernel.lean
+    status: reusable
+    keywords: [heat-flow, gaussian-tempered, joint-continuity, positive-time]
+  - id: rough-heat-kernel/heat-flow-joint-continuity
+    decl: RoughHeatKernel.continuousAt_heatFlow_joint
+    kind: theorem
+    summary: "Joint time-space continuity of the heat flow at every positive time for any Gaussian-tempered positive measure, including infinite mass."
+    file: RoughHeatKernel/Tempered.lean
+    status: reusable
+    keywords: [heat-flow, gaussian-tempered, joint-continuity, positive-time]
+  - id: rough-heat-kernel/signed-heat-flow-joint-continuity
+    decl: RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint
+    kind: theorem
+    summary: "Joint time-space continuity at every positive time for signed Jordan data with Gaussian-tempered total variation; no finite-total-variation assumption."
+    file: RoughHeatKernel/RoughMeasure.lean
+    status: reusable
+    keywords: [heat-flow, gaussian-tempered, joint-continuity, positive-time]
+  - id: rough-heat-kernel/heat-kernel-quarter-spatial-envelope
+    decl: RoughHeatKernel.SpatialEnvelope.quarter_increment
+    kind: theorem
+    summary: "Uniform quarter-Hölder Gaussian envelope: for every r>0 and u,v, |p_r(u)-p_r(v)| is bounded by 2 exp(1) |u-v|^(1/4) r^(-1/8) times p_(2r)(u)+p_(2r)(v)."
+    file: RoughHeatKernel/SpatialEnvelope.lean
+    status: reusable
+    keywords: [heat-kernel, spatial-increment, holder, uniform-envelope]

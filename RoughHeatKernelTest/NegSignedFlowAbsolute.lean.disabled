@@ -1,0 +1,6 @@
+import RoughHeatKernelTest.NegSignedFlowAbsoluteWitness
+open RoughHeatKernel
+-- Signed flow cannot be replaced by total-variation flow.
+example : ∀ μ : RoughMeasure, ∀ t : ℝ, 0 < t → ∀ x : ℝ,
+    μ.heatFlow t x = RoughHeatKernel.heatFlow μ.totalVariation t x := by
+  rw [RoughHeatKernelTest.NegSignedFlowAbsolute.mutated_claim_iff_false]

@@ -1,0 +1,6 @@
+import RoughHeatKernelTest.NegJointTimeConstancyWitness
+open RoughHeatKernel
+-- Joint continuity does not mean constancy in time.
+example : ∀ μ : RoughMeasure, ∀ t : ℝ, 0 < t → ∀ x : ℝ,
+    μ.heatFlow t x = μ.heatFlow 1 x := by
+  rw [RoughHeatKernelTest.NegJointTimeConstancy.mutated_claim_iff_false]

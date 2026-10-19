@@ -24,9 +24,9 @@ related_formalizations:
   note: pinned in lake-manifest.json
 status:
   scope: One-dimensional Gaussian kernel normalization, semigroup, Lq norms and increments; Gaussian-tempered
-    positive and signed Jordan-pair data, finite SignedMeasure bridge, fixed-time spatial continuity,
-    and Chen-Dalang/doubled-profile bounds. Excludes joint time-space heat-flow continuity, weak initial
-    trace, stochastic integration and SPDE well-posedness.
+    positive and signed Jordan-pair data, finite SignedMeasure bridge, joint positive-time continuity,
+    a uniform quarter-Holder Gaussian envelope, and Chen-Dalang/doubled-profile bounds. Excludes
+    continuity at time zero, weak initial trace, stochastic integration and SPDE well-posedness.
   sorry_count: 0
   axioms:
   - Classical.choice

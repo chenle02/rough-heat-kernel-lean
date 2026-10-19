@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
 import Challenge.Reference.RoughHeatKernel.Kernel
+
 /-!
 # Heat flow of Gaussian-tempered measures
 
@@ -162,6 +163,28 @@ theorem continuous_heatFlow {ν : Measure ℝ} (hν : IsGaussianTempered ν) {t 
   · exact (hν.integrable_exp_neg_mul_sq (a := 1 / (4 * t)) (by positivity)).const_mul _
   · exact Eventually.of_forall fun y =>
       (hcont.comp (continuous_id.prodMk continuous_const)).continuousAt
+
+/-- Joint continuity of the heat flow at every strictly positive time. No finite-mass assumption. -/
+theorem continuousAt_heatFlow_joint {ν : Measure ℝ}
+    (hν : IsGaussianTempered ν) (a : ℝ × ℝ) (ha : 0<a.1) :
+    ContinuousAt (fun z : ℝ × ℝ => RoughHeatKernel.heatFlow ν z.1 z.2) a := by
+  refine continuousAt_of_dominated (bound:=fun y =>
+      Real.sqrt (4*Real.exp (6/a.1))*heatKernel (2*a.1) (a.2-y)) ?_ ?_ ?_ ?_
+  · exact Eventually.of_forall fun z => ((continuous_heatKernel z.1).comp
+      (continuous_const.sub continuous_id)).aestronglyMeasurable
+  · have htnear : ∀ᶠ z : ℝ × ℝ in 𝓝 a, z.1∈Set.Ioo (3*a.1/4) (5*a.1/4) :=
+      continuous_fst.continuousAt.eventually (Ioo_mem_nhds (by linarith) (by linarith))
+    have hxnear : ∀ᶠ z : ℝ × ℝ in 𝓝 a, z.2∈Set.Ioo (a.2-1) (a.2+1) :=
+      continuous_snd.continuousAt.eventually (Ioo_mem_nhds (by linarith) (by linarith))
+    filter_upwards [htnear,hxnear] with z hz hx
+    exact Eventually.of_forall fun y => by
+      have hu : 0<z.1 := by linarith [hz.1]
+      rw [Real.norm_eq_abs,abs_of_pos (heatKernel_pos hu _)]
+      apply heatKernel_le_local ha hz.1.le hz.2.le
+      exact abs_le.mpr ⟨by linarith [hx.1],by linarith [hx.2]⟩
+  · exact (hν.integrable_heatKernel_sub (by linarith : 0<2*a.1) a.2).const_mul _
+  · exact Eventually.of_forall fun y => continuousAt_heatKernel_joint a ha y
+
 
 /-- For a Gaussian-tempered `ν`, the extended-real flow is the real flow. -/
 theorem ofReal_heatFlow {ν : Measure ℝ} (hν : IsGaussianTempered ν) {t : ℝ} (ht : 0 < t)

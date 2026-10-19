@@ -1,6 +1,6 @@
 # Public theorem index
 
-The exact source inventory contains these 87 public theorem names. This index does not assert independent comparison or native audit coverage. See [trust](trust.md).
+The exact source inventory contains these 104 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](trust.md).
 
 - `RoughHeatKernel.IsGaussianTempered.add`
 - `RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq`
@@ -10,6 +10,7 @@ The exact source inventory contains these 87 public theorem names. This index do
 - `RoughHeatKernel.RoughMeasure.abs_heatFlow_le`
 - `RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure`
 - `RoughHeatKernel.RoughMeasure.abs_heatFlow_ofSignedMeasure_le`
+- `RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint`
 - `RoughHeatKernel.RoughMeasure.continuous_heatFlow`
 - `RoughHeatKernel.RoughMeasure.dirac_zero_mutuallySingular_dirac_one`
 - `RoughHeatKernel.RoughMeasure.eLpNorm_heatFlow_dirac`
@@ -28,6 +29,19 @@ The exact source inventory contains these 87 public theorem names. This index do
 - `RoughHeatKernel.RoughMeasure.totalVariation_ofSignedMeasure`
 - `RoughHeatKernel.RoughMeasure.totalVariation_ofTempered`
 - `RoughHeatKernel.RoughMeasure.totalVariation_tempered`
+- `RoughHeatKernel.SpatialEnvelope.derivative_envelope`
+- `RoughHeatKernel.SpatialEnvelope.exists_quarter_increment_constant`
+- `RoughHeatKernel.SpatialEnvelope.kernel_le_of_sq_le`
+- `RoughHeatKernel.SpatialEnvelope.kernel_le_two_double`
+- `RoughHeatKernel.SpatialEnvelope.kernel_ratio`
+- `RoughHeatKernel.SpatialEnvelope.kernel_segment_envelope`
+- `RoughHeatKernel.SpatialEnvelope.normalized_gaussian_derivative`
+- `RoughHeatKernel.SpatialEnvelope.ordered_near_increment`
+- `RoughHeatKernel.SpatialEnvelope.ordered_quarter_increment`
+- `RoughHeatKernel.SpatialEnvelope.quarter_increment`
+- `RoughHeatKernel.SpatialEnvelope.quarter_increment_normalized`
+- `RoughHeatKernel.continuousAt_heatFlow_joint`
+- `RoughHeatKernel.continuousAt_heatKernel_joint`
 - `RoughHeatKernel.continuous_heatFlow`
 - `RoughHeatKernel.continuous_heatKernel`
 - `RoughHeatKernel.continuous_toReal_lheatFlow`
@@ -45,11 +59,14 @@ The exact source inventory contains these 87 public theorem names. This index do
 - `RoughHeatKernel.heatKernel_convolution_heatKernel_apply`
 - `RoughHeatKernel.heatKernel_eq_gaussianPDFReal`
 - `RoughHeatKernel.heatKernel_le_heatKernel_zero`
+- `RoughHeatKernel.heatKernel_le_local`
 - `RoughHeatKernel.heatKernel_le_sqrt_div_mul`
 - `RoughHeatKernel.heatKernel_mul_heatKernel_eq`
 - `RoughHeatKernel.heatKernel_neg`
 - `RoughHeatKernel.heatKernel_pos`
 - `RoughHeatKernel.heatKernel_sq_eq`
+- `RoughHeatKernel.heatKernel_sq_exp`
+- `RoughHeatKernel.heatKernel_sq_le_local`
 - `RoughHeatKernel.heatKernel_sub_le_exp_mul_exp`
 - `RoughHeatKernel.heatKernel_zero`
 - `RoughHeatKernel.heatLqConst_pos`

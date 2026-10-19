@@ -13,3 +13,5 @@ import RoughHeatKernelTest.NegTemperedWitness
 import RoughHeatKernelTest.TypeCheck
 
 /-! Positive verification fixtures. Expected-failure sources are deliberately excluded. -/
+import RoughHeatKernelTest.NegJointTimeConstancyWitness
+import RoughHeatKernelTest.NegSignedFlowAbsoluteWitness

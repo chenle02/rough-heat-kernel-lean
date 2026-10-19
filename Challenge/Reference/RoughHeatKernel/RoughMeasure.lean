@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
 import Challenge.Reference.RoughHeatKernel.Tempered
+
 /-!
 # Rough signed initial data
 
@@ -51,6 +52,12 @@ theorem continuous_heatFlow (μ : RoughMeasure) {t : ℝ} (ht : 0 < t) :
     Continuous (μ.heatFlow t) :=
   (RoughHeatKernel.continuous_heatFlow μ.pos_tempered ht).sub
     (RoughHeatKernel.continuous_heatFlow μ.neg_tempered ht)
+
+/-- Joint positive-time continuity for signed Gaussian-tempered Jordan data. -/
+theorem continuousAt_heatFlow_joint (μ : RoughMeasure) (a : ℝ × ℝ) (ha : 0 < a.1) :
+    ContinuousAt (fun z : ℝ × ℝ => μ.heatFlow z.1 z.2) a := by
+  exact (RoughHeatKernel.continuousAt_heatFlow_joint μ.pos_tempered a ha).sub
+    (RoughHeatKernel.continuousAt_heatFlow_joint μ.neg_tempered a ha)
 
 theorem heatFlow_totalVariation (μ : RoughMeasure) {t : ℝ} (ht : 0 < t) (x : ℝ) :
     RoughHeatKernel.heatFlow μ.totalVariation t x =

@@ -9,3 +9,4 @@ import Challenge.Reference.RoughHeatKernel.Lq
 import Challenge.Reference.RoughHeatKernel.RoughMeasure
 import Challenge.Reference.RoughHeatKernel.SquareKernel
 import Challenge.Reference.RoughHeatKernel.Tempered
+import Challenge.Reference.RoughHeatKernel.SpatialEnvelope

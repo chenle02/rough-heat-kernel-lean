@@ -1,4 +1,5 @@
 import RoughHeatKernel
+import RoughHeatKernelTest.Counterexamples
 
 /-! Usage examples, compiled by `verify.sh`. -/
 
@@ -104,3 +105,58 @@ example {t : ℝ} (ht : 0 < t) (x : ℝ) :
 example (s : SignedMeasure ℝ) :
     (RoughMeasure.ofSignedMeasure s).totalVariation = s.totalVariation :=
   RoughMeasure.totalVariation_ofSignedMeasure s
+
+-- Arbitrary positive Gaussian-tempered data: joint time-space continuity.
+example (ν : Measure ℝ) (hν : IsGaussianTempered ν) (a : ℝ × ℝ) (ha : 0 < a.1) :
+    ContinuousAt (fun z : ℝ × ℝ => heatFlow ν z.1 z.2) a :=
+  continuousAt_heatFlow_joint hν a ha
+
+-- Zero data, a translated Dirac mass, and genuinely signed data use the same API.
+example (a : ℝ × ℝ) (ha : 0 < a.1) :
+    ContinuousAt (fun z : ℝ × ℝ => heatFlow (0 : Measure ℝ) z.1 z.2) a :=
+  continuousAt_heatFlow_joint (isGaussianTempered_of_isFiniteMeasure _) a ha
+
+example (y : ℝ) (a : ℝ × ℝ) (ha : 0 < a.1) :
+    ContinuousAt (fun z : ℝ × ℝ => (RoughMeasure.dirac y).heatFlow z.1 z.2) a :=
+  RoughMeasure.continuousAt_heatFlow_joint _ a ha
+
+example (a : ℝ × ℝ) (ha : 0 < a.1) :
+    ContinuousAt (fun z : ℝ × ℝ => RoughMeasure.diracZeroSubDiracOne.heatFlow z.1 z.2) a :=
+  RoughMeasure.continuousAt_heatFlow_joint _ a ha
+
+-- The same concrete infinite-TV datum has a jointly continuous heat flow.
+example (a : ℝ × ℝ) (ha : 0 < a.1) :
+    RoughMeasure.lebesgue.totalVariation Set.univ = ⊤ ∧
+      ContinuousAt (fun z : ℝ × ℝ => RoughMeasure.lebesgue.heatFlow z.1 z.2) a :=
+  ⟨RoughMeasure.lebesgue_totalVariation_univ,
+    RoughMeasure.continuousAt_heatFlow_joint _ a ha⟩
+
+-- The same universal numerical constant works for every time and translated pair.
+example {r : ℝ} (hr : 0 < r) (x z y : ℝ) :
+    |heatKernel r (x-y)-heatKernel r (z-y)| ≤
+      (2*Real.exp 1)*|x-z|^(1/4:ℝ)*r^(-(1/8:ℝ))*
+        (heatKernel (2*r) (x-y)+heatKernel (2*r) (z-y)) := by
+  simpa only [show (x-y)-(z-y)=x-z by ring] using
+    SpatialEnvelope.quarter_increment hr (x-y) (z-y)
+
+-- Nontrivial spatial increment: reuse the existing concrete Gaussian witness.
+example : 0 < |heatKernel 1 0-heatKernel 1 1| ∧
+    |heatKernel 1 0-heatKernel 1 1| ≤
+      (2*Real.exp 1)*|0-1|^(1/4:ℝ)*(1:ℝ)^(-(1/8:ℝ))*
+        (heatKernel (2*1) 0+heatKernel (2*1) 1) := by
+  exact ⟨abs_pos.mpr (sub_ne_zero.mpr
+    (ne_of_gt RoughHeatKernelTest.Counterexamples.off_center_strict)),
+    SpatialEnvelope.quarter_increment (by norm_num) 0 1⟩
+
+-- Setting the envelope's universal coefficient to zero is genuinely false.
+example : ¬ (∀ r : ℝ, 0 < r → ∀ u v : ℝ,
+    |heatKernel r u-heatKernel r v| ≤
+      (0:ℝ)*|u-v|^(1/4:ℝ)*r^(-(1/8:ℝ))*
+        (heatKernel (2*r) u+heatKernel (2*r) v)) := by
+  intro h
+  have hb := h 1 (by norm_num) 0 1
+  norm_num only [zero_mul] at hb
+  have hp : 0 < |heatKernel 1 0-heatKernel 1 1| :=
+    abs_pos.mpr (sub_ne_zero.mpr
+      (ne_of_gt RoughHeatKernelTest.Counterexamples.off_center_strict))
+  exact (not_le_of_gt hp) hb

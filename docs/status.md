@@ -1,7 +1,7 @@
 # Mathematical scope and verification records
 
-Source API 0.7.0 contains 87 inventoried public theorems and 33 curated reusable claim declarations. Counts describe a source inventory and do not imply a percentage of all mathematical work. Read the README mathematical scope and all hypotheses in each Lean declaration.
+Source API 0.8.0 (unreleased) contains 104 inventoried public theorem/lemma declarations and 37 curated reusable claims across 12 library modules. Counts describe source inventory, not mathematical completion. New APIs give joint positive-time heat-flow continuity for positive and signed Gaussian-tempered data, and a uniform quarter-Hölder Gaussian envelope with constant 2*exp(1).
 
-Current verification authority is the generated [README verification block](../README.md#verification-at-a-glance), together with the canonical receipt files it names. Each receipt applies only to its recorded scientific source and dependency pins. Static documentation does not certify a release or a CI state.
+Local compile/control pilots precede release acceptance. Fresh complete current-source verification and all 37 independent comparisons are pending. Retained 0.7 receipts apply only to source cc5a8dba012b; ancestry does not transfer them to changed scientific content. The generated README record and canonical receipts must identify the actual checked source.
 
-Scope exclusions are explicit in README.md and the API guide.
+No continuity at time zero, weak initial trace, stochastic sample-path modification or SPDE well-posedness is claimed.
