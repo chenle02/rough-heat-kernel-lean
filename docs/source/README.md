@@ -17,4 +17,4 @@ Verification authority: https://github.com/chenle02/rough-heat-kernel-lean/blob/
 Canonical receipts: https://github.com/chenle02/rough-heat-kernel-lean/tree/main/.lean-receipts
 These static docs do not assert live release/CI/acceptance state. Each receipt covers only its named scientific content.
 
-New source includes the uniform quarter-Holder Gaussian kernel envelope. Complete current-source verification is pending; historical receipts apply only to their recorded source.
+New source includes the uniform quarter-Holder Gaussian kernel envelope. Complete current-source verification and all 37 independent three-kernel comparisons passed for scientific source 133f3aec2c12; historical receipts apply only to their recorded source.

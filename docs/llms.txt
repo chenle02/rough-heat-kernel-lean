@@ -1,6 +1,6 @@
 # RoughHeatKernel
 
-Source API 0.8.0 (unreleased). Public repository interface:
+Source API 0.8.0. Public repository interface:
 https://github.com/chenle02/rough-heat-kernel-lean
 
 Read the exact Lean statement before using a result. The source declaration

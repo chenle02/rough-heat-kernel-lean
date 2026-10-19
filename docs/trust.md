@@ -24,4 +24,4 @@ Use lean-toolchain and lake-manifest.json unchanged, then run the build and veri
 
 For the exact local command and required output variables, see [verification.md](verification.md).
 
-Source 0.8.0 is unreleased: fresh complete verification and independent comparison are pending. Earlier 0.7 receipts are historical authority only for their recorded source.
+Scientific source 133f3aec2c12 passed complete fresh verification and all 37 independent three-kernel comparisons. Earlier 0.7 receipts are historical authority only for their recorded source.
