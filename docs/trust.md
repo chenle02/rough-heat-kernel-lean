@@ -24,4 +24,4 @@ Use lean-toolchain and lake-manifest.json unchanged, then run the build and veri
 
 For the exact local command and required output variables, see [verification.md](verification.md).
 
-Scientific source 133f3aec2c12 passed complete fresh verification and all 37 independent three-kernel comparisons. Earlier 0.7 receipts are historical authority only for their recorded source.
+Scientific source 6a35f44f2d51 (0.11.0) passed complete fresh verification and all 51 independent three-kernel comparisons. Receipts for 0ca762dbce91 (0.10.0), 3b16158a4974 (0.9.0), 133f3aec2c12 (0.8.0) and earlier remain historical authority only for their recorded sources.

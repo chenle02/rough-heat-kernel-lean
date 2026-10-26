@@ -33,9 +33,9 @@ status:
   - Quot.sound
   - propext
   evidence:
-    commit: 0ca762dbce91a8ae4a97da0b854d1f77bf28be93
-    gate_receipt: .lean-receipts/0ca762dbce91-systemd-user-rough-heat-kernel-v0100-p14s.service-01e3aee066f0489b8c9ee3ebdf69e091-h-2db2e0fa6029.json
-    comparator_receipt: .lean-receipts/0ca762dbce91-comparator.json
+    commit: 6a35f44f2d517811cbb08688814c8edd304a400a
+    gate_receipt: .lean-receipts/6a35f44f2d51-systemd-user-rough-heat-kernel-v0110-p14s.service-11a0d698f32d4a27a624903fe1acdfb1-h-2db2e0fa6029.json
+    comparator_receipt: .lean-receipts/6a35f44f2d51-comparator.json
   main_results:
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_convolution_heatKernel
@@ -211,6 +211,34 @@ status:
     challenge_file: Challenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.hasSum_pow_div_Gamma
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.lintegral_sq_lheatFlow_mul_le
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.ofReal_integral_le_lintegral
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.normalCDF_le_one
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.normalCDF_monotone
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.tendsto_erf_atTop
+    file: Solution.lean
+    challenge_file: Challenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.hasDerivAt_erf
     file: Solution.lean
     challenge_file: Challenge.lean
 automation:
@@ -573,6 +601,59 @@ alignment:
     status: reusable
     note: 'Error-function series (DLMF 7.6.2, reindexed): for z >= 0, sum_k z^k / Gamma(k/2 + 1) = e^(z^2)
       (1 + erf z).'
+  - source: null
+    lean: RoughHeatKernel.lintegral_sq_lheatFlow_mul_le
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-flow-square-pointwise
+    status: reusable
+    note: 'Pointwise-in-time Chen-Dalang step: for 0 < r < R and s-finite nu, int J(r,y)^2 p_((R-r)/2)(x-y)
+      dy <= 2 sqrt(R/r) J(2R,x)^2, J = lheatFlow nu (lower integrals, no integrability needed).'
+  - source: null
+    lean: RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/heat-kernel-shifted-semigroup
+    status: reusable
+    note: 'Shifted semigroup identity: int p_a(y-m) p_b(x-y) dy = p_(a+b)(x-m) for a, b > 0.'
+  - source: null
+    lean: RoughHeatKernel.ofReal_integral_le_lintegral
+    module: RoughHeatKernel/ChenDalang.lean
+    kind: theorem
+    claim: rough-heat-kernel/ofreal-integral-le-lintegral
+    status: reusable
+    note: For nonnegative f, ofReal(int f dmu) <= int^- ofReal(f) dmu with no integrability hypothesis
+      (a non-integrable f has Bochner integral 0).
+  - source: null
+    lean: RoughHeatKernel.normalCDF_le_one
+    module: RoughHeatKernel/Erf.lean
+    kind: theorem
+    claim: rough-heat-kernel/normal-cdf-le-one
+    status: reusable
+    note: The standard normal distribution function is at most 1 (with normalCDF_nonneg, integral_normalDensity
+      = 1).
+  - source: null
+    lean: RoughHeatKernel.normalCDF_monotone
+    module: RoughHeatKernel/Erf.lean
+    kind: theorem
+    claim: rough-heat-kernel/normal-cdf-monotone
+    status: reusable
+    note: The standard normal distribution function is monotone; hence normalCDF x >= 1/2 for x >= 0 (half_le_normalCDF).
+  - source: null
+    lean: RoughHeatKernel.tendsto_erf_atTop
+    module: RoughHeatKernel/Erf.lean
+    kind: theorem
+    claim: rough-heat-kernel/erf-tendsto-at-top
+    status: reusable
+    note: erf x -> 1 as x -> infinity (with erf x -> -1 at -infinity and erfc x -> 0 at infinity).
+  - source: null
+    lean: RoughHeatKernel.hasDerivAt_erf
+    module: RoughHeatKernel/Erf.lean
+    kind: theorem
+    claim: rough-heat-kernel/erf-has-deriv
+    status: reusable
+    note: 'Derivative of the error function: erf''(x) = (2/sqrt pi) e^(-x^2); also erfc'' = -erf'', continuity,
+      parity and signs of erf.'
 acknowledgements: Developed and verified with lean-pkg (https://github.com/lean-pkg/lean-pkg, doi:10.5281/zenodo.23272098).
   This work was completed in part with resources provided by the Auburn University Easley Cluster (https://hpc.auburn.edu/hpc/docs/hpcdocs/build/html/easley/intro.html).
   Historical verification used Easley; current release execution is identified by its own receipts.
