@@ -96,7 +96,8 @@ theorem heatKernel_mul_heatKernel_eq {t : ℝ} (ht : 0 < t) (y z₁ z₂ : ℝ) 
         ring
     _ = _ := by rw [Real.exp_add]; ring
 
-private theorem integrable_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0 < a)
+/-- `y ↦ p_a(y - m) p_b(x - y)` is integrable for `a, b > 0`. -/
+theorem integrable_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0 < a)
     (hb : 0 < b) (x m : ℝ) :
     Integrable (fun y => heatKernel a (y - m) * heatKernel b (x - y)) := by
   have h := (integrable_heatKernel_sub_mul_heatKernel ha hb (x - m)).comp_sub_right m
@@ -104,7 +105,9 @@ private theorem integrable_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0
   simp only
   rw [show x - m - (y - m) = x - y by ring, mul_comm]
 
-private theorem integral_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0 < a)
+/-- The semigroup identity with shifted arguments:
+`∫ p_a(y - m) p_b(x - y) dy = p_{a+b}(x - m)` for `a, b > 0`. -/
+theorem integral_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0 < a)
     (hb : 0 < b) (x m : ℝ) :
     ∫ y, heatKernel a (y - m) * heatKernel b (x - y) = heatKernel (a + b) (x - m) := by
   have h := integral_heatKernel_mul_heatKernel ha hb (x - m)
@@ -170,13 +173,58 @@ theorem lintegral_heatKernel_mul_mul_le {s t : ℝ} (hs : 0 < s) (hst : s < t) (
 
 /-! ### The estimate -/
 
-private theorem lheatFlow_sq_eq (ν : Measure ℝ) [SFinite ν] (s y : ℝ) :
+/-- `J(s, y)² = ∫∫ p_s(y - z₁) p_s(y - z₂) ν(dz₁) ν(dz₂)` for `J = lheatFlow ν`. -/
+theorem lheatFlow_sq_eq (ν : Measure ℝ) [SFinite ν] (s y : ℝ) :
     lheatFlow ν s y ^ 2 = ∫⁻ q : ℝ × ℝ, ENNReal.ofReal (heatKernel s (y - q.1)) *
       ENNReal.ofReal (heatKernel s (y - q.2)) ∂(ν.prod ν) := by
   rw [sq, lheatFlow]
   exact (lintegral_prod_mul (μ := ν) (ν := ν)
     (f := fun z => ENNReal.ofReal (heatKernel s (y - z)))
     (g := fun z => ENNReal.ofReal (heatKernel s (y - z))) (by fun_prop) (by fun_prop)).symm
+
+/-- The pointwise-in-time step of `lintegral_sq_lheatFlow_conv_le`: for `0 < r < R`,
+`∫ J(r, y)² p_{(R-r)/2}(x - y) dy ≤ 2√(R/r) J(2R, x)²`, where `J = lheatFlow ν`. -/
+theorem lintegral_sq_lheatFlow_mul_le (ν : Measure ℝ) [SFinite ν] {r R : ℝ} (hr : 0 < r)
+    (hrR : r < R) (x : ℝ) :
+    ∫⁻ y, lheatFlow ν r y ^ 2 * ENNReal.ofReal (heatKernel ((R - r) / 2) (x - y)) ≤
+      ENNReal.ofReal (2 * Real.sqrt (R / r)) * lheatFlow ν (2 * R) x ^ 2 := by
+  have hF : Measurable fun q : ℝ × (ℝ × ℝ) =>
+      ENNReal.ofReal (heatKernel r (q.1 - q.2.1)) * ENNReal.ofReal (heatKernel r (q.1 - q.2.2)) *
+        ENNReal.ofReal (heatKernel ((R - r) / 2) (x - q.1)) := by
+    fun_prop
+  have hk : Measurable fun q : ℝ × ℝ =>
+      ENNReal.ofReal (heatKernel (2 * R) (x - q.1)) *
+        ENNReal.ofReal (heatKernel (2 * R) (x - q.2)) := by
+    fun_prop
+  calc ∫⁻ y, lheatFlow ν r y ^ 2 * ENNReal.ofReal (heatKernel ((R - r) / 2) (x - y))
+      = ∫⁻ y, ∫⁻ q : ℝ × ℝ, ENNReal.ofReal (heatKernel r (y - q.1)) *
+          ENNReal.ofReal (heatKernel r (y - q.2)) *
+            ENNReal.ofReal (heatKernel ((R - r) / 2) (x - y)) ∂(ν.prod ν) := by
+        refine lintegral_congr fun y => ?_
+        rw [lheatFlow_sq_eq, ← lintegral_mul_const' _ _ ENNReal.ofReal_ne_top]
+    _ = ∫⁻ q : ℝ × ℝ, (∫⁻ y : ℝ, ENNReal.ofReal (heatKernel r (y - q.1)) *
+          ENNReal.ofReal (heatKernel r (y - q.2)) *
+            ENNReal.ofReal (heatKernel ((R - r) / 2) (x - y))) ∂(ν.prod ν) :=
+        lintegral_lintegral_swap hF.aemeasurable
+    _ ≤ ∫⁻ q : ℝ × ℝ, ENNReal.ofReal (heatKernel (2 * R) (x - q.1)) *
+          ENNReal.ofReal (heatKernel (2 * R) (x - q.2)) *
+            ENNReal.ofReal (2 * Real.sqrt (R / r)) ∂(ν.prod ν) := by
+        refine lintegral_mono fun q => ?_
+        rw [mul_comm]
+        exact lintegral_heatKernel_mul_mul_le hr hrR x q.1 q.2
+    _ = ENNReal.ofReal (2 * Real.sqrt (R / r)) * lheatFlow ν (2 * R) x ^ 2 := by
+        rw [lintegral_mul_const _ hk, lheatFlow_sq_eq, mul_comm]
+
+/-- `ENNReal.ofReal (∫ f dμ) ≤ ∫⁻ ENNReal.ofReal f dμ` for nonnegative `f`, with no
+integrability hypothesis (a non-integrable `f` has Bochner integral `0`). -/
+theorem ofReal_integral_le_lintegral {α : Type*} [MeasurableSpace α] {μ : Measure α}
+    {f : α → ℝ} (hf : ∀ a, 0 ≤ f a) :
+    ENNReal.ofReal (∫ a, f a ∂μ) ≤ ∫⁻ a, ENNReal.ofReal (f a) ∂μ := by
+  calc ENNReal.ofReal (∫ a, f a ∂μ) ≤ ‖∫ a, f a ∂μ‖ₑ := by
+        rw [Real.enorm_eq_ofReal_abs]; exact ENNReal.ofReal_le_ofReal (le_abs_self _)
+    _ ≤ ∫⁻ a, ‖f a‖ₑ ∂μ := enorm_integral_le_lintegral_enorm _
+    _ = ∫⁻ a, ENNReal.ofReal (f a) ∂μ :=
+        lintegral_congr fun a => Real.enorm_eq_ofReal (hf a)
 
 /-- The Chen–Dalang convolution estimate (`a = 2`, Gaussian case), for every s-finite
 positive measure `ν`, `t > 0`, `x ∈ ℝ` and measurable `h : ℝ → [0, ∞]`:
