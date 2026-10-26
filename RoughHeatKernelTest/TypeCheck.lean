@@ -48,6 +48,8 @@ set_option pp.universes true
 #check @RoughHeatKernel.continuousAt_heatKernel_joint
 #check @RoughHeatKernel.continuous_heatFlow
 #check @RoughHeatKernel.continuous_heatKernel
+#check @RoughHeatKernel.continuous_normalCDF
+#check @RoughHeatKernel.continuous_normalDensity
 #check @RoughHeatKernel.continuous_toReal_lheatFlow
 #check @RoughHeatKernel.eLpNorm_heatKernel
 #check @RoughHeatKernel.eLpNorm_heatKernel_of_ne_top
@@ -56,6 +58,10 @@ set_option pp.universes true
 #check @RoughHeatKernel.gaussianPDFReal_eq_heatKernel_sub
 #check @RoughHeatKernel.hasDerivAt_heatKernel
 #check @RoughHeatKernel.hasDerivAt_heatKernel_time
+#check @RoughHeatKernel.hasDerivAt_normalCDF
+#check @RoughHeatKernel.hasSum_even_pow_div_Gamma
+#check @RoughHeatKernel.hasSum_odd_pow_div_Gamma
+#check @RoughHeatKernel.hasSum_pow_div_Gamma
 #check @RoughHeatKernel.heatFlow_le_gaussian_growth
 #check @RoughHeatKernel.heatFlow_nonneg
 #check @RoughHeatKernel.heatKernel_add_le_sqrt_two_mul
@@ -66,6 +72,7 @@ set_option pp.universes true
 #check @RoughHeatKernel.heatKernel_le_local
 #check @RoughHeatKernel.heatKernel_le_sqrt_div_mul
 #check @RoughHeatKernel.heatKernel_mul_heatKernel_eq
+#check @RoughHeatKernel.heatKernel_mul_sq_eq
 #check @RoughHeatKernel.heatKernel_neg
 #check @RoughHeatKernel.heatKernel_pos
 #check @RoughHeatKernel.heatKernel_sq_eq
@@ -78,6 +85,7 @@ set_option pp.universes true
 #check @RoughHeatKernel.integrable_heatKernel
 #check @RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel
 #check @RoughHeatKernel.integrable_mul_heatKernel
+#check @RoughHeatKernel.integrable_normalDensity
 #check @RoughHeatKernel.integrable_sq_mul_heatKernel
 #check @RoughHeatKernel.integral_abs_heatKernel_add_sub_le
 #check @RoughHeatKernel.integral_abs_heatKernel_sub_shift_le
@@ -86,8 +94,12 @@ set_option pp.universes true
 #check @RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel
 #check @RoughHeatKernel.integral_heatKernel
 #check @RoughHeatKernel.integral_heatKernel_mul_heatKernel
+#check @RoughHeatKernel.integral_heatKernel_mul_sub_mul
 #check @RoughHeatKernel.integral_heatKernel_sq
+#check @RoughHeatKernel.integral_rpow_mul_sub_rpow
 #check @RoughHeatKernel.integral_sq_mul_heatKernel
+#check @RoughHeatKernel.integral_sq_sub_sq_pow
+#check @RoughHeatKernel.intervalIntegrable_rpow_mul_sub_rpow
 #check @RoughHeatKernel.isGaussianTempered_dirac
 #check @RoughHeatKernel.isGaussianTempered_of_isFiniteMeasure
 #check @RoughHeatKernel.isGaussianTempered_volume
@@ -108,5 +120,9 @@ set_option pp.universes true
 #check @RoughHeatKernel.lintegral_sq_lheatFlow_conv_le
 #check @RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le
 #check @RoughHeatKernel.measurable_heatKernel
+#check @RoughHeatKernel.normalCDF_eq_add_integral
+#check @RoughHeatKernel.normalCDF_eq_erf
+#check @RoughHeatKernel.normalCDF_eq_integral_normalDensity
+#check @RoughHeatKernel.normalCDF_zero
 #check @RoughHeatKernel.ofReal_heatFlow
 #check @RoughHeatKernel.toReal_lheatFlow

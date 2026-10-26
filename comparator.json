@@ -38,7 +38,14 @@
     "RoughHeatKernel.heatKernel_sq_le_local",
     "RoughHeatKernel.continuousAt_heatFlow_joint",
     "RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint",
-    "RoughHeatKernel.SpatialEnvelope.quarter_increment"
+    "RoughHeatKernel.SpatialEnvelope.quarter_increment",
+    "RoughHeatKernel.integral_rpow_mul_sub_rpow",
+    "RoughHeatKernel.heatKernel_mul_sq_eq",
+    "RoughHeatKernel.integral_heatKernel_mul_sub_mul",
+    "RoughHeatKernel.normalCDF_zero",
+    "RoughHeatKernel.hasDerivAt_normalCDF",
+    "RoughHeatKernel.normalCDF_eq_erf",
+    "RoughHeatKernel.hasSum_pow_div_Gamma"
   ],
   "definition_names": [],
   "permitted_axioms": [
