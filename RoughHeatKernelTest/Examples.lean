@@ -180,3 +180,8 @@ example : normalCDF 0 = 1 / 2 ∧ erf 0 = 0 := by
 example : HasSum (fun k : ℕ => (0 : ℝ) ^ k / Real.Gamma ((k : ℝ) / 2 + 1)) 1 := by
   have h := hasSum_pow_div_Gamma (z := 0) le_rfl
   simpa [erf] using h
+
+-- `erf` is odd and vanishes at `0`; `normalCDF` lies in `[1/2, 1]` on `[0, ∞)`.
+example : erf (-1) = -erf 1 ∧ erfc 0 = 1 := ⟨erf_neg 1, erfc_zero⟩
+
+example : 1 / 2 ≤ normalCDF 1 ∧ normalCDF 1 ≤ 1 := ⟨half_le_normalCDF zero_le_one, normalCDF_le_one 1⟩

@@ -333,3 +333,52 @@ claims:
     file: RoughHeatKernel/Erf.lean
     status: reusable
     keywords: [error-function, gamma-function, power-series, has-sum]
+  - id: rough-heat-kernel/heat-flow-square-pointwise
+    decl: RoughHeatKernel.lintegral_sq_lheatFlow_mul_le
+    kind: theorem
+    summary: "Pointwise-in-time Chen-Dalang step: for 0 < r < R and s-finite nu, int J(r,y)^2 p_((R-r)/2)(x-y) dy <= 2 sqrt(R/r) J(2R,x)^2, J = lheatFlow nu (lower integrals, no integrability needed)."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [heat-kernel, heat-flow, chen-dalang, lintegral]
+  - id: rough-heat-kernel/heat-kernel-shifted-semigroup
+    decl: RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub
+    kind: theorem
+    summary: "Shifted semigroup identity: int p_a(y-m) p_b(x-y) dy = p_(a+b)(x-m) for a, b > 0."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [heat-kernel, semigroup, convolution]
+  - id: rough-heat-kernel/ofreal-integral-le-lintegral
+    decl: RoughHeatKernel.ofReal_integral_le_lintegral
+    kind: theorem
+    summary: "For nonnegative f, ofReal(int f dmu) <= int^- ofReal(f) dmu with no integrability hypothesis (a non-integrable f has Bochner integral 0)."
+    file: RoughHeatKernel/ChenDalang.lean
+    status: reusable
+    keywords: [bochner-integral, lintegral, measure-theory]
+  - id: rough-heat-kernel/normal-cdf-le-one
+    decl: RoughHeatKernel.normalCDF_le_one
+    kind: theorem
+    summary: "The standard normal distribution function is at most 1 (with normalCDF_nonneg, integral_normalDensity = 1)."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [normal-distribution, gaussian]
+  - id: rough-heat-kernel/normal-cdf-monotone
+    decl: RoughHeatKernel.normalCDF_monotone
+    kind: theorem
+    summary: "The standard normal distribution function is monotone; hence normalCDF x >= 1/2 for x >= 0 (half_le_normalCDF)."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [normal-distribution, gaussian, monotone]
+  - id: rough-heat-kernel/erf-tendsto-at-top
+    decl: RoughHeatKernel.tendsto_erf_atTop
+    kind: theorem
+    summary: "erf x -> 1 as x -> infinity (with erf x -> -1 at -infinity and erfc x -> 0 at infinity)."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [error-function, limits]
+  - id: rough-heat-kernel/erf-has-deriv
+    decl: RoughHeatKernel.hasDerivAt_erf
+    kind: theorem
+    summary: "Derivative of the error function: erf'(x) = (2/sqrt pi) e^(-x^2); also erfc' = -erf', continuity, parity and signs of erf."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [error-function, derivative]

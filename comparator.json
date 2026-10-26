@@ -45,7 +45,14 @@
     "RoughHeatKernel.normalCDF_zero",
     "RoughHeatKernel.hasDerivAt_normalCDF",
     "RoughHeatKernel.normalCDF_eq_erf",
-    "RoughHeatKernel.hasSum_pow_div_Gamma"
+    "RoughHeatKernel.hasSum_pow_div_Gamma",
+    "RoughHeatKernel.lintegral_sq_lheatFlow_mul_le",
+    "RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub",
+    "RoughHeatKernel.ofReal_integral_le_lintegral",
+    "RoughHeatKernel.normalCDF_le_one",
+    "RoughHeatKernel.normalCDF_monotone",
+    "RoughHeatKernel.tendsto_erf_atTop",
+    "RoughHeatKernel.hasDerivAt_erf"
   ],
   "definition_names": [],
   "permitted_axioms": [
