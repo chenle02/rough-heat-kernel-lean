@@ -1,5 +1,5 @@
 name = "RoughHeatKernel"
-version = "0.8.0"
+version = "0.9.0"
 description = "The one-dimensional heat kernel and the heat flow of rough (possibly infinite-mass) initial measures."
 keywords = ["heat kernel", "heat equation", "measure", "SPDE", "Gaussian"]
 license = "Apache-2.0"
