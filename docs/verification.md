@@ -1,7 +1,3 @@
----
-layout: page
-title: Reproduce the verification checks
----
 # Reproduce the verification checks
 
 Use Linux with Bash, Git, Python 3, GNU coreutils, a C toolchain, and the pinned

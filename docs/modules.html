@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Gaussian kernels and heat flow for positive and signed Gaussian-tempered measures, including data of infinite mass."><title>Module and API map · RoughHeatKernel</title><link rel="stylesheet" href="assets/site.css"><link rel="icon" href="assets/mark.svg"></head><body class="rough"><a class="skip" href="#content">Skip to content</a><header><a class="brand" href="index.html"><img src="assets/mark.svg" alt=""><span>RoughHeatKernel</span></a><nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="getting-started.html">Start</a><a href="status.html">Status</a><a href="api.html">API</a><a href="trust.html">Trust</a><a href="agents.html">For agents</a><a href="contributing.html">Contribute</a><a href="citation.html">Cite</a></nav></header><main id="content">
+<h1 id="module-and-api-map">Module and API map</h1>
+
+<p>The umbrella <code class="language-plaintext highlighter-rouge">RoughHeatKernel.lean</code> imports all fifteen modules below. There are 142 public theorem/lemma declarations; the <a href="declarations.html">index</a> names each one.</p>
+
+<div class="table-scroll">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Module</th>
+        <th style="text-align: right">Public theorems</th>
+        <th>API boundary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Kernel</td>
+        <td style="text-align: right">15</td>
+        <td>One-dimensional variance-t Gaussian kernel, mass and semigroup</td>
+      </tr>
+      <tr>
+        <td>Lq</td>
+        <td style="text-align: right">4</td>
+        <td>Exact kernel Lq norms and constants, including q = infinity</td>
+      </tr>
+      <tr>
+        <td>Gaussian</td>
+        <td style="text-align: right">3</td>
+        <td>Mathlib Gaussian density and integration bridges</td>
+      </tr>
+      <tr>
+        <td>Tempered</td>
+        <td style="text-align: right">19</td>
+        <td>Gaussian-tempered positive measures, convergent flows, joint positive-time continuity, weighted and local bounds</td>
+      </tr>
+      <tr>
+        <td>RoughMeasure</td>
+        <td style="text-align: right">10</td>
+        <td>Signed Jordan pairs, total variation, positive/Dirac/Lebesgue constructors</td>
+      </tr>
+      <tr>
+        <td>Finite</td>
+        <td style="text-align: right">12</td>
+        <td>Finite data, Mathlib SignedMeasure bridge, genuinely signed example</td>
+      </tr>
+      <tr>
+        <td>Increments</td>
+        <td style="text-align: right">12</td>
+        <td>First derivatives, moments and spatial/time L1 kernel increments</td>
+      </tr>
+      <tr>
+        <td>ChenDalang</td>
+        <td style="text-align: right">11</td>
+        <td>Gaussian product/comparison, shifted semigroup identity, quadratic convolution estimate and its pointwise-in-time step, Bochner-to-lower-integral bound, local finiteness</td>
+      </tr>
+      <tr>
+        <td>SquareKernel</td>
+        <td style="text-align: right">4</td>
+        <td>Squared-kernel identity, arcsine integral, white-noise-shaped deterministic convolution bound</td>
+      </tr>
+      <tr>
+        <td>FlowSemigroup</td>
+        <td style="text-align: right">2</td>
+        <td>Positive heat-flow semigroup and its time integral</td>
+      </tr>
+      <tr>
+        <td>Doubled</td>
+        <td style="text-align: right">6</td>
+        <td>Gaussian doubling and time-resolved doubled-profile bounds</td>
+      </tr>
+      <tr>
+        <td>SpatialEnvelope</td>
+        <td style="text-align: right">11</td>
+        <td>Uniform quarter-Hölder Gaussian envelope with a universal numerical constant</td>
+      </tr>
+      <tr>
+        <td>Beta</td>
+        <td style="text-align: right">2</td>
+        <td>Real Beta integral on [0, t] and integrability of its integrand</td>
+      </tr>
+      <tr>
+        <td>Scaled</td>
+        <td style="text-align: right">2</td>
+        <td>Squared-kernel and semigroup identities for the diffusion-scale kernel heatKernel (ν * t)</td>
+      </tr>
+      <tr>
+        <td>Erf</td>
+        <td style="text-align: right">29</td>
+        <td>Error function (derivative, parity, signs, limits), standard normal density (mass one) and distribution function (bounds, monotonicity), Φ–erf identity, Gamma series for e^{z²}(1 + erf z)</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<h2 id="measures-and-flows">Measures and flows</h2>
+
+<p><code class="language-plaintext highlighter-rouge">IsGaussianTempered</code> requires a finite Gaussian-weighted mass for every positive Gaussian exponent. It permits infinite total mass. <code class="language-plaintext highlighter-rouge">RoughMeasure</code> records mutually singular positive and negative tempered measures; their sum is its total variation. Mathlib’s finite SignedMeasure is a source for this construction, not the general model for infinite-mass data.</p>
+
+<p><code class="language-plaintext highlighter-rouge">heatFlow</code> is real-valued and uses Bochner integration. <code class="language-plaintext highlighter-rouge">lheatFlow</code> uses nonnegative extended-real lower integration and is defined for every measure. Conversion to real values requires finiteness; the library proves that for tempered data at positive times.</p>
+
+<h2 id="special-functions">Special functions</h2>
+
+<p><code class="language-plaintext highlighter-rouge">erf x = (2/√π) ∫_0^x e^{-t²} dt</code> is an oriented interval integral, written exactly as TauCeti’s <code class="language-plaintext highlighter-rouge">erf</code>, so a later bridge is definitional; <code class="language-plaintext highlighter-rouge">erfc = 1 - erf</code>. <code class="language-plaintext highlighter-rouge">normalCDF x</code> integrates the standard normal density over <code class="language-plaintext highlighter-rouge">(-∞, x]</code>. The series <code class="language-plaintext highlighter-rouge">hasSum_pow_div_Gamma</code> is DLMF 7.6.2 reindexed and assumes <code class="language-plaintext highlighter-rouge">z ≥ 0</code>. The Beta integral <code class="language-plaintext highlighter-rouge">integral_rpow_mul_sub_rpow</code> is DLMF 5.12.1 scaled to <code class="language-plaintext highlighter-rouge">[0, t]</code> and assumes <code class="language-plaintext highlighter-rouge">a, b, t &gt; 0</code>.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>Joint positive-time continuity is established in the source for positive and signed Gaussian-tempered data. Initial weak trace and continuity at time zero remain outside the API. The squared-kernel convolution estimate is deterministic; its stochastic interpretation does not add a stochastic integral construction to this package.</p>
+
+</main><footer><p>RoughHeatKernel · source API 0.11.0 · Le Chen, Auburn University</p><p><a href="llms.txt">llms.txt</a> · <a href="source/CITATION.cff">Citation</a> · <a href="source/LICENSE">Apache-2.0</a></p><p>Public repository interface: <a href="https://github.com/chenle02/rough-heat-kernel-lean">rough-heat-kernel-lean</a>. See the repository verification record for current evidence.</p></footer></body></html>

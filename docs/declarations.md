@@ -1,7 +1,3 @@
----
-layout: page
-title: Public theorem index
----
 # Public theorem index
 
 The exact source inventory contains these 142 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](https://chenle02.github.io/rough-heat-kernel-lean/trust.html).
