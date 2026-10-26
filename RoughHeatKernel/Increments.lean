@@ -3,8 +3,13 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import RoughHeatKernel.Gaussian
-import Mathlib.Probability.Moments.Variance
+module
+
+public import RoughHeatKernel.Gaussian
+public import Mathlib.Probability.Moments.Variance
+import Mathlib.Analysis.SpecialFunctions.Sqrt
+
+public section
 
 /-!
 # `L¹` bounds for heat-kernel increments

@@ -1,1 +1,3 @@
-import RoughHeatKernel
+module
+
+public import RoughHeatKernel

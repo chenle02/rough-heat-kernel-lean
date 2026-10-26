@@ -3,8 +3,12 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import RoughHeatKernel.ChenDalang
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv
+module
+
+public import RoughHeatKernel.ChenDalang
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv
+
+public section
 
 /-!
 # The squared kernel and the white-noise convolution bound

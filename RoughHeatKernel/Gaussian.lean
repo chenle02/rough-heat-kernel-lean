@@ -3,8 +3,12 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import RoughHeatKernel.Kernel
-import Mathlib.Probability.Distributions.Gaussian.Real
+module
+
+public import RoughHeatKernel.Kernel
+public import Mathlib.Probability.Distributions.Gaussian.Real
+
+public section
 
 /-!
 # Bridge to Mathlib's Gaussian distribution
