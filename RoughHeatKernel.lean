@@ -12,3 +12,6 @@ public import RoughHeatKernel.SquareKernel
 public import RoughHeatKernel.FlowSemigroup
 public import RoughHeatKernel.Doubled
 public import RoughHeatKernel.SpatialEnvelope
+public import RoughHeatKernel.Beta
+public import RoughHeatKernel.Scaled
+public import RoughHeatKernel.Erf
