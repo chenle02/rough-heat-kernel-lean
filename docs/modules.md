@@ -1,6 +1,12 @@
+---
+layout: page
+title: Module and API map
+---
 # Module and API map
 
 The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are 142 public theorem/lemma declarations; the [index](declarations.md) names each one.
+
+<div class="table-scroll" markdown="1">
 
 | Module | Public theorems | API boundary |
 |---|---:|---|
@@ -19,6 +25,8 @@ The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are
 | Beta | 2 | Real Beta integral on [0, t] and integrability of its integrand |
 | Scaled | 2 | Squared-kernel and semigroup identities for the diffusion-scale kernel heatKernel (ν * t) |
 | Erf | 29 | Error function (derivative, parity, signs, limits), standard normal density (mass one) and distribution function (bounds, monotonicity), Φ–erf identity, Gamma series for e^{z²}(1 + erf z) |
+
+</div>
 
 ## Measures and flows
 
