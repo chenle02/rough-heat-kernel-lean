@@ -6,7 +6,11 @@ The collector uses shared-cache AxiomAudit.axiomsOf. Its
 project-wide allowlist result is sound for axiom-clean imports; per-declaration
 lists can undercount within cyclic clusters. Exact types use kernel Expr repr.
 -/
-import AxiomAudit
+module
+
+public import AxiomAudit
+
+public section
 
 open Lean AxiomAudit
 

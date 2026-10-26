@@ -17,7 +17,7 @@ with tempfile.TemporaryDirectory(prefix='compiled-escape-') as td:
     t = Path(td)
     env = os.environ.copy()
     env['LEAN_PATH'] = str(t)+':'+subprocess.check_output(['lake','env','printenv','LEAN_PATH'],cwd=root,text=True).strip()
-    for module, expected in [('EscapePositive', set()), ('EscapeNegative', {'sorryAx','EscapeNegative.injected'}), ('EscapeNative', {'EscapeNative.nativeTrue._native.native_decide.ax_1_1'})]:
+    for module, expected in [('EscapePositive', set()), ('EscapeNegative', {'sorryAx','EscapeNegative.injected'}), ('EscapeNative', {'_private.EscapeNative.0.EscapeNative.nativeTrue._native.native_decide.ax_1_1'})]:
         source = root/'tests'/(module+'.lean')
         with (out/(module+'-build.log')).open('w') as log:
             subprocess.run(['lake','env','lean','-R',str(source.parent),str(source),'-o',str(t/(module+'.olean'))],cwd=root,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
@@ -60,7 +60,9 @@ def import_only_source(source):
         else: code.append(text[i]); i += 1
     if depth: return False
     lines = [line.strip() for line in ''.join(code).splitlines() if line.strip()]
-    return bool(lines) and all(re.fullmatch(r'import [A-Za-z_][A-Za-z0-9_.]*', line) for line in lines)
+    # Lean module system: an optional leading `module` header, then only (public) imports.
+    if lines[:1] == ['module']: lines = lines[1:]
+    return bool(lines) and all(re.fullmatch(r'(?:public )?import [A-Za-z_][A-Za-z0-9_.]*', line) for line in lines)
 
 # Two cones deliberately define the same declaration names. Never import them into one environment.
 prod = ['RoughHeatKernel', 'RoughHeatKernelTest', 'Solution']
