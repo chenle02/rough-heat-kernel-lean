@@ -1,0 +1,38 @@
+{
+  "commit": "6a35f44f2d517811cbb08688814c8edd304a400a",
+  "lean_toolchain": "leanprover/lean4:v4.35.0",
+  "mathlib_rev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "sorry_count": 0,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "report_sha256": "6d8ebcde7451cd8bb3f2618bf50700415b0a0500b8317d5ed462ce84023f4951",
+  "job_id": "systemd-user:rough-heat-kernel-v0110-p14s.service:11a0d698f32d4a27a624903fe1acdfb1@h-2db2e0fa6029",
+  "checker": "verify.sh (fresh complete library/reference/tests; all-owned/strict controls/native replay)",
+  "generated_at": "2026-10-26T17:24:34Z",
+  "job_stdout_sha256": "af4a0c4b0cee20a072f3559b40834962fc9c5d853915090e3dd74e8b21cf691d",
+  "manifest_sha256": "33928f37ec692b2b06a4da70ee2d832c381b1ed04218618fa3bccaf73a248494",
+  "log_commit_bound": true,
+  "claim_axioms": {
+    "checked": 51,
+    "nonstandard": [],
+    "missing": []
+  },
+  "producer": {
+    "lean_pkg": "0.20.0",
+    "install": "installed",
+    "commit": null,
+    "dirty": null,
+    "sources_sha256": "558e6675cac80492b5ba57c2b12541b7cc408e6abf01b6cc7dc6b727fab8ea84",
+    "source_files": 76,
+    "python": "3.12.3"
+  },
+  "unit_properties_sha256": "a1b572f49f82d5167000e15b077e02f491c708e93392c5aba274774797b49cf7",
+  "report_compressed": {
+    "format": "gzip",
+    "sha256": "9fb9d7c556b9891f2ff83756668bd4c55443bfa76f6877bb7d37ea0143719bae",
+    "bytes": 3859092
+  }
+}
