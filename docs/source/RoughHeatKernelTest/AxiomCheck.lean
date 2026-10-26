@@ -46,6 +46,8 @@ public section
 #print axioms RoughHeatKernel.continuousAt_heatKernel_joint
 #print axioms RoughHeatKernel.continuous_heatFlow
 #print axioms RoughHeatKernel.continuous_heatKernel
+#print axioms RoughHeatKernel.continuous_normalCDF
+#print axioms RoughHeatKernel.continuous_normalDensity
 #print axioms RoughHeatKernel.continuous_toReal_lheatFlow
 #print axioms RoughHeatKernel.eLpNorm_heatKernel
 #print axioms RoughHeatKernel.eLpNorm_heatKernel_of_ne_top
@@ -54,6 +56,10 @@ public section
 #print axioms RoughHeatKernel.gaussianPDFReal_eq_heatKernel_sub
 #print axioms RoughHeatKernel.hasDerivAt_heatKernel
 #print axioms RoughHeatKernel.hasDerivAt_heatKernel_time
+#print axioms RoughHeatKernel.hasDerivAt_normalCDF
+#print axioms RoughHeatKernel.hasSum_even_pow_div_Gamma
+#print axioms RoughHeatKernel.hasSum_odd_pow_div_Gamma
+#print axioms RoughHeatKernel.hasSum_pow_div_Gamma
 #print axioms RoughHeatKernel.heatFlow_le_gaussian_growth
 #print axioms RoughHeatKernel.heatFlow_nonneg
 #print axioms RoughHeatKernel.heatKernel_add_le_sqrt_two_mul
@@ -64,6 +70,7 @@ public section
 #print axioms RoughHeatKernel.heatKernel_le_local
 #print axioms RoughHeatKernel.heatKernel_le_sqrt_div_mul
 #print axioms RoughHeatKernel.heatKernel_mul_heatKernel_eq
+#print axioms RoughHeatKernel.heatKernel_mul_sq_eq
 #print axioms RoughHeatKernel.heatKernel_neg
 #print axioms RoughHeatKernel.heatKernel_pos
 #print axioms RoughHeatKernel.heatKernel_sq_eq
@@ -76,6 +83,7 @@ public section
 #print axioms RoughHeatKernel.integrable_heatKernel
 #print axioms RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel
 #print axioms RoughHeatKernel.integrable_mul_heatKernel
+#print axioms RoughHeatKernel.integrable_normalDensity
 #print axioms RoughHeatKernel.integrable_sq_mul_heatKernel
 #print axioms RoughHeatKernel.integral_abs_heatKernel_add_sub_le
 #print axioms RoughHeatKernel.integral_abs_heatKernel_sub_shift_le
@@ -84,8 +92,12 @@ public section
 #print axioms RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel
 #print axioms RoughHeatKernel.integral_heatKernel
 #print axioms RoughHeatKernel.integral_heatKernel_mul_heatKernel
+#print axioms RoughHeatKernel.integral_heatKernel_mul_sub_mul
 #print axioms RoughHeatKernel.integral_heatKernel_sq
+#print axioms RoughHeatKernel.integral_rpow_mul_sub_rpow
 #print axioms RoughHeatKernel.integral_sq_mul_heatKernel
+#print axioms RoughHeatKernel.integral_sq_sub_sq_pow
+#print axioms RoughHeatKernel.intervalIntegrable_rpow_mul_sub_rpow
 #print axioms RoughHeatKernel.isGaussianTempered_dirac
 #print axioms RoughHeatKernel.isGaussianTempered_of_isFiniteMeasure
 #print axioms RoughHeatKernel.isGaussianTempered_volume
@@ -106,5 +118,9 @@ public section
 #print axioms RoughHeatKernel.lintegral_sq_lheatFlow_conv_le
 #print axioms RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le
 #print axioms RoughHeatKernel.measurable_heatKernel
+#print axioms RoughHeatKernel.normalCDF_eq_add_integral
+#print axioms RoughHeatKernel.normalCDF_eq_erf
+#print axioms RoughHeatKernel.normalCDF_eq_integral_normalDensity
+#print axioms RoughHeatKernel.normalCDF_zero
 #print axioms RoughHeatKernel.ofReal_heatFlow
 #print axioms RoughHeatKernel.toReal_lheatFlow

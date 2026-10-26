@@ -104,9 +104,15 @@ theorem totalVariation_ofSignedMeasure (s : SignedMeasure ℝ) :
     (ofSignedMeasure s).totalVariation = s.totalVariation :=
   rfl
 
+-- Keep this instance proof free of a module-private auxiliary theorem, so the reference
+-- copy and the library declare byte-identical constants (lake comparator, module system).
+set_option backward.inferInstanceAs.wrap false in
 instance (s : SignedMeasure ℝ) : IsFiniteMeasure (ofSignedMeasure s).pos :=
   inferInstanceAs (IsFiniteMeasure s.toJordanDecomposition.posPart)
 
+-- Keep this instance proof free of a module-private auxiliary theorem, so the reference
+-- copy and the library declare byte-identical constants (lake comparator, module system).
+set_option backward.inferInstanceAs.wrap false in
 instance (s : SignedMeasure ℝ) : IsFiniteMeasure (ofSignedMeasure s).neg :=
   inferInstanceAs (IsFiniteMeasure s.toJordanDecomposition.negPart)
 

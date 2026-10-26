@@ -164,3 +164,19 @@ example : ¬ (∀ r : ℝ, 0 < r → ∀ u v : ℝ,
     abs_pos.mpr (sub_ne_zero.mpr
       (ne_of_gt RoughHeatKernelTest.Counterexamples.off_center_strict))
   exact (not_le_of_gt hp) hb
+
+-- Beta integral with `a = b = 1/2` on `[0, 1]`: the arcsine value `Γ(1/2)² / Γ(1) = π`.
+example : ∫ s in (0 : ℝ)..1, s ^ ((1 / 2 : ℝ) - 1) * (1 - s) ^ ((1 / 2 : ℝ) - 1) = Real.pi := by
+  rw [integral_rpow_mul_sub_rpow (by norm_num) (by norm_num) one_pos]
+  norm_num [Real.Gamma_one_half_eq, Real.sq_sqrt Real.pi_pos.le]
+  rw [← sq, Real.sq_sqrt Real.pi_pos.le]
+
+-- The median of the standard normal law is `0`, and `erf 0 = 0`.
+example : normalCDF 0 = 1 / 2 ∧ erf 0 = 0 := by
+  refine ⟨normalCDF_zero, ?_⟩
+  simp [erf]
+
+-- The series at `z = 0` sums to `1 = e^0 (1 + erf 0)`.
+example : HasSum (fun k : ℕ => (0 : ℝ) ^ k / Real.Gamma ((k : ℝ) / 2 + 1)) 1 := by
+  have h := hasSum_pow_div_Gamma (z := 0) le_rfl
+  simpa [erf] using h

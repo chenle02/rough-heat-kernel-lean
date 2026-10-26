@@ -1,6 +1,6 @@
 # RoughHeatKernel
 
-Source API 0.9.0. Public repository interface:
+Source API 0.10.0. Public repository interface:
 https://github.com/chenle02/rough-heat-kernel-lean
 
 Read the exact Lean statement before using a result. The source declaration
@@ -23,3 +23,5 @@ Do not infer full-paper SPDE well-posedness or remove theorem hypotheses.
 Historical attribution: [Earlier development resources](citation.html#historical-compute). Current release executors and checked scope are recorded by the source-bound receipts.
 
 New deterministic APIs: joint positive-time continuity for positive and signed Gaussian-tempered heat flows; uniform quarter-Holder Gaussian kernel increments with universal constant 2*exp(1). No time-zero continuity, stochastic sample modification or SPDE claim. Current-source full verification and independent three-kernel comparison passed at 133f3aec2c12; prior 0.7 receipts remain historical.
+
+Added in 0.10.0 (verification pending): real Beta integral on [0, t] (DLMF 5.12.1); squared-kernel and semigroup identities for heatKernel (nu * t); erf, erfc, normalDensity, normalCDF with normalCDF 0 = 1/2, derivative, normalCDF x = (1 + erf(x/sqrt 2))/2, and sum_k z^k / Gamma(k/2 + 1) = e^(z^2) (1 + erf z) for z >= 0 (DLMF 7.6.2).

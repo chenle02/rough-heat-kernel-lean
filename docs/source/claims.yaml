@@ -284,3 +284,52 @@ claims:
     file: RoughHeatKernel/SpatialEnvelope.lean
     status: reusable
     keywords: [heat-kernel, spatial-increment, holder, uniform-envelope]
+  - id: rough-heat-kernel/beta-integral
+    decl: RoughHeatKernel.integral_rpow_mul_sub_rpow
+    kind: theorem
+    summary: "Real Beta integral on [0,t]: int_0^t s^(a-1) (t-s)^(b-1) ds = t^(a+b-1) Gamma(a) Gamma(b)/Gamma(a+b) for a, b, t > 0 (DLMF 5.12.1, scaled)."
+    file: RoughHeatKernel/Beta.lean
+    status: reusable
+    keywords: [beta-function, gamma-function, interval-integral, rpow]
+  - id: rough-heat-kernel/scaled-heat-kernel-square
+    decl: RoughHeatKernel.heatKernel_mul_sq_eq
+    kind: theorem
+    summary: "Squared kernel at diffusion scale nu: p_(nu t)(x)^2 = p_((nu/2) t)(x) (4 pi nu)^(-1/2) t^(-1/2) for nu, t > 0."
+    file: RoughHeatKernel/Scaled.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, squared-kernel, diffusion-scale]
+  - id: rough-heat-kernel/scaled-heat-kernel-semigroup
+    decl: RoughHeatKernel.integral_heatKernel_mul_sub_mul
+    kind: theorem
+    summary: "Semigroup identity at diffusion scale nu: int p_(nu(t-s))(x-y) p_(nu s)(y) dy = p_(nu t)(x) for nu > 0 and 0 < s < t."
+    file: RoughHeatKernel/Scaled.lean
+    status: reusable
+    keywords: [heat-kernel, gaussian, semigroup, diffusion-scale]
+  - id: rough-heat-kernel/normal-cdf-at-zero
+    decl: RoughHeatKernel.normalCDF_zero
+    kind: theorem
+    summary: "The standard normal distribution function int_(-inf)^x (2 pi)^(-1/2) e^(-y^2/2) dy equals 1/2 at x = 0."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [normal-distribution, gaussian, distribution-function]
+  - id: rough-heat-kernel/normal-cdf-derivative
+    decl: RoughHeatKernel.hasDerivAt_normalCDF
+    kind: theorem
+    summary: "The standard normal distribution function is differentiable everywhere with derivative the standard normal density (2 pi)^(-1/2) e^(-x^2/2)."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [normal-distribution, gaussian, derivative]
+  - id: rough-heat-kernel/normal-cdf-erf
+    decl: RoughHeatKernel.normalCDF_eq_erf
+    kind: theorem
+    summary: "The standard normal distribution function in terms of the error function: normalCDF x = (1 + erf(x/sqrt 2))/2, with erf x = (2/sqrt pi) int_0^x e^(-t^2) dt."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [normal-distribution, error-function, gaussian]
+  - id: rough-heat-kernel/erf-gamma-series
+    decl: RoughHeatKernel.hasSum_pow_div_Gamma
+    kind: theorem
+    summary: "Error-function series (DLMF 7.6.2, reindexed): for z >= 0, sum_k z^k / Gamma(k/2 + 1) = e^(z^2) (1 + erf z)."
+    file: RoughHeatKernel/Erf.lean
+    status: reusable
+    keywords: [error-function, gamma-function, power-series, has-sum]

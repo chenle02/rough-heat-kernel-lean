@@ -1,4 +1,4 @@
-# RoughHeatKernel — source API 0.9.0
+# RoughHeatKernel — source API 0.10.0
 
 Gaussian kernels and heat flow for positive and signed Gaussian-tempered measures, including data of infinite mass.
 
@@ -7,6 +7,7 @@ Mathematical capsule:
 - Gaussian-tempered positive measures: convergent heat flow, joint positive-time continuity and weighted bounds.
 - Signed Jordan-pair data: total-variation domination, finite SignedMeasure interoperability and nontrivial examples.
 - Chen–Dalang, squared-kernel, heat-flow semigroup and doubled-profile convolution estimates.
+- Real Beta integral, diffusion-scale kernel identities, error function, standard normal distribution function and the Gamma series for e^{z²}(1 + erf z).
 
 Not established:
 - Continuity at time zero and weak convergence to the initial datum.

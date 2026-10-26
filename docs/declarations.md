@@ -1,6 +1,6 @@
 # Public theorem index
 
-The exact source inventory contains these 104 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](trust.md).
+The exact source inventory contains these 120 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](trust.md).
 
 - `RoughHeatKernel.IsGaussianTempered.add`
 - `RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq`
@@ -44,6 +44,8 @@ The exact source inventory contains these 104 public theorem/lemma names. This i
 - `RoughHeatKernel.continuousAt_heatKernel_joint`
 - `RoughHeatKernel.continuous_heatFlow`
 - `RoughHeatKernel.continuous_heatKernel`
+- `RoughHeatKernel.continuous_normalCDF`
+- `RoughHeatKernel.continuous_normalDensity`
 - `RoughHeatKernel.continuous_toReal_lheatFlow`
 - `RoughHeatKernel.eLpNorm_heatKernel`
 - `RoughHeatKernel.eLpNorm_heatKernel_of_ne_top`
@@ -52,6 +54,10 @@ The exact source inventory contains these 104 public theorem/lemma names. This i
 - `RoughHeatKernel.gaussianPDFReal_eq_heatKernel_sub`
 - `RoughHeatKernel.hasDerivAt_heatKernel`
 - `RoughHeatKernel.hasDerivAt_heatKernel_time`
+- `RoughHeatKernel.hasDerivAt_normalCDF`
+- `RoughHeatKernel.hasSum_even_pow_div_Gamma`
+- `RoughHeatKernel.hasSum_odd_pow_div_Gamma`
+- `RoughHeatKernel.hasSum_pow_div_Gamma`
 - `RoughHeatKernel.heatFlow_le_gaussian_growth`
 - `RoughHeatKernel.heatFlow_nonneg`
 - `RoughHeatKernel.heatKernel_add_le_sqrt_two_mul`
@@ -62,6 +68,7 @@ The exact source inventory contains these 104 public theorem/lemma names. This i
 - `RoughHeatKernel.heatKernel_le_local`
 - `RoughHeatKernel.heatKernel_le_sqrt_div_mul`
 - `RoughHeatKernel.heatKernel_mul_heatKernel_eq`
+- `RoughHeatKernel.heatKernel_mul_sq_eq`
 - `RoughHeatKernel.heatKernel_neg`
 - `RoughHeatKernel.heatKernel_pos`
 - `RoughHeatKernel.heatKernel_sq_eq`
@@ -74,6 +81,7 @@ The exact source inventory contains these 104 public theorem/lemma names. This i
 - `RoughHeatKernel.integrable_heatKernel`
 - `RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel`
 - `RoughHeatKernel.integrable_mul_heatKernel`
+- `RoughHeatKernel.integrable_normalDensity`
 - `RoughHeatKernel.integrable_sq_mul_heatKernel`
 - `RoughHeatKernel.integral_abs_heatKernel_add_sub_le`
 - `RoughHeatKernel.integral_abs_heatKernel_sub_shift_le`
@@ -82,8 +90,12 @@ The exact source inventory contains these 104 public theorem/lemma names. This i
 - `RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel`
 - `RoughHeatKernel.integral_heatKernel`
 - `RoughHeatKernel.integral_heatKernel_mul_heatKernel`
+- `RoughHeatKernel.integral_heatKernel_mul_sub_mul`
 - `RoughHeatKernel.integral_heatKernel_sq`
+- `RoughHeatKernel.integral_rpow_mul_sub_rpow`
 - `RoughHeatKernel.integral_sq_mul_heatKernel`
+- `RoughHeatKernel.integral_sq_sub_sq_pow`
+- `RoughHeatKernel.intervalIntegrable_rpow_mul_sub_rpow`
 - `RoughHeatKernel.isGaussianTempered_dirac`
 - `RoughHeatKernel.isGaussianTempered_of_isFiniteMeasure`
 - `RoughHeatKernel.isGaussianTempered_volume`
@@ -104,5 +116,9 @@ The exact source inventory contains these 104 public theorem/lemma names. This i
 - `RoughHeatKernel.lintegral_sq_lheatFlow_conv_le`
 - `RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le`
 - `RoughHeatKernel.measurable_heatKernel`
+- `RoughHeatKernel.normalCDF_eq_add_integral`
+- `RoughHeatKernel.normalCDF_eq_erf`
+- `RoughHeatKernel.normalCDF_eq_integral_normalDensity`
+- `RoughHeatKernel.normalCDF_zero`
 - `RoughHeatKernel.ofReal_heatFlow`
 - `RoughHeatKernel.toReal_lheatFlow`

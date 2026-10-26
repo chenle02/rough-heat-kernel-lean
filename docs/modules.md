@@ -1,6 +1,6 @@
 # Module and API map
 
-The umbrella `RoughHeatKernel.lean` imports all twelve modules below. There are 104 public theorem/lemma declarations; the [index](declarations.md) names each one.
+The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are 120 public theorem/lemma declarations; the [index](declarations.md) names each one.
 
 | Module | Public theorems | API boundary |
 |---|---:|---|
@@ -16,12 +16,19 @@ The umbrella `RoughHeatKernel.lean` imports all twelve modules below. There are 
 | FlowSemigroup | 2 | Positive heat-flow semigroup and its time integral |
 | Doubled | 6 | Gaussian doubling and time-resolved doubled-profile bounds |
 | SpatialEnvelope | 11 | Uniform quarter-Hölder Gaussian envelope with a universal numerical constant |
+| Beta | 2 | Real Beta integral on [0, t] and integrability of its integrand |
+| Scaled | 2 | Squared-kernel and semigroup identities for the diffusion-scale kernel heatKernel (ν * t) |
+| Erf | 12 | Error function, standard normal density and distribution function, Φ–erf identity, Gamma series for e^{z²}(1 + erf z) |
 
 ## Measures and flows
 
 `IsGaussianTempered` requires a finite Gaussian-weighted mass for every positive Gaussian exponent. It permits infinite total mass. `RoughMeasure` records mutually singular positive and negative tempered measures; their sum is its total variation. Mathlib's finite SignedMeasure is a source for this construction, not the general model for infinite-mass data.
 
 `heatFlow` is real-valued and uses Bochner integration. `lheatFlow` uses nonnegative extended-real lower integration and is defined for every measure. Conversion to real values requires finiteness; the library proves that for tempered data at positive times.
+
+## Special functions
+
+`erf x = (2/√π) ∫_0^x e^{-t²} dt` is an oriented interval integral, written exactly as TauCeti's `erf`, so a later bridge is definitional; `erfc = 1 - erf`. `normalCDF x` integrates the standard normal density over `(-∞, x]`. The series `hasSum_pow_div_Gamma` is DLMF 7.6.2 reindexed and assumes `z ≥ 0`. The Beta integral `integral_rpow_mul_sub_rpow` is DLMF 5.12.1 scaled to `[0, t]` and assumes `a, b, t > 0`.
 
 ## Limitations
 

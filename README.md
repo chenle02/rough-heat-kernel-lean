@@ -12,7 +12,7 @@ The one-dimensional heat kernel and the heat flow of rough positive and signed m
 
 This library treats measures with Gaussian-tempered total variation: they may have infinite total mass, but their integral against every decaying Gaussian is finite. Dirac masses, finite signed measures and Lebesgue measure are examples. The results are standard analysis; no new mathematics is claimed.
 
-**Source API 0.9.0.** Version 0.9.0 ports every file to the Lean module system (`module` headers, `public import`, `@[expose]` on definitions); all theorem statements, hypotheses and definitions are unchanged from 0.8.0, and a downstream `module` file can now `public import RoughHeatKernel`. Scientific source `3b16158a4974` passed both verification tiers; receipts for 0.8.0 and earlier remain historical.
+**Source API 0.10.0.** Version 0.10.0 adds three modules: `RoughHeatKernel.Beta` (the real Beta integral on `[0, t]`), `RoughHeatKernel.Scaled` (squared-kernel and semigroup identities for `heatKernel (ν * t)`) and `RoughHeatKernel.Erf` (the error function, the standard normal density and distribution function, and the series `Σ z^k / Γ(k/2 + 1) = e^{z²}(1 + erf z)`). The source now has 120 public theorem/lemma declarations across 15 library modules and 44 curated reusable claims; every 0.9.0 statement, hypothesis and definition is unchanged. Verification of the 0.10.0 source is pending; the verification record below still describes the 0.9.0 scientific source `3b16158a4974`.
 
 ## What is proved
 
@@ -23,6 +23,8 @@ This library treats measures with Gaussian-tempered total variation: they may ha
 | Signed data | Jordan-pair rough measures, domination by total variation, Dirac and genuinely signed examples, finite Mathlib SignedMeasure interoperability |
 | Kernel regularity | First spatial and time derivatives, Gaussian moments, spatial and forward-time L1 increments, uniform quarter-Hölder Gaussian envelope |
 | Convolution estimates | Chen–Dalang Gaussian quadratic bound, squared-kernel and arcsine identities, heat-flow semigroup, doubled-profile linear and quadratic bounds |
+| Diffusion-scale kernel | Squared-kernel and semigroup identities for the kernel `p_{νt}` of `∂_t u = (ν/2) ∂_x² u` |
+| Special functions | Real Beta integral on `[0, t]`, error function, standard normal density and distribution function, `Φ(x) = (1 + erf(x/√2))/2`, Gamma series for `e^{z²}(1 + erf z)` |
 
 The [API guide](docs/modules.md) maps these results to modules. The [declaration index](docs/declarations.md) lists every public theorem, and [claims.yaml](claims.yaml) describes the curated reusable source claims; registry acceptance is separate.
 
@@ -46,7 +48,7 @@ Use `import RoughHeatKernel`, or a narrower module such as `import RoughHeatKern
 
 ## Verification
 
-Scientific source `3b16158a4974` passed the complete fresh local verifier and independent three-kernel comparison for all 37 curated claims. The verifier checked all 104 public propositions, compiled-environment ownership and axiom dependencies for 248 production/positive-test declarations in 30 modules and 219 proved-reference declarations in 13 modules, elaborated types, examples and eleven strict negative fixtures with separately compiled witnesses, with compiled escape controls and exact native module replay. The permitted axioms are `Classical.choice`, `Quot.sound` and `propext`. The [trust guide](docs/trust.md) explains each check. Receipts bind the scientific source, dependency pins and retained outputs; proof checking does not validate this prose or remove hypotheses from a theorem.
+Verification of the 0.10.0 source (120 public theorems, 44 curated claims) is pending. The previous release record follows: scientific source `3b16158a4974` passed the complete fresh local verifier and independent three-kernel comparison for all 37 curated claims. The verifier checked all 104 public propositions, compiled-environment ownership and axiom dependencies for 248 production/positive-test declarations in 30 modules and 219 proved-reference declarations in 13 modules, elaborated types, examples and eleven strict negative fixtures with separately compiled witnesses, with compiled escape controls and exact native module replay. The permitted axioms are `Classical.choice`, `Quot.sound` and `propext`. The [trust guide](docs/trust.md) explains each check. Receipts bind the scientific source, dependency pins and retained outputs; proof checking does not validate this prose or remove hypotheses from a theorem.
 
 ## Attribution and AI assistance
 
@@ -873,7 +875,7 @@ Expected: `#print axioms` on any declaration above reports a subset of {`Classic
 
 ## Citation
 
-Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.9.0.
+Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.10.0.
 
 See [CITATION.cff](CITATION.cff).
 
