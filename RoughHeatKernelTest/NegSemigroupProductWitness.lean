@@ -3,7 +3,11 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import RoughHeatKernelTest.Counterexamples
+module
+
+public import RoughHeatKernelTest.Counterexamples
+
+public section
 
 open RoughHeatKernel MeasureTheory RoughHeatKernelTest.Counterexamples
 open scoped ENNReal

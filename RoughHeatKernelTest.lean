@@ -1,16 +1,18 @@
-import RoughHeatKernelTest.AxiomCheck
-import RoughHeatKernelTest.Counterexamples
-import RoughHeatKernelTest.Examples
-import RoughHeatKernelTest.NegArcsineWitness
-import RoughHeatKernelTest.NegDoubledSemigroupWitness
-import RoughHeatKernelTest.NegFlowSemigroupWitness
-import RoughHeatKernelTest.NegGaussianMeanWitness
-import RoughHeatKernelTest.NegIncrementWitness
-import RoughHeatKernelTest.NegMassWitness
-import RoughHeatKernelTest.NegProductIdentityWitness
-import RoughHeatKernelTest.NegSemigroupProductWitness
-import RoughHeatKernelTest.NegTemperedWitness
-import RoughHeatKernelTest.TypeCheck
-import RoughHeatKernelTest.NegJointTimeConstancyWitness
-import RoughHeatKernelTest.NegSignedFlowAbsoluteWitness
+module
+
+public import RoughHeatKernelTest.AxiomCheck
+public import RoughHeatKernelTest.Counterexamples
+public import RoughHeatKernelTest.Examples
+public import RoughHeatKernelTest.NegArcsineWitness
+public import RoughHeatKernelTest.NegDoubledSemigroupWitness
+public import RoughHeatKernelTest.NegFlowSemigroupWitness
+public import RoughHeatKernelTest.NegGaussianMeanWitness
+public import RoughHeatKernelTest.NegIncrementWitness
+public import RoughHeatKernelTest.NegMassWitness
+public import RoughHeatKernelTest.NegProductIdentityWitness
+public import RoughHeatKernelTest.NegSemigroupProductWitness
+public import RoughHeatKernelTest.NegTemperedWitness
+public import RoughHeatKernelTest.TypeCheck
+public import RoughHeatKernelTest.NegJointTimeConstancyWitness
+public import RoughHeatKernelTest.NegSignedFlowAbsoluteWitness
 /-! Positive verification fixtures. Expected-failure sources are deliberately excluded. -/

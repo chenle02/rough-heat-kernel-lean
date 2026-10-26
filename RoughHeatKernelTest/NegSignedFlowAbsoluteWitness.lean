@@ -1,5 +1,9 @@
 /- Copyright (c) 2026 Le Chen. Apache-2.0. -/
-import RoughHeatKernel
+module
+
+public import RoughHeatKernel
+
+public section
 noncomputable section
 set_option autoImplicit false
 open RoughHeatKernel MeasureTheory

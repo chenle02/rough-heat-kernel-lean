@@ -1,4 +1,8 @@
-import RoughHeatKernel
+module
+
+public import RoughHeatKernel
+
+public section
 
 set_option pp.universes true
 

@@ -1,3 +1,5 @@
+module
+
 import RoughHeatKernelTest.NegJointTimeConstancyWitness
 open RoughHeatKernel
 -- Joint continuity does not mean constancy in time.
