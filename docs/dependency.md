@@ -1,7 +1,3 @@
----
-layout: page
-title: Use as a Lake dependency
----
 # Use as a Lake dependency
 
 Use the same lean-toolchain as this source, then add a require entry for package `RoughHeatKernel` from `https://github.com/chenle02/rough-heat-kernel-lean.git`. Select a published version tag or exact commit from the README verification record.

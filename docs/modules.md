@@ -1,7 +1,3 @@
----
-layout: page
-title: Module and API map
----
 # Module and API map
 
 The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are 142 public theorem/lemma declarations; the [index](declarations.md) names each one.
