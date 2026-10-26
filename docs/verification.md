@@ -1,3 +1,7 @@
+---
+layout: page
+title: Reproduce the verification checks
+---
 # Reproduce the verification checks
 
 Use Linux with Bash, Git, Python 3, GNU coreutils, a C toolchain, and the pinned
@@ -35,5 +39,5 @@ retained alongside them. Use a fresh external directory for another run.
 This command runs the checks. An official lower-tier receipt additionally
 requires the actual retained executor terminal state and receipt producer.
 Independent comparator evidence is a separate check. Inspect the generated
-[README verification record](../README.md#verification-at-a-glance) and its
+[README verification record](https://github.com/chenle02/rough-heat-kernel-lean/blob/main/README.md#verification-at-a-glance) and its
 canonical receipts for actual execution and exact source identity.
