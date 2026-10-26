@@ -3,8 +3,12 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import Challenge.Reference.RoughHeatKernel.SquareKernel
-import Challenge.Reference.RoughHeatKernel.FlowSemigroup
+module
+
+public import Challenge.Reference.RoughHeatKernel.SquareKernel
+public import Challenge.Reference.RoughHeatKernel.FlowSemigroup
+
+public section
 /-!
 # Doubled-profile bounds
 

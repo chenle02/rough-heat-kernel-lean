@@ -1,9 +1,13 @@
 /- Copyright (c) 2026 Le Chen. Apache-2.0.
 Known uniform quarter-Hölder Gaussian envelope with an explicit universal constant. -/
-import Challenge.Reference.RoughHeatKernel.Increments
-import Challenge.Reference.RoughHeatKernel.ChenDalang
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
+module
+
+public import Challenge.Reference.RoughHeatKernel.Increments
+public import Challenge.Reference.RoughHeatKernel.ChenDalang
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+
+public section
 
 noncomputable section
 set_option autoImplicit false

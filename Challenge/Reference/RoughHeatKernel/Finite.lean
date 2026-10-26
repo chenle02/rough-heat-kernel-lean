@@ -3,9 +3,13 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import Challenge.Reference.RoughHeatKernel.RoughMeasure
-import Challenge.Reference.RoughHeatKernel.Lq
-import Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan
+module
+
+public import Challenge.Reference.RoughHeatKernel.RoughMeasure
+public import Challenge.Reference.RoughHeatKernel.Lq
+public import Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan
+
+@[expose] public section
 
 /-!
 # Finite measures and the Dirac mass

@@ -3,7 +3,11 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import Challenge.Reference.RoughHeatKernel.Kernel
+module
+
+public import Challenge.Reference.RoughHeatKernel.Kernel
+
+@[expose] public section
 /-!
 # `L^q` norms of the heat kernel
 
