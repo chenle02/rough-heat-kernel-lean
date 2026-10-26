@@ -210,3 +210,31 @@ rows:
   claims:
   - rough-heat-kernel/erf-gamma-series
   statement: "For z >= 0, sum_k z^k / Gamma(k/2 + 1) = e^(z^2) (1 + erf z) (DLMF 7.6.2, reindexed)."
+- title: Pointwise-in-time Chen-Dalang heat-flow step
+  claims:
+  - rough-heat-kernel/heat-flow-square-pointwise
+  statement: "For 0 < r < R and s-finite nu, int J(r,y)^2 p_((R-r)/2)(x-y) dy <= 2 sqrt(R/r) J(2R,x)^2, with J = lheatFlow nu."
+- title: Shifted heat-kernel semigroup identity
+  claims:
+  - rough-heat-kernel/heat-kernel-shifted-semigroup
+  statement: "int p_a(y-m) p_b(x-y) dy = p_(a+b)(x-m) for a, b > 0."
+- title: Bochner integral below the lower integral
+  claims:
+  - rough-heat-kernel/ofreal-integral-le-lintegral
+  statement: "For nonnegative f, ofReal(int f dmu) <= int^- ofReal(f) dmu, with no integrability hypothesis."
+- title: Normal distribution function at most one
+  claims:
+  - rough-heat-kernel/normal-cdf-le-one
+  statement: "The standard normal distribution function is at most 1."
+- title: Monotonicity of the normal distribution function
+  claims:
+  - rough-heat-kernel/normal-cdf-monotone
+  statement: "The standard normal distribution function is monotone."
+- title: Limit of the error function at infinity
+  claims:
+  - rough-heat-kernel/erf-tendsto-at-top
+  statement: "erf x tends to 1 as x tends to infinity."
+- title: Derivative of the error function
+  claims:
+  - rough-heat-kernel/erf-has-deriv
+  statement: "erf has derivative (2/sqrt pi) e^(-x^2) at every x."

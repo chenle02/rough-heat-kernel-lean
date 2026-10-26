@@ -1,4 +1,4 @@
-# RoughHeatKernel — source API 0.10.0
+# RoughHeatKernel — source API 0.11.0
 
 Gaussian kernels and heat flow for positive and signed Gaussian-tempered measures, including data of infinite mass.
 

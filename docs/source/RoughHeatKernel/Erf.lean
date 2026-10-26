@@ -12,6 +12,7 @@ public import Mathlib.Analysis.SpecialFunctions.Sqrt
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
 public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.MeasureTheory.Integral.IntegralEqImproper
 
 @[expose] public section
 
@@ -306,5 +307,101 @@ theorem hasSum_pow_div_Gamma {z : ℝ} (hz : 0 ≤ z) :
   · convert hasSum_odd_pow_div_Gamma hz using 3 with m
     push_cast
     ring_nf
+
+/-! ### Elementary properties of `erf`, `erfc` and `normalCDF` -/
+
+/-- `erf' x = (2/√π) e^{-x²}`. -/
+theorem hasDerivAt_erf (x : ℝ) : HasDerivAt erf (2 / √π * exp (-x ^ 2)) x := by
+  have hc : Continuous (fun t : ℝ => exp (-t ^ 2)) := by fun_prop
+  have h := intervalIntegral.integral_hasDerivAt_right (hc.intervalIntegrable 0 x)
+    (hc.stronglyMeasurableAtFilter _ _) hc.continuousAt
+  exact h.const_mul (2 / √π)
+
+/-- `erfc' x = -(2/√π) e^{-x²}`. -/
+theorem hasDerivAt_erfc (x : ℝ) : HasDerivAt erfc (-(2 / √π * exp (-x ^ 2))) x :=
+  (hasDerivAt_erf x).const_sub 1
+
+theorem continuous_erf : Continuous erf :=
+  continuous_iff_continuousAt.2 fun x => (hasDerivAt_erf x).continuousAt
+
+theorem erf_zero : erf 0 = 0 := by simp [erf]
+
+theorem erfc_zero : erfc 0 = 1 := by simp [erfc, erf_zero]
+
+/-- `erf` is odd. -/
+theorem erf_neg (x : ℝ) : erf (-x) = -erf x := by
+  unfold erf
+  have h := intervalIntegral.integral_comp_neg (a := 0) (b := x) (fun t : ℝ => exp (-t ^ 2))
+  simp only [even_two, Even.neg_pow, neg_zero] at h
+  rw [intervalIntegral.integral_symm (-x) 0, ← h]
+  ring
+
+theorem erf_nonneg {x : ℝ} (hx : 0 ≤ x) : 0 ≤ erf x := by
+  unfold erf
+  have : 0 ≤ ∫ t in (0 : ℝ)..x, exp (-t ^ 2) :=
+    intervalIntegral.integral_nonneg hx fun _ _ => (exp_pos _).le
+  positivity
+
+theorem erf_nonpos {x : ℝ} (hx : x ≤ 0) : erf x ≤ 0 := by
+  rw [← neg_neg x, erf_neg]
+  exact neg_nonpos.2 (erf_nonneg (neg_nonneg.2 hx))
+
+/-- `erf x → 1` as `x → ∞`. -/
+theorem tendsto_erf_atTop : Filter.Tendsto erf Filter.atTop (nhds 1) := by
+  have hint : IntegrableOn (fun t : ℝ => exp (-t ^ 2)) (Ioi 0) := by
+    have := (integrable_exp_neg_mul_sq (b := 1) one_pos).integrableOn (s := Ioi (0 : ℝ))
+    simpa using this
+  have h := intervalIntegral_tendsto_integral_Ioi 0 hint Filter.tendsto_id
+  have hval : ∫ t in Ioi (0 : ℝ), exp (-t ^ 2) = √π / 2 := by
+    have := integral_gaussian_Ioi 1
+    simpa using this
+  rw [hval] at h
+  have h2 := h.const_mul (2 / √π)
+  have hpi : 0 < √π := sqrt_pos.2 pi_pos
+  have he : 2 / √π * (√π / 2) = 1 := by field_simp
+  rw [he] at h2
+  exact h2
+
+/-- `erf x → -1` as `x → -∞`. -/
+theorem tendsto_erf_atBot : Filter.Tendsto erf Filter.atBot (nhds (-1)) := by
+  have h := (tendsto_erf_atTop.comp Filter.tendsto_neg_atBot_atTop).neg
+  refine h.congr fun x => ?_
+  simp [erf_neg]
+
+/-- `erfc x → 0` as `x → ∞`. -/
+theorem tendsto_erfc_atTop : Filter.Tendsto erfc Filter.atTop (nhds 0) := by
+  have h := tendsto_erf_atTop.const_sub 1
+  rw [sub_self] at h
+  exact h
+
+theorem normalDensity_nonneg (y : ℝ) : 0 ≤ normalDensity y := by
+  unfold normalDensity; positivity
+
+/-- The standard normal density has total mass one. -/
+theorem integral_normalDensity : ∫ y, normalDensity y = 1 := by
+  unfold normalDensity
+  rw [MeasureTheory.integral_const_mul]
+  have h := integral_gaussian (1 / 2 : ℝ)
+  have e : (fun y : ℝ => exp (-y ^ 2 / 2)) = fun y => exp (-(1 / 2) * y ^ 2) := by
+    ext y; ring_nf
+  rw [e, h, show π / (1 / 2) = 2 * π by ring]
+  exact inv_mul_cancel₀ (sqrt_pos.2 (by positivity)).ne'
+
+theorem normalCDF_nonneg (x : ℝ) : 0 ≤ normalCDF x :=
+  setIntegral_nonneg measurableSet_Iic fun y _ => by positivity
+
+theorem normalCDF_le_one (x : ℝ) : normalCDF x ≤ 1 := by
+  rw [normalCDF_eq_integral_normalDensity, ← integral_normalDensity]
+  exact setIntegral_le_integral integrable_normalDensity
+    (Filter.Eventually.of_forall normalDensity_nonneg)
+
+theorem normalCDF_monotone : Monotone normalCDF :=
+  monotone_of_deriv_nonneg (fun x => (hasDerivAt_normalCDF x).differentiableAt) fun x => by
+    rw [(hasDerivAt_normalCDF x).deriv]
+    exact normalDensity_nonneg x
+
+/-- `normalCDF x ≥ normalCDF 0 = 1/2` for `x ≥ 0`. -/
+theorem half_le_normalCDF {x : ℝ} (hx : 0 ≤ x) : 1 / 2 ≤ normalCDF x :=
+  normalCDF_zero ▸ normalCDF_monotone hx
 
 end RoughHeatKernel

@@ -1,6 +1,6 @@
 # Public theorem index
 
-The exact source inventory contains these 120 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](trust.md).
+The exact source inventory contains these 142 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](trust.md).
 
 - `RoughHeatKernel.IsGaussianTempered.add`
 - `RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq`
@@ -122,3 +122,25 @@ The exact source inventory contains these 120 public theorem/lemma names. This i
 - `RoughHeatKernel.normalCDF_zero`
 - `RoughHeatKernel.ofReal_heatFlow`
 - `RoughHeatKernel.toReal_lheatFlow`
+- `RoughHeatKernel.continuous_erf`
+- `RoughHeatKernel.erf_neg`
+- `RoughHeatKernel.erf_nonneg`
+- `RoughHeatKernel.erf_nonpos`
+- `RoughHeatKernel.erf_zero`
+- `RoughHeatKernel.erfc_zero`
+- `RoughHeatKernel.half_le_normalCDF`
+- `RoughHeatKernel.hasDerivAt_erf`
+- `RoughHeatKernel.hasDerivAt_erfc`
+- `RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel_sub`
+- `RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub`
+- `RoughHeatKernel.integral_normalDensity`
+- `RoughHeatKernel.lheatFlow_sq_eq`
+- `RoughHeatKernel.lintegral_sq_lheatFlow_mul_le`
+- `RoughHeatKernel.normalCDF_le_one`
+- `RoughHeatKernel.normalCDF_monotone`
+- `RoughHeatKernel.normalCDF_nonneg`
+- `RoughHeatKernel.normalDensity_nonneg`
+- `RoughHeatKernel.ofReal_integral_le_lintegral`
+- `RoughHeatKernel.tendsto_erf_atBot`
+- `RoughHeatKernel.tendsto_erf_atTop`
+- `RoughHeatKernel.tendsto_erfc_atTop`

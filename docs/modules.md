@@ -1,6 +1,6 @@
 # Module and API map
 
-The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are 120 public theorem/lemma declarations; the [index](declarations.md) names each one.
+The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are 142 public theorem/lemma declarations; the [index](declarations.md) names each one.
 
 | Module | Public theorems | API boundary |
 |---|---:|---|
@@ -11,14 +11,14 @@ The umbrella `RoughHeatKernel.lean` imports all fifteen modules below. There are
 | RoughMeasure | 10 | Signed Jordan pairs, total variation, positive/Dirac/Lebesgue constructors |
 | Finite | 12 | Finite data, Mathlib SignedMeasure bridge, genuinely signed example |
 | Increments | 12 | First derivatives, moments and spatial/time L1 kernel increments |
-| ChenDalang | 6 | Gaussian product/comparison, quadratic convolution estimate, local finiteness |
+| ChenDalang | 11 | Gaussian product/comparison, shifted semigroup identity, quadratic convolution estimate and its pointwise-in-time step, Bochner-to-lower-integral bound, local finiteness |
 | SquareKernel | 4 | Squared-kernel identity, arcsine integral, white-noise-shaped deterministic convolution bound |
 | FlowSemigroup | 2 | Positive heat-flow semigroup and its time integral |
 | Doubled | 6 | Gaussian doubling and time-resolved doubled-profile bounds |
 | SpatialEnvelope | 11 | Uniform quarter-Hölder Gaussian envelope with a universal numerical constant |
 | Beta | 2 | Real Beta integral on [0, t] and integrability of its integrand |
 | Scaled | 2 | Squared-kernel and semigroup identities for the diffusion-scale kernel heatKernel (ν * t) |
-| Erf | 12 | Error function, standard normal density and distribution function, Φ–erf identity, Gamma series for e^{z²}(1 + erf z) |
+| Erf | 29 | Error function (derivative, parity, signs, limits), standard normal density (mass one) and distribution function (bounds, monotonicity), Φ–erf identity, Gamma series for e^{z²}(1 + erf z) |
 
 ## Measures and flows
 
