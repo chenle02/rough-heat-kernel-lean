@@ -12,7 +12,7 @@ The one-dimensional heat kernel and the heat flow of rough positive and signed m
 
 This library treats measures with Gaussian-tempered total variation: they may have infinite total mass, but their integral against every decaying Gaussian is finite. Dirac masses, finite signed measures and Lebesgue measure are examples. The results are standard analysis; no new mathematics is claimed.
 
-**Source API 0.8.0.** This source contains 104 public theorem/lemma declarations across 12 library modules and 37 curated reusable claims. New APIs give joint positive-time continuity and a uniform quarter-Hölder Gaussian envelope. Complete fresh verification and independent three-kernel comparison passed for scientific source `133f3aec2c12`; earlier receipts remain historical.
+**Source API 0.9.0.** Version 0.9.0 ports every file to the Lean module system (`module` headers, `public import`, `@[expose]` on definitions); all theorem statements, hypotheses and definitions are unchanged from 0.8.0, and a downstream `module` file can now `public import RoughHeatKernel`. Verification of the 0.9.0 source is pending; the verification record below still describes the 0.8.0 scientific source `133f3aec2c12`.
 
 ## What is proved
 
@@ -871,7 +871,7 @@ Expected: `#print axioms` on any declaration above reports a subset of {`Classic
 
 ## Citation
 
-Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.8.0.
+Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.9.0.
 
 See [CITATION.cff](CITATION.cff).
 

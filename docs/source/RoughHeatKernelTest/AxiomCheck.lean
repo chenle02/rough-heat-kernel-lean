@@ -1,4 +1,8 @@
-import RoughHeatKernel
+module
+
+public import RoughHeatKernel
+
+public section
 
 #print axioms RoughHeatKernel.IsGaussianTempered.add
 #print axioms RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq

@@ -3,7 +3,11 @@ Copyright (c) 2026 Le Chen. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Le Chen
 -/
-import RoughHeatKernel.Kernel
+module
+
+public import RoughHeatKernel.Kernel
+
+@[expose] public section
 
 /-!
 # `L^q` norms of the heat kernel

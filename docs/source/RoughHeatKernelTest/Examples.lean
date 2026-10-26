@@ -1,5 +1,9 @@
-import RoughHeatKernel
-import RoughHeatKernelTest.Counterexamples
+module
+
+public import RoughHeatKernel
+public import RoughHeatKernelTest.Counterexamples
+
+public section
 
 /-! Usage examples, compiled by `verify.sh`. -/
 
