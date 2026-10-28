@@ -6,4 +6,4 @@ Source API 0.11.0 contains 142 inventoried public theorem/lemma declarations and
 
 Scientific source 6a35f44f2d51 (0.11.0) passed both verification tiers (fresh complete verifier; lake comparator, 51 of 51 claims). Scientific source 0ca762dbce91 (0.10.0) and scientific source 3b16158a4974 (0.9.0) passed both verification tiers; scientific source 133f3aec2c12 passed complete fresh verification and all 37 independent three-kernel comparisons. Retained 0.7 receipts apply only to source cc5a8dba012b; the current receipts bind the additional scientific content. The generated README record and canonical receipts must identify the actual checked source.
 
-No continuity at time zero, weak initial trace, stochastic sample-path modification or SPDE well-posedness is claimed.
+No rough-data heat-flow continuity at the initial time, weak initial trace, stochastic sample-path modification or SPDE well-posedness is claimed. The new causal kernel section is L²-continuous in its output variables at every time, including zero.

@@ -8,6 +8,8 @@
 
 </div>
 
+Development candidate: the source adds deterministic causal heat-kernel L² continuity and weighted continuity, with 160 public theorems and 56 curated claims. A fresh native verification receipt binds scientific source `d4b93224f565`; comparator verification remains pending. The published release records below retain their original source scope.
+
 The one-dimensional heat kernel and the heat flow of rough positive and signed measures, formalized in Lean 4.
 
 This library treats measures with Gaussian-tempered total variation: they may have infinite total mass, but their integral against every decaying Gaussian is finite. Dirac masses, finite signed measures and Lebesgue measure are examples. The results are standard analysis; no new mathematics is claimed.
