@@ -382,3 +382,51 @@ claims:
     file: RoughHeatKernel/Erf.lean
     status: reusable
     keywords: [error-function, derivative]
+  - id: rough-heat-kernel/lintegral-heatk-sq
+    decl: RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq
+    kind: theorem
+    summary: Exact squared L2 norm of every causal heat-kernel section, including nonpositive output times.
+    file: RoughHeatKernel/CausalHeatKernel.lean
+    status: reusable
+    keywords:
+    - causal-heat-kernel
+    - l2-continuity
+  - id: rough-heat-kernel/memlp-heatk
+    decl: RoughHeatKernel.CausalHeatKernel.memLp_heatK
+    kind: theorem
+    summary: Every causal heat-kernel section belongs to L2 for positive diffusivity.
+    file: RoughHeatKernel/CausalHeatKernel.lean
+    status: reusable
+    keywords:
+    - causal-heat-kernel
+    - l2-continuity
+  - id: rough-heat-kernel/tendsto-heatk-sq
+    decl: RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq
+    kind: theorem
+    summary: Joint output-time and output-space L2 continuity of causal heat-kernel sections, including nonpositive
+      output times.
+    file: RoughHeatKernel/CausalHeatKernel.lean
+    status: reusable
+    keywords:
+    - causal-heat-kernel
+    - l2-continuity
+  - id: rough-heat-kernel/heatkernel-sq-le-future-of-far
+    decl: RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far
+    kind: theorem
+    summary: Far-space Gaussian domination at unchanged positive diffusivity, with an explicit sufficient radius and
+      later output time.
+    file: RoughHeatKernel/WeightedCausalHeatKernel.lean
+    status: reusable
+    keywords:
+    - causal-heat-kernel
+    - l2-continuity
+  - id: rough-heat-kernel/tendsto-weighted-sq-difference
+    decl: RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference
+    kind: theorem
+    summary: Joint weighted causal-kernel L2 continuity at positive output time, from finite future variance and a
+      finite compact weight bound; weights may be infinite outside the active region.
+    file: RoughHeatKernel/WeightedCausalHeatKernel.lean
+    status: reusable
+    keywords:
+    - causal-heat-kernel
+    - l2-continuity

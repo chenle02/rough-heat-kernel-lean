@@ -15,3 +15,7 @@ public import Challenge.Reference.RoughHeatKernel.SpatialEnvelope
 public import Challenge.Reference.RoughHeatKernel.Beta
 public import Challenge.Reference.RoughHeatKernel.Scaled
 public import Challenge.Reference.RoughHeatKernel.Erf
+
+public import Challenge.Reference.RoughHeatKernel.CausalHeatKernel
+
+public import Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel

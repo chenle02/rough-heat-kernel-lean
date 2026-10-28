@@ -52,7 +52,12 @@
     "RoughHeatKernel.normalCDF_le_one",
     "RoughHeatKernel.normalCDF_monotone",
     "RoughHeatKernel.tendsto_erf_atTop",
-    "RoughHeatKernel.hasDerivAt_erf"
+    "RoughHeatKernel.hasDerivAt_erf",
+    "RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq",
+    "RoughHeatKernel.CausalHeatKernel.memLp_heatK",
+    "RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq",
+    "RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far",
+    "RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference"
   ],
   "definition_names": [],
   "permitted_axioms": [
