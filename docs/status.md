@@ -1,4 +1,4 @@
-Verified revision00b39962d332: deterministic causal heat-kernel L² continuity and weighted continuity have been added. The exact public inventory is 160 theorems; the complete fresh native gate and all 56 curated statement comparisons passed. Historical 0.11.0 release records below certify only their original source.
+Verified revision `00b39962d332`: deterministic causal heat-kernel L² continuity and weighted continuity have been added. The exact public inventory is 160 theorems; the complete fresh native gate and all 56 curated statement comparisons passed. Historical 0.11.0 release records below certify only their original source.
 
 # Mathematical scope and verification records
 
