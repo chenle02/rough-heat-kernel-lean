@@ -1,7 +1,23 @@
 # Public theorem index
 
-The exact source inventory contains these 142 public theorem/lemma names. This index asserts no independent comparison or native audit coverage. See [trust](https://chenle02.github.io/rough-heat-kernel-lean/trust.html).
+The development source inventories 160 public theorems. New causal-kernel APIs have local module/type/axiom checks; new full package and comparator receipts are pending. Historical release receipts retain their original scope.
 
+- `RoughHeatKernel.CausalHeatKernel.heatK_causal`
+- `RoughHeatKernel.CausalHeatKernel.heatK_eq_heatKernel`
+- `RoughHeatKernel.CausalHeatKernel.heatK_of`
+- `RoughHeatKernel.CausalHeatKernel.heatK_of_not`
+- `RoughHeatKernel.CausalHeatKernel.heatK_sq_le_local`
+- `RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq`
+- `RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq_Ioi`
+- `RoughHeatKernel.CausalHeatKernel.lintegral_heatKernel_mul_sq`
+- `RoughHeatKernel.CausalHeatKernel.lintegral_time`
+- `RoughHeatKernel.CausalHeatKernel.measurable_heatK`
+- `RoughHeatKernel.CausalHeatKernel.measurable_heatK_section`
+- `RoughHeatKernel.CausalHeatKernel.memLp_heatK`
+- `RoughHeatKernel.CausalHeatKernel.tail_bound_real`
+- `RoughHeatKernel.CausalHeatKernel.tendsto_heatK_of_ne`
+- `RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq`
+- `RoughHeatKernel.CausalHeatKernel.tendsto_lintegral_indicator_le`
 - `RoughHeatKernel.IsGaussianTempered.add`
 - `RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq`
 - `RoughHeatKernel.IsGaussianTempered.integrable_heatKernel_sub`
@@ -40,8 +56,11 @@ The exact source inventory contains these 142 public theorem/lemma names. This i
 - `RoughHeatKernel.SpatialEnvelope.ordered_quarter_increment`
 - `RoughHeatKernel.SpatialEnvelope.quarter_increment`
 - `RoughHeatKernel.SpatialEnvelope.quarter_increment_normalized`
+- `RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far`
+- `RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference`
 - `RoughHeatKernel.continuousAt_heatFlow_joint`
 - `RoughHeatKernel.continuousAt_heatKernel_joint`
+- `RoughHeatKernel.continuous_erf`
 - `RoughHeatKernel.continuous_heatFlow`
 - `RoughHeatKernel.continuous_heatKernel`
 - `RoughHeatKernel.continuous_normalCDF`
@@ -50,8 +69,16 @@ The exact source inventory contains these 142 public theorem/lemma names. This i
 - `RoughHeatKernel.eLpNorm_heatKernel`
 - `RoughHeatKernel.eLpNorm_heatKernel_of_ne_top`
 - `RoughHeatKernel.eLpNorm_heatKernel_top`
+- `RoughHeatKernel.erf_neg`
+- `RoughHeatKernel.erf_nonneg`
+- `RoughHeatKernel.erf_nonpos`
+- `RoughHeatKernel.erf_zero`
+- `RoughHeatKernel.erfc_zero`
 - `RoughHeatKernel.exists_sqrt_mul_heatFlow_le`
 - `RoughHeatKernel.gaussianPDFReal_eq_heatKernel_sub`
+- `RoughHeatKernel.half_le_normalCDF`
+- `RoughHeatKernel.hasDerivAt_erf`
+- `RoughHeatKernel.hasDerivAt_erfc`
 - `RoughHeatKernel.hasDerivAt_heatKernel`
 - `RoughHeatKernel.hasDerivAt_heatKernel_time`
 - `RoughHeatKernel.hasDerivAt_normalCDF`
@@ -80,6 +107,7 @@ The exact source inventory contains these 142 public theorem/lemma names. This i
 - `RoughHeatKernel.integrable_exp_mul_heatFlow_rpow`
 - `RoughHeatKernel.integrable_heatKernel`
 - `RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel`
+- `RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel_sub`
 - `RoughHeatKernel.integrable_mul_heatKernel`
 - `RoughHeatKernel.integrable_normalDensity`
 - `RoughHeatKernel.integrable_sq_mul_heatKernel`
@@ -92,6 +120,8 @@ The exact source inventory contains these 142 public theorem/lemma names. This i
 - `RoughHeatKernel.integral_heatKernel_mul_heatKernel`
 - `RoughHeatKernel.integral_heatKernel_mul_sub_mul`
 - `RoughHeatKernel.integral_heatKernel_sq`
+- `RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub`
+- `RoughHeatKernel.integral_normalDensity`
 - `RoughHeatKernel.integral_rpow_mul_sub_rpow`
 - `RoughHeatKernel.integral_sq_mul_heatKernel`
 - `RoughHeatKernel.integral_sq_sub_sq_pow`
@@ -102,6 +132,7 @@ The exact source inventory contains these 142 public theorem/lemma names. This i
 - `RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul`
 - `RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral`
 - `RoughHeatKernel.lheatFlow_lt_top`
+- `RoughHeatKernel.lheatFlow_sq_eq`
 - `RoughHeatKernel.lintegral_arcsine`
 - `RoughHeatKernel.lintegral_enorm_heatKernel_add_sub_le`
 - `RoughHeatKernel.lintegral_enorm_heatKernel_sub_shift_le`
@@ -115,32 +146,19 @@ The exact source inventory contains these 142 public theorem/lemma names. This i
 - `RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow`
 - `RoughHeatKernel.lintegral_sq_lheatFlow_conv_le`
 - `RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le`
+- `RoughHeatKernel.lintegral_sq_lheatFlow_mul_le`
 - `RoughHeatKernel.measurable_heatKernel`
 - `RoughHeatKernel.normalCDF_eq_add_integral`
 - `RoughHeatKernel.normalCDF_eq_erf`
 - `RoughHeatKernel.normalCDF_eq_integral_normalDensity`
-- `RoughHeatKernel.normalCDF_zero`
-- `RoughHeatKernel.ofReal_heatFlow`
-- `RoughHeatKernel.toReal_lheatFlow`
-- `RoughHeatKernel.continuous_erf`
-- `RoughHeatKernel.erf_neg`
-- `RoughHeatKernel.erf_nonneg`
-- `RoughHeatKernel.erf_nonpos`
-- `RoughHeatKernel.erf_zero`
-- `RoughHeatKernel.erfc_zero`
-- `RoughHeatKernel.half_le_normalCDF`
-- `RoughHeatKernel.hasDerivAt_erf`
-- `RoughHeatKernel.hasDerivAt_erfc`
-- `RoughHeatKernel.integrable_heatKernel_sub_mul_heatKernel_sub`
-- `RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub`
-- `RoughHeatKernel.integral_normalDensity`
-- `RoughHeatKernel.lheatFlow_sq_eq`
-- `RoughHeatKernel.lintegral_sq_lheatFlow_mul_le`
 - `RoughHeatKernel.normalCDF_le_one`
 - `RoughHeatKernel.normalCDF_monotone`
 - `RoughHeatKernel.normalCDF_nonneg`
+- `RoughHeatKernel.normalCDF_zero`
 - `RoughHeatKernel.normalDensity_nonneg`
+- `RoughHeatKernel.ofReal_heatFlow`
 - `RoughHeatKernel.ofReal_integral_le_lintegral`
 - `RoughHeatKernel.tendsto_erf_atBot`
 - `RoughHeatKernel.tendsto_erf_atTop`
 - `RoughHeatKernel.tendsto_erfc_atTop`
+- `RoughHeatKernel.toReal_lheatFlow`

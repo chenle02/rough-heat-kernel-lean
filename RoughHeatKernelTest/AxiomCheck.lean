@@ -4,6 +4,22 @@ public import RoughHeatKernel
 
 public section
 
+#print axioms RoughHeatKernel.CausalHeatKernel.heatK_causal
+#print axioms RoughHeatKernel.CausalHeatKernel.heatK_eq_heatKernel
+#print axioms RoughHeatKernel.CausalHeatKernel.heatK_of
+#print axioms RoughHeatKernel.CausalHeatKernel.heatK_of_not
+#print axioms RoughHeatKernel.CausalHeatKernel.heatK_sq_le_local
+#print axioms RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq
+#print axioms RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq_Ioi
+#print axioms RoughHeatKernel.CausalHeatKernel.lintegral_heatKernel_mul_sq
+#print axioms RoughHeatKernel.CausalHeatKernel.lintegral_time
+#print axioms RoughHeatKernel.CausalHeatKernel.measurable_heatK
+#print axioms RoughHeatKernel.CausalHeatKernel.measurable_heatK_section
+#print axioms RoughHeatKernel.CausalHeatKernel.memLp_heatK
+#print axioms RoughHeatKernel.CausalHeatKernel.tail_bound_real
+#print axioms RoughHeatKernel.CausalHeatKernel.tendsto_heatK_of_ne
+#print axioms RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq
+#print axioms RoughHeatKernel.CausalHeatKernel.tendsto_lintegral_indicator_le
 #print axioms RoughHeatKernel.IsGaussianTempered.add
 #print axioms RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq
 #print axioms RoughHeatKernel.IsGaussianTempered.integrable_heatKernel_sub
@@ -42,6 +58,8 @@ public section
 #print axioms RoughHeatKernel.SpatialEnvelope.ordered_quarter_increment
 #print axioms RoughHeatKernel.SpatialEnvelope.quarter_increment
 #print axioms RoughHeatKernel.SpatialEnvelope.quarter_increment_normalized
+#print axioms RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far
+#print axioms RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference
 #print axioms RoughHeatKernel.continuousAt_heatFlow_joint
 #print axioms RoughHeatKernel.continuousAt_heatKernel_joint
 #print axioms RoughHeatKernel.continuous_erf

@@ -6,6 +6,22 @@ public section
 
 set_option pp.universes true
 
+#check @RoughHeatKernel.CausalHeatKernel.heatK_causal
+#check @RoughHeatKernel.CausalHeatKernel.heatK_eq_heatKernel
+#check @RoughHeatKernel.CausalHeatKernel.heatK_of
+#check @RoughHeatKernel.CausalHeatKernel.heatK_of_not
+#check @RoughHeatKernel.CausalHeatKernel.heatK_sq_le_local
+#check @RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq
+#check @RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq_Ioi
+#check @RoughHeatKernel.CausalHeatKernel.lintegral_heatKernel_mul_sq
+#check @RoughHeatKernel.CausalHeatKernel.lintegral_time
+#check @RoughHeatKernel.CausalHeatKernel.measurable_heatK
+#check @RoughHeatKernel.CausalHeatKernel.measurable_heatK_section
+#check @RoughHeatKernel.CausalHeatKernel.memLp_heatK
+#check @RoughHeatKernel.CausalHeatKernel.tail_bound_real
+#check @RoughHeatKernel.CausalHeatKernel.tendsto_heatK_of_ne
+#check @RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq
+#check @RoughHeatKernel.CausalHeatKernel.tendsto_lintegral_indicator_le
 #check @RoughHeatKernel.IsGaussianTempered.add
 #check @RoughHeatKernel.IsGaussianTempered.integrable_exp_neg_mul_sq
 #check @RoughHeatKernel.IsGaussianTempered.integrable_heatKernel_sub
@@ -44,6 +60,8 @@ set_option pp.universes true
 #check @RoughHeatKernel.SpatialEnvelope.ordered_quarter_increment
 #check @RoughHeatKernel.SpatialEnvelope.quarter_increment
 #check @RoughHeatKernel.SpatialEnvelope.quarter_increment_normalized
+#check @RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far
+#check @RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference
 #check @RoughHeatKernel.continuousAt_heatFlow_joint
 #check @RoughHeatKernel.continuousAt_heatKernel_joint
 #check @RoughHeatKernel.continuous_erf

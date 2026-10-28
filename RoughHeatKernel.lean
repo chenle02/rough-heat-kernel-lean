@@ -15,3 +15,6 @@ public import RoughHeatKernel.SpatialEnvelope
 public import RoughHeatKernel.Beta
 public import RoughHeatKernel.Scaled
 public import RoughHeatKernel.Erf
+
+public import RoughHeatKernel.CausalHeatKernel
+public import RoughHeatKernel.WeightedCausalHeatKernel
