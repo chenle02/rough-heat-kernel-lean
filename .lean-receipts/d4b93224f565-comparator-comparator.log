@@ -1,0 +1,450 @@
+== unit: slots 1 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/36534d167319f136.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/2925] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.heatKernel_convolution_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.heatKernel_convolution_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 45995 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 2 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/1f9ef0e517a4321e.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3038] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.eLpNorm_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.eLpNorm_heatKernel, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 46007 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 3 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/d609950b4ad9f38c.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3006] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.continuous_heatFlow, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.continuous_heatFlow, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 24948 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 4-6,9-10,12,14-21,23-35,38-51,54 (42 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/3fe6a473d0123197.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3158] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.integrable_exp_mul_heatFlow_rpow, RoughHeatKernel.exists_sqrt_mul_heatFlow_le, RoughHeatKernel.ofReal_heatFlow, RoughHeatKernel.heatKernel_eq_gaussianPDFReal, RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel, RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral, RoughHeatKernel.integral_abs_heatKernel_sub_sub_le, RoughHeatKernel.integral_abs_heatKernel_add_sub_le, RoughHeatKernel.hasDerivAt_heatKernel_time, RoughHeatKernel.lintegral_enorm_sub_le_lintegral, RoughHeatKernel.integral_sq_mul_heatKernel, RoughHeatKernel.lintegral_sq_lheatFlow_conv_le, RoughHeatKernel.heatKernel_mul_heatKernel_eq, RoughHeatKernel.heatKernel_le_sqrt_div_mul, RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le, RoughHeatKernel.heatKernel_sq_eq, RoughHeatKernel.lintegral_arcsine, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.heatKernel_add_le_sqrt_two_mul, RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le, RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le, RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le, RoughHeatKernel.heatKernel_sq_le_local, RoughHeatKernel.continuousAt_heatFlow_joint, RoughHeatKernel.integral_rpow_mul_sub_rpow, RoughHeatKernel.heatKernel_mul_sq_eq, RoughHeatKernel.integral_heatKernel_mul_sub_mul, RoughHeatKernel.normalCDF_zero, RoughHeatKernel.hasDerivAt_normalCDF, RoughHeatKernel.normalCDF_eq_erf, RoughHeatKernel.hasSum_pow_div_Gamma, RoughHeatKernel.lintegral_sq_lheatFlow_mul_le, RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub, RoughHeatKernel.ofReal_integral_le_lintegral, RoughHeatKernel.normalCDF_le_one, RoughHeatKernel.normalCDF_monotone, RoughHeatKernel.tendsto_erf_atTop, RoughHeatKernel.hasDerivAt_erf, RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.integrable_exp_mul_heatFlow_rpow, RoughHeatKernel.exists_sqrt_mul_heatFlow_le, RoughHeatKernel.ofReal_heatFlow, RoughHeatKernel.heatKernel_eq_gaussianPDFReal, RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel, RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral, RoughHeatKernel.integral_abs_heatKernel_sub_sub_le, RoughHeatKernel.integral_abs_heatKernel_add_sub_le, RoughHeatKernel.hasDerivAt_heatKernel_time, RoughHeatKernel.lintegral_enorm_sub_le_lintegral, RoughHeatKernel.integral_sq_mul_heatKernel, RoughHeatKernel.lintegral_sq_lheatFlow_conv_le, RoughHeatKernel.heatKernel_mul_heatKernel_eq, RoughHeatKernel.heatKernel_le_sqrt_div_mul, RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le, RoughHeatKernel.heatKernel_sq_eq, RoughHeatKernel.lintegral_arcsine, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow, RoughHeatKernel.heatKernel_add_le_sqrt_two_mul, RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul, RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le, RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le, RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le, RoughHeatKernel.heatKernel_sq_le_local, RoughHeatKernel.continuousAt_heatFlow_joint, RoughHeatKernel.integral_rpow_mul_sub_rpow, RoughHeatKernel.heatKernel_mul_sq_eq, RoughHeatKernel.integral_heatKernel_mul_sub_mul, RoughHeatKernel.normalCDF_zero, RoughHeatKernel.hasDerivAt_normalCDF, RoughHeatKernel.normalCDF_eq_erf, RoughHeatKernel.hasSum_pow_div_Gamma, RoughHeatKernel.lintegral_sq_lheatFlow_mul_le, RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub, RoughHeatKernel.ofReal_integral_le_lintegral, RoughHeatKernel.normalCDF_le_one, RoughHeatKernel.normalCDF_monotone, RoughHeatKernel.tendsto_erf_atTop, RoughHeatKernel.hasDerivAt_erf, RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 51272 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 7 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/be71e4162be1a4bf.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3195] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 25617 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 8 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/0c7cbf40ea1056b5.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3232] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3223/3226] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 25665 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 11 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/658e6505dbdc6108.json
+Resolving dependencies
+Building Challenge
+⚠ [2869/3245] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 17758 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 13 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/492d6a0a67d82c95.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/2988] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.totalVariation_ofTempered, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.totalVariation_ofTempered, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 16742 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 22 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/3db93ee4ec8a6982.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3010] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 19783 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 36 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/68d541d193168be8.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/2973] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 24996 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 37 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/a035f58247524d88.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/2896] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.SpatialEnvelope.quarter_increment, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.SpatialEnvelope.quarter_increment, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 19428 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 52 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/3e0d756e14f67715.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3091] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 46250 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 53 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/e3b3c9a88e49a291.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3042] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.CausalHeatKernel.memLp_heatK, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.CausalHeatKernel.memLp_heatK, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 46289 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 55 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/7d9ffb418d9c3064.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3049] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 15569 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+== unit: slots 56 (1 names)
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+No files to download
+Already decompressed 9031 file(s)
+lean-path-shadow: none (11 entries, roots Challenge,RoughHeatKernel,RoughHeatKernelTest,Solution)
+== lake comparator (toolchain) <evidence>/comparator-stages/04-units/9f56908fad4d2532.json
+Resolving dependencies
+Building Challenge
+⚠ [2868/3058] Replayed Challenge.Reference.RoughHeatKernel.ChenDalang
+warning: Challenge/Reference/RoughHeatKernel/ChenDalang.lean:164:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3245 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3226/3246] Replayed RoughHeatKernel.ChenDalang
+warning: RoughHeatKernel/ChenDalang.lean:165:24: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+Build completed successfully (3246 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running con-ron kernel on solution
+con-ron: accepted 46301 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
