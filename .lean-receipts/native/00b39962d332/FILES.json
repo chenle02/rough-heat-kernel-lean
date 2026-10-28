@@ -1,0 +1,293 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 635,
+      "sha256": "6d45a80344f54e06bb1d78e90e37dd21c1a37f78fa9c885823e23510c6f5157f"
+    },
+    "controls/CONTROLS.json": {
+      "bytes": 481,
+      "sha256": "9dd7eb255bd00821d9e32b8c05a18b4e25aa8ddf848ad58e3ae7f97aeaf7b134"
+    },
+    "controls/EscapeNative-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/EscapeNative.json": {
+      "bytes": 5890,
+      "sha256": "87be5e8016da91f30de24f1274aebbcfd1b6a9bede3115c4ce6e7ddcddc442f0"
+    },
+    "controls/EscapeNative.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/EscapeNegative-build.log": {
+      "bytes": 322,
+      "sha256": "d80cc28695f2b54c6f3e2b5c26f4598592e2b13dbf541a99a534076db0bf1443"
+    },
+    "controls/EscapeNegative.json": {
+      "bytes": 802,
+      "sha256": "d3de7b7285068aad2b80caff121308dfd5260adbf444f5abeb94fae491867f70"
+    },
+    "controls/EscapeNegative.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/EscapePositive-build.log": {
+      "bytes": 189,
+      "sha256": "54058f6da30001aa9bd50ecdad9babab47ae297213ec901f0acec646d8b0fb04"
+    },
+    "controls/EscapePositive.json": {
+      "bytes": 490,
+      "sha256": "9ff306a70533acfc45062a12de85706bf59cb33eea21d9eb7d5132b3162a3d75"
+    },
+    "controls/EscapePositive.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/sources/EscapeNative.lean": {
+      "bytes": 142,
+      "sha256": "e621bb434c41ecf7af3c68f8c8a81473d00a3d5db3b62dd55a74a14ebb981b70"
+    },
+    "controls/sources/EscapeNegative.lean": {
+      "bytes": 280,
+      "sha256": "a6a3c9c85be9f1d29e15d9921634c486b060f0ef4ab9ca3dc0016abe44372df5"
+    },
+    "controls/sources/EscapePositive.lean": {
+      "bytes": 215,
+      "sha256": "86faf27af929ae8f5dc9b51b980d743e1e525871017f54babad5abce66625302"
+    },
+    "declared-inputs/coverage.yaml": {
+      "bytes": 13447,
+      "sha256": "06e0576f8ddbc5e8c129cb7111f2ab50102bef2a0b20c505cd1b7f990386b502"
+    },
+    "manifest.json": {
+      "bytes": 35652,
+      "sha256": "cc310190fc2227ccda4b4b49b63f227a21cbf6da6d751a0570a312791b826301"
+    },
+    "production-inventory.json": {
+      "bytes": 44332,
+      "sha256": "8b72295b027faf2eb90996f69373eb471325f3a315d5e2b8ccff8558c5e997ce"
+    },
+    "production.json.gz": {
+      "bytes": 109056,
+      "sha256": "b869b45f0e6d9645ddf97b2bf2568c707048a59962f6385e56b4e926ebffa1af"
+    },
+    "production.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reference-inventory.json": {
+      "bytes": 44627,
+      "sha256": "08a7f062e3e7d011fb4ef43919c0d048bc021197101ec5f86a11aa419c7f8d79"
+    },
+    "reference.json.gz": {
+      "bytes": 101580,
+      "sha256": "d8cec24f75d75a6586c89bd2491135d3c6402fdb4361694bd7fc3cfdda4f2733"
+    },
+    "reference.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Beta.leanchecker.log": {
+      "bytes": 51,
+      "sha256": "7d02c0f5a6988dc4238d3ca79dbd07adc3e85d9fabb141814e432fe4a3a6efd7"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.CausalHeatKernel.leanchecker.log": {
+      "bytes": 63,
+      "sha256": "b2d45993b4e949dfad197aa44903fed8d91f8c8752e5d96a8da1ce74afa3262d"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.ChenDalang.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "b24bbbf08c747ccbb691a5b587bfcdcf09ca900ac7ac7f55a3051a1dc048eb35"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Doubled.leanchecker.log": {
+      "bytes": 54,
+      "sha256": "96467a7f4b87f0a911f705523e046f1d7e5c448aba151c632ef0073adaf629a5"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Erf.leanchecker.log": {
+      "bytes": 50,
+      "sha256": "4e05514acb8a2f4eaeec2e606fdf329781c98e6a6aaf5a9155fd7a56a3320e10"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Finite.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "ec86a7d9e28c354713c26e4dd33081e908ea3906b9614bc111101cb54f2ba03f"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.FlowSemigroup.leanchecker.log": {
+      "bytes": 60,
+      "sha256": "a3d8f85d44d65556719facad3b611b420318a85714bdf9e1c6c4dd263bda71ea"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Gaussian.leanchecker.log": {
+      "bytes": 55,
+      "sha256": "0c234c98b77c3289050c283f4c44c8ead8f49f718fdd3104cab79d62c95f1a51"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Increments.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "907e1d43c5aee596376647d87e4083a492716a9d608b84741594637b0c4e80b7"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Kernel.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "31af9c705b8314215010479dd1b2ced66b177aa58a2acf5ee53130574ea8bd0c"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Lq.leanchecker.log": {
+      "bytes": 49,
+      "sha256": "d7ae13b706f705ffc7cf2887c856a5854934666eff50a3a5d33cb27b05a3faa3"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.RoughMeasure.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "f89a92b723f204a7d24f1455e7708b79361b31db3fe727c85d91a4d837b8ff27"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Scaled.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "2358c08419aa5ada318581edb412b9ff6a64c3efb341b69c2e9b1a10de9b586f"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.SpatialEnvelope.leanchecker.log": {
+      "bytes": 62,
+      "sha256": "020fd8c5eecca638700d0ed48556c92e7d2e2178d46badb35a14e176e89a04a0"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.SquareKernel.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "50a028fb37ac023fbb1ca0b5acda025e5e18bdaffcbb2a04d6b896993eff56e0"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Tempered.leanchecker.log": {
+      "bytes": 55,
+      "sha256": "f0caaf12093fe46560ad8f8aeececad769ae231091a2e2b52e0a11061391bf52"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel.leanchecker.log": {
+      "bytes": 71,
+      "sha256": "a6120c2458093005ff7d770e3f2f23125b6d1c086405461c9460880b7275a3a3"
+    },
+    "replay/RoughHeatKernel.Beta.leanchecker.log": {
+      "bytes": 31,
+      "sha256": "7f6a3d1763aa2aef3241006f0ef22e2fa92967b4639fdb5ca099cee41d3e215c"
+    },
+    "replay/RoughHeatKernel.CausalHeatKernel.leanchecker.log": {
+      "bytes": 43,
+      "sha256": "f48c55016f148c0dc6472f30c21ff8bdaf7e4eda0f43906e533d3f292136393e"
+    },
+    "replay/RoughHeatKernel.ChenDalang.leanchecker.log": {
+      "bytes": 37,
+      "sha256": "796e4522e77c2851f1e31f729aac52cc8f2c0c9e14b12ffa6bae93dfbe83c87e"
+    },
+    "replay/RoughHeatKernel.Doubled.leanchecker.log": {
+      "bytes": 34,
+      "sha256": "1b9c8fecd58880bd4061a7fe975de6aaef06bf1d8cba56f5402e9ce9c22378e2"
+    },
+    "replay/RoughHeatKernel.Erf.leanchecker.log": {
+      "bytes": 30,
+      "sha256": "ed3846a98d37c582d3966583d1126bc7cc03b4a34e928b6df5577a7a40b4a1db"
+    },
+    "replay/RoughHeatKernel.Finite.leanchecker.log": {
+      "bytes": 33,
+      "sha256": "c8c7de22a05062596d07add7c9fe0fb7393ea949a8f8844f1ac26ac435e632d9"
+    },
+    "replay/RoughHeatKernel.FlowSemigroup.leanchecker.log": {
+      "bytes": 40,
+      "sha256": "d4832286974e8e8afabe83d6286e8af6571da303382aa14343af0565067b8c05"
+    },
+    "replay/RoughHeatKernel.Gaussian.leanchecker.log": {
+      "bytes": 35,
+      "sha256": "ce9112908fb9ba446a9e51001018e82834fbcbdd009d62773fc11bdb0bab7506"
+    },
+    "replay/RoughHeatKernel.Increments.leanchecker.log": {
+      "bytes": 37,
+      "sha256": "2a2ea633d6d2cbbda8b1abeffb3c06018dd9d93149d42d865fd2681afce2254c"
+    },
+    "replay/RoughHeatKernel.Kernel.leanchecker.log": {
+      "bytes": 33,
+      "sha256": "e8e415fdd0e6364508562325f905a7198b4c84c916eb36f264ffd41b9a626178"
+    },
+    "replay/RoughHeatKernel.Lq.leanchecker.log": {
+      "bytes": 29,
+      "sha256": "eb6c6a3c2bd48b5a63bbac1a9281c3b8507a13928602ef5ccd8b45e583e11abd"
+    },
+    "replay/RoughHeatKernel.RoughMeasure.leanchecker.log": {
+      "bytes": 39,
+      "sha256": "21f7351339c2c968c99a1bf344f3e32d9d673c82f0f9f5a4f270d0891fd15d9a"
+    },
+    "replay/RoughHeatKernel.Scaled.leanchecker.log": {
+      "bytes": 33,
+      "sha256": "dd3e43587fa7fe19f4415abe1e86eb7176b5563563f454ccf5b882713aea375f"
+    },
+    "replay/RoughHeatKernel.SpatialEnvelope.leanchecker.log": {
+      "bytes": 42,
+      "sha256": "7384cb208aa25c5dc267654c36def8d9a9bb405ffc65d87461af4b4722ac9a47"
+    },
+    "replay/RoughHeatKernel.SquareKernel.leanchecker.log": {
+      "bytes": 39,
+      "sha256": "04c51a5e439fb9db718c54b680a30700a24ed4e46caf1737b9dd618918994028"
+    },
+    "replay/RoughHeatKernel.Tempered.leanchecker.log": {
+      "bytes": 35,
+      "sha256": "1f10d4f7b2c51812e35b8d8e6694ab4eeba0eb2c610f9be4fe1f7f19c6b97941"
+    },
+    "replay/RoughHeatKernel.WeightedCausalHeatKernel.leanchecker.log": {
+      "bytes": 51,
+      "sha256": "6af5086428481bd63bedbdb8358bc15fe86c60afad0fed8e25517e6dac0a0cfe"
+    },
+    "replay/RoughHeatKernelTest.AxiomCheck.leanchecker.log": {
+      "bytes": 41,
+      "sha256": "f41447794a8039645bdb9d88142cb18a4ea352f4f0c5142d037fa2c9c83b9da4"
+    },
+    "replay/RoughHeatKernelTest.Counterexamples.leanchecker.log": {
+      "bytes": 46,
+      "sha256": "d39039270f8d1ce1467c92aa37f724d96dfe645b11c0f86693486de7f4c83e46"
+    },
+    "replay/RoughHeatKernelTest.Examples.leanchecker.log": {
+      "bytes": 39,
+      "sha256": "df832e5e3c4f2af4c7ea37f88374afc3039b894fc2e25421d3b0d370aa75925d"
+    },
+    "replay/RoughHeatKernelTest.NegArcsineWitness.leanchecker.log": {
+      "bytes": 48,
+      "sha256": "55b696d34a283e67fc5384b57246a8cb69872881f51ea664315c60d50a0f8278"
+    },
+    "replay/RoughHeatKernelTest.NegDoubledSemigroupWitness.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "0f5bf52d547c1d3416db1bd85b7648e2ce6db3bce050656006991b9f6636aeac"
+    },
+    "replay/RoughHeatKernelTest.NegFlowSemigroupWitness.leanchecker.log": {
+      "bytes": 54,
+      "sha256": "f99013cf438302fb8259bcdd2dc8cfd5b9067f7347f8e87e003a272c3a4187e2"
+    },
+    "replay/RoughHeatKernelTest.NegGaussianMeanWitness.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "df7de32a35ba45f2ea6a3204d0b547e60c20e7cd7887627583fbe0bb2644f871"
+    },
+    "replay/RoughHeatKernelTest.NegIncrementWitness.leanchecker.log": {
+      "bytes": 50,
+      "sha256": "60673f7cbfe8895ea551dcde7ddc06362d42d0347efe9367e553bea4e7a9668d"
+    },
+    "replay/RoughHeatKernelTest.NegJointTimeConstancyWitness.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "aeb79073b6cb4b0ad83bd0169cc4398e526022fbd08be5d440b406a248b2e89a"
+    },
+    "replay/RoughHeatKernelTest.NegMassWitness.leanchecker.log": {
+      "bytes": 45,
+      "sha256": "ae3691fa8bbb3c000c104aa22df390498c84162298647620eab51798505f86c3"
+    },
+    "replay/RoughHeatKernelTest.NegProductIdentityWitness.leanchecker.log": {
+      "bytes": 56,
+      "sha256": "99be9af040163c18fd61ae3fccd9f4a4e66756f5180faf16b16c70efb98beec2"
+    },
+    "replay/RoughHeatKernelTest.NegSemigroupProductWitness.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "76ad148d15556d1cad1649c4e54e5e1a4ef259a1268cc32f5f89626d2f1d131f"
+    },
+    "replay/RoughHeatKernelTest.NegSignedFlowAbsoluteWitness.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "a4aab08c8a4e89e4e5a2bfe65ab1949d33da1c0cbae251507256bd349d91468f"
+    },
+    "replay/RoughHeatKernelTest.NegTemperedWitness.leanchecker.log": {
+      "bytes": 49,
+      "sha256": "fa7d409e91b3015a0ad4f96b574f98b81a88b8a738b683058c682bb83ad3d7cc"
+    },
+    "replay/RoughHeatKernelTest.TypeCheck.leanchecker.log": {
+      "bytes": 40,
+      "sha256": "530aa768e082074f44932c6254329d93f4e8d506ad69139b7d832712e281bb16"
+    }
+  },
+  "index_self_excluded": true,
+  "package": "rough-heat-kernel",
+  "schema": "native-capsule-file-index/1",
+  "scientific_commit": "00b39962d3328088133a0b75c9f710b6834a463a",
+  "scope": "fresh native ownership/type/axiom inspection, compiled controls and replay at coverage-bound source; not comparator or release"
+}

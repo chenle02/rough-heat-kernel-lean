@@ -1,0 +1,803 @@
+{
+  "actual_previous_run_comparison": {
+    "production": {
+      "changed_object_hash_modules": [],
+      "changed_source_hash_modules": [],
+      "modules": 35,
+      "new_raw_sha256": "e533ada1f090d1f0df854cf77917f7623124e5027e8ae6abce2af851595fef90",
+      "old_raw_sha256": "e533ada1f090d1f0df854cf77917f7623124e5027e8ae6abce2af851595fef90"
+    },
+    "reference": {
+      "changed_object_hash_modules": [],
+      "changed_source_hash_modules": [],
+      "modules": 18,
+      "new_raw_sha256": "b3c774248fa9e29f1a0f4afb0282f01d65eed5ea27276582806a4f8361223cd6",
+      "old_raw_sha256": "b3c774248fa9e29f1a0f4afb0282f01d65eed5ea27276582806a4f8361223cd6"
+    }
+  },
+  "cones": {
+    "production": {
+      "gzip_sha256": "b869b45f0e6d9645ddf97b2bf2568c707048a59962f6385e56b4e926ebffa1af",
+      "module_owned_counts": {
+        "RoughHeatKernel": 0,
+        "RoughHeatKernel.Beta": 2,
+        "RoughHeatKernel.CausalHeatKernel": 21,
+        "RoughHeatKernel.ChenDalang": 13,
+        "RoughHeatKernel.Doubled": 10,
+        "RoughHeatKernel.Erf": 65,
+        "RoughHeatKernel.Finite": 24,
+        "RoughHeatKernel.FlowSemigroup": 4,
+        "RoughHeatKernel.Gaussian": 3,
+        "RoughHeatKernel.Increments": 16,
+        "RoughHeatKernel.Kernel": 26,
+        "RoughHeatKernel.Lq": 14,
+        "RoughHeatKernel.RoughMeasure": 47,
+        "RoughHeatKernel.Scaled": 9,
+        "RoughHeatKernel.SpatialEnvelope": 25,
+        "RoughHeatKernel.SquareKernel": 13,
+        "RoughHeatKernel.Tempered": 26,
+        "RoughHeatKernel.WeightedCausalHeatKernel": 6,
+        "RoughHeatKernelTest": 0,
+        "RoughHeatKernelTest.AxiomCheck": 0,
+        "RoughHeatKernelTest.Counterexamples": 4,
+        "RoughHeatKernelTest.Examples": 0,
+        "RoughHeatKernelTest.NegArcsineWitness": 2,
+        "RoughHeatKernelTest.NegDoubledSemigroupWitness": 2,
+        "RoughHeatKernelTest.NegFlowSemigroupWitness": 2,
+        "RoughHeatKernelTest.NegGaussianMeanWitness": 2,
+        "RoughHeatKernelTest.NegIncrementWitness": 2,
+        "RoughHeatKernelTest.NegJointTimeConstancyWitness": 3,
+        "RoughHeatKernelTest.NegMassWitness": 2,
+        "RoughHeatKernelTest.NegProductIdentityWitness": 2,
+        "RoughHeatKernelTest.NegSemigroupProductWitness": 2,
+        "RoughHeatKernelTest.NegSignedFlowAbsoluteWitness": 3,
+        "RoughHeatKernelTest.NegTemperedWitness": 3,
+        "RoughHeatKernelTest.TypeCheck": 0,
+        "Solution": 0
+      },
+      "modules": [
+        "RoughHeatKernel",
+        "RoughHeatKernel.Beta",
+        "RoughHeatKernel.CausalHeatKernel",
+        "RoughHeatKernel.ChenDalang",
+        "RoughHeatKernel.Doubled",
+        "RoughHeatKernel.Erf",
+        "RoughHeatKernel.Finite",
+        "RoughHeatKernel.FlowSemigroup",
+        "RoughHeatKernel.Gaussian",
+        "RoughHeatKernel.Increments",
+        "RoughHeatKernel.Kernel",
+        "RoughHeatKernel.Lq",
+        "RoughHeatKernel.RoughMeasure",
+        "RoughHeatKernel.Scaled",
+        "RoughHeatKernel.SpatialEnvelope",
+        "RoughHeatKernel.SquareKernel",
+        "RoughHeatKernel.Tempered",
+        "RoughHeatKernel.WeightedCausalHeatKernel",
+        "RoughHeatKernelTest",
+        "RoughHeatKernelTest.AxiomCheck",
+        "RoughHeatKernelTest.Counterexamples",
+        "RoughHeatKernelTest.Examples",
+        "RoughHeatKernelTest.NegArcsineWitness",
+        "RoughHeatKernelTest.NegDoubledSemigroupWitness",
+        "RoughHeatKernelTest.NegFlowSemigroupWitness",
+        "RoughHeatKernelTest.NegGaussianMeanWitness",
+        "RoughHeatKernelTest.NegIncrementWitness",
+        "RoughHeatKernelTest.NegJointTimeConstancyWitness",
+        "RoughHeatKernelTest.NegMassWitness",
+        "RoughHeatKernelTest.NegProductIdentityWitness",
+        "RoughHeatKernelTest.NegSemigroupProductWitness",
+        "RoughHeatKernelTest.NegSignedFlowAbsoluteWitness",
+        "RoughHeatKernelTest.NegTemperedWitness",
+        "RoughHeatKernelTest.TypeCheck",
+        "Solution"
+      ],
+      "owned_count": 353,
+      "projectwide_axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "raw_bytes": 3064712,
+      "raw_sha256": "e533ada1f090d1f0df854cf77917f7623124e5027e8ae6abce2af851595fef90",
+      "replayed_modules": [
+        "RoughHeatKernel.Beta",
+        "RoughHeatKernel.CausalHeatKernel",
+        "RoughHeatKernel.ChenDalang",
+        "RoughHeatKernel.Doubled",
+        "RoughHeatKernel.Erf",
+        "RoughHeatKernel.Finite",
+        "RoughHeatKernel.FlowSemigroup",
+        "RoughHeatKernel.Gaussian",
+        "RoughHeatKernel.Increments",
+        "RoughHeatKernel.Kernel",
+        "RoughHeatKernel.Lq",
+        "RoughHeatKernel.RoughMeasure",
+        "RoughHeatKernel.Scaled",
+        "RoughHeatKernel.SpatialEnvelope",
+        "RoughHeatKernel.SquareKernel",
+        "RoughHeatKernel.Tempered",
+        "RoughHeatKernel.WeightedCausalHeatKernel",
+        "RoughHeatKernelTest.AxiomCheck",
+        "RoughHeatKernelTest.Counterexamples",
+        "RoughHeatKernelTest.Examples",
+        "RoughHeatKernelTest.NegArcsineWitness",
+        "RoughHeatKernelTest.NegDoubledSemigroupWitness",
+        "RoughHeatKernelTest.NegFlowSemigroupWitness",
+        "RoughHeatKernelTest.NegGaussianMeanWitness",
+        "RoughHeatKernelTest.NegIncrementWitness",
+        "RoughHeatKernelTest.NegJointTimeConstancyWitness",
+        "RoughHeatKernelTest.NegMassWitness",
+        "RoughHeatKernelTest.NegProductIdentityWitness",
+        "RoughHeatKernelTest.NegSemigroupProductWitness",
+        "RoughHeatKernelTest.NegSignedFlowAbsoluteWitness",
+        "RoughHeatKernelTest.NegTemperedWitness",
+        "RoughHeatKernelTest.TypeCheck"
+      ],
+      "zero_owned_import_only_modules": [
+        "RoughHeatKernel",
+        "RoughHeatKernelTest",
+        "Solution"
+      ]
+    },
+    "reference": {
+      "gzip_sha256": "d8cec24f75d75a6586c89bd2491135d3c6402fdb4361694bd7fc3cfdda4f2733",
+      "module_owned_counts": {
+        "Challenge": 0,
+        "Challenge.Reference.RoughHeatKernel.Beta": 2,
+        "Challenge.Reference.RoughHeatKernel.CausalHeatKernel": 21,
+        "Challenge.Reference.RoughHeatKernel.ChenDalang": 13,
+        "Challenge.Reference.RoughHeatKernel.Doubled": 10,
+        "Challenge.Reference.RoughHeatKernel.Erf": 65,
+        "Challenge.Reference.RoughHeatKernel.Finite": 24,
+        "Challenge.Reference.RoughHeatKernel.FlowSemigroup": 4,
+        "Challenge.Reference.RoughHeatKernel.Gaussian": 3,
+        "Challenge.Reference.RoughHeatKernel.Increments": 16,
+        "Challenge.Reference.RoughHeatKernel.Kernel": 26,
+        "Challenge.Reference.RoughHeatKernel.Lq": 14,
+        "Challenge.Reference.RoughHeatKernel.RoughMeasure": 47,
+        "Challenge.Reference.RoughHeatKernel.Scaled": 9,
+        "Challenge.Reference.RoughHeatKernel.SpatialEnvelope": 25,
+        "Challenge.Reference.RoughHeatKernel.SquareKernel": 13,
+        "Challenge.Reference.RoughHeatKernel.Tempered": 26,
+        "Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel": 6
+      },
+      "modules": [
+        "Challenge",
+        "Challenge.Reference.RoughHeatKernel.Beta",
+        "Challenge.Reference.RoughHeatKernel.CausalHeatKernel",
+        "Challenge.Reference.RoughHeatKernel.ChenDalang",
+        "Challenge.Reference.RoughHeatKernel.Doubled",
+        "Challenge.Reference.RoughHeatKernel.Erf",
+        "Challenge.Reference.RoughHeatKernel.Finite",
+        "Challenge.Reference.RoughHeatKernel.FlowSemigroup",
+        "Challenge.Reference.RoughHeatKernel.Gaussian",
+        "Challenge.Reference.RoughHeatKernel.Increments",
+        "Challenge.Reference.RoughHeatKernel.Kernel",
+        "Challenge.Reference.RoughHeatKernel.Lq",
+        "Challenge.Reference.RoughHeatKernel.RoughMeasure",
+        "Challenge.Reference.RoughHeatKernel.Scaled",
+        "Challenge.Reference.RoughHeatKernel.SpatialEnvelope",
+        "Challenge.Reference.RoughHeatKernel.SquareKernel",
+        "Challenge.Reference.RoughHeatKernel.Tempered",
+        "Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel"
+      ],
+      "owned_count": 324,
+      "projectwide_axiom_union": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "raw_bytes": 2872206,
+      "raw_sha256": "b3c774248fa9e29f1a0f4afb0282f01d65eed5ea27276582806a4f8361223cd6",
+      "replayed_modules": [
+        "Challenge.Reference.RoughHeatKernel.Beta",
+        "Challenge.Reference.RoughHeatKernel.CausalHeatKernel",
+        "Challenge.Reference.RoughHeatKernel.ChenDalang",
+        "Challenge.Reference.RoughHeatKernel.Doubled",
+        "Challenge.Reference.RoughHeatKernel.Erf",
+        "Challenge.Reference.RoughHeatKernel.Finite",
+        "Challenge.Reference.RoughHeatKernel.FlowSemigroup",
+        "Challenge.Reference.RoughHeatKernel.Gaussian",
+        "Challenge.Reference.RoughHeatKernel.Increments",
+        "Challenge.Reference.RoughHeatKernel.Kernel",
+        "Challenge.Reference.RoughHeatKernel.Lq",
+        "Challenge.Reference.RoughHeatKernel.RoughMeasure",
+        "Challenge.Reference.RoughHeatKernel.Scaled",
+        "Challenge.Reference.RoughHeatKernel.SpatialEnvelope",
+        "Challenge.Reference.RoughHeatKernel.SquareKernel",
+        "Challenge.Reference.RoughHeatKernel.Tempered",
+        "Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel"
+      ],
+      "zero_owned_import_only_modules": [
+        "Challenge"
+      ]
+    }
+  },
+  "coverage_input_binding": {
+    "fresh_native_run_required_for_new_binding": true,
+    "previous_native_receipt_remains_historical": "d4b93224f565606f4c55681f232cc90d2efbb796",
+    "scientific_commit": "00b39962d3328088133a0b75c9f710b6834a463a",
+    "sha256": "06e0576f8ddbc5e8c129cb7111f2ab50102bef2a0b20c505cd1b7f990386b502",
+    "source_path": "coverage.yaml"
+  },
+  "diagnostic_log_transformations": [
+    {
+      "artifact": "controls/EscapePositive-build.log",
+      "mathematical_records_modified": false,
+      "published_sha256": "54058f6da30001aa9bd50ecdad9babab47ae297213ec901f0acec646d8b0fb04",
+      "raw_private_artifact": "controls/EscapePositive-build.log",
+      "raw_sha256": "d77f2f4530378ef02e843cf5156350a9f82543fdad503aecbda4049f81c5bbe1",
+      "transformation": "remove exact scientific-checkout prefix from diagnostic source locations only; preserve every diagnostic line"
+    },
+    {
+      "artifact": "controls/EscapeNegative-build.log",
+      "mathematical_records_modified": false,
+      "published_sha256": "d80cc28695f2b54c6f3e2b5c26f4598592e2b13dbf541a99a534076db0bf1443",
+      "raw_private_artifact": "controls/EscapeNegative-build.log",
+      "raw_sha256": "fe1ec1c310f5a39a70b234727b7573fd7dd38385f00f5b8c5ca157b59d4b42ed",
+      "transformation": "remove exact scientific-checkout prefix from diagnostic source locations only; preserve every diagnostic line"
+    }
+  ],
+  "kernel_type_records_redacted": false,
+  "native_tool_limit": "high-trust imported inspection paired with recorded kernel replay; projectwide forbidden-axiom union is authoritative, per-declaration cyclic collector lists may undercount",
+  "original_raw_artifacts_retained": true,
+  "package": "rough-heat-kernel",
+  "payloads": {
+    "controls/CONTROLS.json": {
+      "bytes": 481,
+      "sha256": "9dd7eb255bd00821d9e32b8c05a18b4e25aa8ddf848ad58e3ae7f97aeaf7b134"
+    },
+    "controls/EscapeNative-build.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/EscapeNative.json": {
+      "bytes": 5890,
+      "sha256": "87be5e8016da91f30de24f1274aebbcfd1b6a9bede3115c4ce6e7ddcddc442f0"
+    },
+    "controls/EscapeNative.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/EscapeNegative-build.log": {
+      "bytes": 322,
+      "sha256": "d80cc28695f2b54c6f3e2b5c26f4598592e2b13dbf541a99a534076db0bf1443"
+    },
+    "controls/EscapeNegative.json": {
+      "bytes": 802,
+      "sha256": "d3de7b7285068aad2b80caff121308dfd5260adbf444f5abeb94fae491867f70"
+    },
+    "controls/EscapeNegative.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/EscapePositive-build.log": {
+      "bytes": 189,
+      "sha256": "54058f6da30001aa9bd50ecdad9babab47ae297213ec901f0acec646d8b0fb04"
+    },
+    "controls/EscapePositive.json": {
+      "bytes": 490,
+      "sha256": "9ff306a70533acfc45062a12de85706bf59cb33eea21d9eb7d5132b3162a3d75"
+    },
+    "controls/EscapePositive.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "controls/sources/EscapeNative.lean": {
+      "bytes": 142,
+      "sha256": "e621bb434c41ecf7af3c68f8c8a81473d00a3d5db3b62dd55a74a14ebb981b70"
+    },
+    "controls/sources/EscapeNegative.lean": {
+      "bytes": 280,
+      "sha256": "a6a3c9c85be9f1d29e15d9921634c486b060f0ef4ab9ca3dc0016abe44372df5"
+    },
+    "controls/sources/EscapePositive.lean": {
+      "bytes": 215,
+      "sha256": "86faf27af929ae8f5dc9b51b980d743e1e525871017f54babad5abce66625302"
+    },
+    "declared-inputs/coverage.yaml": {
+      "bytes": 13447,
+      "role": "declared coverage build input at scientific commit",
+      "sha256": "06e0576f8ddbc5e8c129cb7111f2ab50102bef2a0b20c505cd1b7f990386b502"
+    },
+    "production-inventory.json": {
+      "bytes": 44332,
+      "sha256": "8b72295b027faf2eb90996f69373eb471325f3a315d5e2b8ccff8558c5e997ce"
+    },
+    "production.json.gz": {
+      "bytes": 109056,
+      "complete_type_axiom_records": true,
+      "decompression_verified": true,
+      "format": "gzip",
+      "raw_bytes": 3064712,
+      "raw_sha256": "e533ada1f090d1f0df854cf77917f7623124e5027e8ae6abce2af851595fef90",
+      "sha256": "b869b45f0e6d9645ddf97b2bf2568c707048a59962f6385e56b4e926ebffa1af"
+    },
+    "production.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reference-inventory.json": {
+      "bytes": 44627,
+      "sha256": "08a7f062e3e7d011fb4ef43919c0d048bc021197101ec5f86a11aa419c7f8d79"
+    },
+    "reference.json.gz": {
+      "bytes": 101580,
+      "complete_type_axiom_records": true,
+      "decompression_verified": true,
+      "format": "gzip",
+      "raw_bytes": 2872206,
+      "raw_sha256": "b3c774248fa9e29f1a0f4afb0282f01d65eed5ea27276582806a4f8361223cd6",
+      "sha256": "d8cec24f75d75a6586c89bd2491135d3c6402fdb4361694bd7fc3cfdda4f2733"
+    },
+    "reference.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Beta.leanchecker.log": {
+      "bytes": 51,
+      "sha256": "7d02c0f5a6988dc4238d3ca79dbd07adc3e85d9fabb141814e432fe4a3a6efd7"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.CausalHeatKernel.leanchecker.log": {
+      "bytes": 63,
+      "sha256": "b2d45993b4e949dfad197aa44903fed8d91f8c8752e5d96a8da1ce74afa3262d"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.ChenDalang.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "b24bbbf08c747ccbb691a5b587bfcdcf09ca900ac7ac7f55a3051a1dc048eb35"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Doubled.leanchecker.log": {
+      "bytes": 54,
+      "sha256": "96467a7f4b87f0a911f705523e046f1d7e5c448aba151c632ef0073adaf629a5"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Erf.leanchecker.log": {
+      "bytes": 50,
+      "sha256": "4e05514acb8a2f4eaeec2e606fdf329781c98e6a6aaf5a9155fd7a56a3320e10"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Finite.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "ec86a7d9e28c354713c26e4dd33081e908ea3906b9614bc111101cb54f2ba03f"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.FlowSemigroup.leanchecker.log": {
+      "bytes": 60,
+      "sha256": "a3d8f85d44d65556719facad3b611b420318a85714bdf9e1c6c4dd263bda71ea"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Gaussian.leanchecker.log": {
+      "bytes": 55,
+      "sha256": "0c234c98b77c3289050c283f4c44c8ead8f49f718fdd3104cab79d62c95f1a51"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Increments.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "907e1d43c5aee596376647d87e4083a492716a9d608b84741594637b0c4e80b7"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Kernel.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "31af9c705b8314215010479dd1b2ced66b177aa58a2acf5ee53130574ea8bd0c"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Lq.leanchecker.log": {
+      "bytes": 49,
+      "sha256": "d7ae13b706f705ffc7cf2887c856a5854934666eff50a3a5d33cb27b05a3faa3"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.RoughMeasure.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "f89a92b723f204a7d24f1455e7708b79361b31db3fe727c85d91a4d837b8ff27"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Scaled.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "2358c08419aa5ada318581edb412b9ff6a64c3efb341b69c2e9b1a10de9b586f"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.SpatialEnvelope.leanchecker.log": {
+      "bytes": 62,
+      "sha256": "020fd8c5eecca638700d0ed48556c92e7d2e2178d46badb35a14e176e89a04a0"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.SquareKernel.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "50a028fb37ac023fbb1ca0b5acda025e5e18bdaffcbb2a04d6b896993eff56e0"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.Tempered.leanchecker.log": {
+      "bytes": 55,
+      "sha256": "f0caaf12093fe46560ad8f8aeececad769ae231091a2e2b52e0a11061391bf52"
+    },
+    "replay/Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel.leanchecker.log": {
+      "bytes": 71,
+      "sha256": "a6120c2458093005ff7d770e3f2f23125b6d1c086405461c9460880b7275a3a3"
+    },
+    "replay/RoughHeatKernel.Beta.leanchecker.log": {
+      "bytes": 31,
+      "sha256": "7f6a3d1763aa2aef3241006f0ef22e2fa92967b4639fdb5ca099cee41d3e215c"
+    },
+    "replay/RoughHeatKernel.CausalHeatKernel.leanchecker.log": {
+      "bytes": 43,
+      "sha256": "f48c55016f148c0dc6472f30c21ff8bdaf7e4eda0f43906e533d3f292136393e"
+    },
+    "replay/RoughHeatKernel.ChenDalang.leanchecker.log": {
+      "bytes": 37,
+      "sha256": "796e4522e77c2851f1e31f729aac52cc8f2c0c9e14b12ffa6bae93dfbe83c87e"
+    },
+    "replay/RoughHeatKernel.Doubled.leanchecker.log": {
+      "bytes": 34,
+      "sha256": "1b9c8fecd58880bd4061a7fe975de6aaef06bf1d8cba56f5402e9ce9c22378e2"
+    },
+    "replay/RoughHeatKernel.Erf.leanchecker.log": {
+      "bytes": 30,
+      "sha256": "ed3846a98d37c582d3966583d1126bc7cc03b4a34e928b6df5577a7a40b4a1db"
+    },
+    "replay/RoughHeatKernel.Finite.leanchecker.log": {
+      "bytes": 33,
+      "sha256": "c8c7de22a05062596d07add7c9fe0fb7393ea949a8f8844f1ac26ac435e632d9"
+    },
+    "replay/RoughHeatKernel.FlowSemigroup.leanchecker.log": {
+      "bytes": 40,
+      "sha256": "d4832286974e8e8afabe83d6286e8af6571da303382aa14343af0565067b8c05"
+    },
+    "replay/RoughHeatKernel.Gaussian.leanchecker.log": {
+      "bytes": 35,
+      "sha256": "ce9112908fb9ba446a9e51001018e82834fbcbdd009d62773fc11bdb0bab7506"
+    },
+    "replay/RoughHeatKernel.Increments.leanchecker.log": {
+      "bytes": 37,
+      "sha256": "2a2ea633d6d2cbbda8b1abeffb3c06018dd9d93149d42d865fd2681afce2254c"
+    },
+    "replay/RoughHeatKernel.Kernel.leanchecker.log": {
+      "bytes": 33,
+      "sha256": "e8e415fdd0e6364508562325f905a7198b4c84c916eb36f264ffd41b9a626178"
+    },
+    "replay/RoughHeatKernel.Lq.leanchecker.log": {
+      "bytes": 29,
+      "sha256": "eb6c6a3c2bd48b5a63bbac1a9281c3b8507a13928602ef5ccd8b45e583e11abd"
+    },
+    "replay/RoughHeatKernel.RoughMeasure.leanchecker.log": {
+      "bytes": 39,
+      "sha256": "21f7351339c2c968c99a1bf344f3e32d9d673c82f0f9f5a4f270d0891fd15d9a"
+    },
+    "replay/RoughHeatKernel.Scaled.leanchecker.log": {
+      "bytes": 33,
+      "sha256": "dd3e43587fa7fe19f4415abe1e86eb7176b5563563f454ccf5b882713aea375f"
+    },
+    "replay/RoughHeatKernel.SpatialEnvelope.leanchecker.log": {
+      "bytes": 42,
+      "sha256": "7384cb208aa25c5dc267654c36def8d9a9bb405ffc65d87461af4b4722ac9a47"
+    },
+    "replay/RoughHeatKernel.SquareKernel.leanchecker.log": {
+      "bytes": 39,
+      "sha256": "04c51a5e439fb9db718c54b680a30700a24ed4e46caf1737b9dd618918994028"
+    },
+    "replay/RoughHeatKernel.Tempered.leanchecker.log": {
+      "bytes": 35,
+      "sha256": "1f10d4f7b2c51812e35b8d8e6694ab4eeba0eb2c610f9be4fe1f7f19c6b97941"
+    },
+    "replay/RoughHeatKernel.WeightedCausalHeatKernel.leanchecker.log": {
+      "bytes": 51,
+      "sha256": "6af5086428481bd63bedbdb8358bc15fe86c60afad0fed8e25517e6dac0a0cfe"
+    },
+    "replay/RoughHeatKernelTest.AxiomCheck.leanchecker.log": {
+      "bytes": 41,
+      "sha256": "f41447794a8039645bdb9d88142cb18a4ea352f4f0c5142d037fa2c9c83b9da4"
+    },
+    "replay/RoughHeatKernelTest.Counterexamples.leanchecker.log": {
+      "bytes": 46,
+      "sha256": "d39039270f8d1ce1467c92aa37f724d96dfe645b11c0f86693486de7f4c83e46"
+    },
+    "replay/RoughHeatKernelTest.Examples.leanchecker.log": {
+      "bytes": 39,
+      "sha256": "df832e5e3c4f2af4c7ea37f88374afc3039b894fc2e25421d3b0d370aa75925d"
+    },
+    "replay/RoughHeatKernelTest.NegArcsineWitness.leanchecker.log": {
+      "bytes": 48,
+      "sha256": "55b696d34a283e67fc5384b57246a8cb69872881f51ea664315c60d50a0f8278"
+    },
+    "replay/RoughHeatKernelTest.NegDoubledSemigroupWitness.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "0f5bf52d547c1d3416db1bd85b7648e2ce6db3bce050656006991b9f6636aeac"
+    },
+    "replay/RoughHeatKernelTest.NegFlowSemigroupWitness.leanchecker.log": {
+      "bytes": 54,
+      "sha256": "f99013cf438302fb8259bcdd2dc8cfd5b9067f7347f8e87e003a272c3a4187e2"
+    },
+    "replay/RoughHeatKernelTest.NegGaussianMeanWitness.leanchecker.log": {
+      "bytes": 53,
+      "sha256": "df7de32a35ba45f2ea6a3204d0b547e60c20e7cd7887627583fbe0bb2644f871"
+    },
+    "replay/RoughHeatKernelTest.NegIncrementWitness.leanchecker.log": {
+      "bytes": 50,
+      "sha256": "60673f7cbfe8895ea551dcde7ddc06362d42d0347efe9367e553bea4e7a9668d"
+    },
+    "replay/RoughHeatKernelTest.NegJointTimeConstancyWitness.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "aeb79073b6cb4b0ad83bd0169cc4398e526022fbd08be5d440b406a248b2e89a"
+    },
+    "replay/RoughHeatKernelTest.NegMassWitness.leanchecker.log": {
+      "bytes": 45,
+      "sha256": "ae3691fa8bbb3c000c104aa22df390498c84162298647620eab51798505f86c3"
+    },
+    "replay/RoughHeatKernelTest.NegProductIdentityWitness.leanchecker.log": {
+      "bytes": 56,
+      "sha256": "99be9af040163c18fd61ae3fccd9f4a4e66756f5180faf16b16c70efb98beec2"
+    },
+    "replay/RoughHeatKernelTest.NegSemigroupProductWitness.leanchecker.log": {
+      "bytes": 57,
+      "sha256": "76ad148d15556d1cad1649c4e54e5e1a4ef259a1268cc32f5f89626d2f1d131f"
+    },
+    "replay/RoughHeatKernelTest.NegSignedFlowAbsoluteWitness.leanchecker.log": {
+      "bytes": 59,
+      "sha256": "a4aab08c8a4e89e4e5a2bfe65ab1949d33da1c0cbae251507256bd349d91468f"
+    },
+    "replay/RoughHeatKernelTest.NegTemperedWitness.leanchecker.log": {
+      "bytes": 49,
+      "sha256": "fa7d409e91b3015a0ad4f96b574f98b81a88b8a738b683058c682bb83ad3d7cc"
+    },
+    "replay/RoughHeatKernelTest.TypeCheck.leanchecker.log": {
+      "bytes": 40,
+      "sha256": "530aa768e082074f44932c6254329d93f4e8d506ad69139b7d832712e281bb16"
+    }
+  },
+  "private_operational_bindings": [
+    {
+      "artifact": "production-providers-pre.json",
+      "bytes": 12596,
+      "sha256": "551f33a9a4082ac76a801a81e4292c7e37b2fca07df53d3dcfaf3f7d3555acae"
+    },
+    {
+      "artifact": "production-providers-post.json",
+      "bytes": 12596,
+      "sha256": "551f33a9a4082ac76a801a81e4292c7e37b2fca07df53d3dcfaf3f7d3555acae"
+    },
+    {
+      "artifact": "reference-providers-pre.json",
+      "bytes": 6951,
+      "sha256": "22f348b0873690a62b64aaceb6bebfa6bcc9c2da21e66d037afa0e90b4edbbd2"
+    },
+    {
+      "artifact": "reference-providers-post.json",
+      "bytes": 6951,
+      "sha256": "22f348b0873690a62b64aaceb6bebfa6bcc9c2da21e66d037afa0e90b4edbbd2"
+    },
+    {
+      "artifact": "controls/EscapePositive-build.log",
+      "bytes": 253,
+      "sha256": "d77f2f4530378ef02e843cf5156350a9f82543fdad503aecbda4049f81c5bbe1"
+    },
+    {
+      "artifact": "controls/EscapeNegative-build.log",
+      "bytes": 514,
+      "sha256": "fe1ec1c310f5a39a70b234727b7573fd7dd38385f00f5b8c5ca157b59d4b42ed"
+    },
+    {
+      "artifact": "controls/EscapeNative-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "producer_provider_pre_post_equal": true,
+  "provider_paths_published": false,
+  "schema": "native-evidence-capsule/1",
+  "scientific_commit": "00b39962d3328088133a0b75c9f710b6834a463a",
+  "scope": "complete native compiled ownership/type/axiom inspection, compiled escape controls and exact selected-module leanchecker replay; not comparator, release or whole-campaign acceptance",
+  "source_bindings": {
+    "Challenge": {
+      "path": "Challenge.lean",
+      "sha256": "18c67b2c35257095b68efc1871236072602c3a62848ea53fcf496f0dfceb07d3"
+    },
+    "Challenge.Reference.RoughHeatKernel.Beta": {
+      "path": "Challenge/Reference/RoughHeatKernel/Beta.lean",
+      "sha256": "6c4e0c19e44f0c8d8bd389244960dc0012db7d3eb7d6ce9691cfbd6964e1945b"
+    },
+    "Challenge.Reference.RoughHeatKernel.CausalHeatKernel": {
+      "path": "Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean",
+      "sha256": "fcf7476237791f8277c6b9bd4048d2b3d0a8b8420e1695ebc145f9201d7a7f3b"
+    },
+    "Challenge.Reference.RoughHeatKernel.ChenDalang": {
+      "path": "Challenge/Reference/RoughHeatKernel/ChenDalang.lean",
+      "sha256": "b385e1e2842fad2b552558913740aa1d7ae8c49ee7cfd7d78b621927e90be646"
+    },
+    "Challenge.Reference.RoughHeatKernel.Doubled": {
+      "path": "Challenge/Reference/RoughHeatKernel/Doubled.lean",
+      "sha256": "69493efb18e29aa917c7ca2a878024fe4ffc08d56dc205fdc2db1d05eb54d0ef"
+    },
+    "Challenge.Reference.RoughHeatKernel.Erf": {
+      "path": "Challenge/Reference/RoughHeatKernel/Erf.lean",
+      "sha256": "6c06dee0b8cda999d93d622a3ac56fc03de73475c7cad81e2bf85c3f3ed57437"
+    },
+    "Challenge.Reference.RoughHeatKernel.Finite": {
+      "path": "Challenge/Reference/RoughHeatKernel/Finite.lean",
+      "sha256": "652e82d1efbd4a6102ddce2fbac050094e83b40b47b4fe47ce8b62d09c33c154"
+    },
+    "Challenge.Reference.RoughHeatKernel.FlowSemigroup": {
+      "path": "Challenge/Reference/RoughHeatKernel/FlowSemigroup.lean",
+      "sha256": "d5e803d15c52cfc9ac91558471e16f967939cfdbe5acd38ac2c55f8d2bf41df1"
+    },
+    "Challenge.Reference.RoughHeatKernel.Gaussian": {
+      "path": "Challenge/Reference/RoughHeatKernel/Gaussian.lean",
+      "sha256": "1391c314d6b01ea0e955bce6057390c2fcfe4347e5133b43ca7fef93a260c323"
+    },
+    "Challenge.Reference.RoughHeatKernel.Increments": {
+      "path": "Challenge/Reference/RoughHeatKernel/Increments.lean",
+      "sha256": "e7165c84a0deb5423ae228b914b1704bc437880a9b11b9d1118f61cfa127593c"
+    },
+    "Challenge.Reference.RoughHeatKernel.Kernel": {
+      "path": "Challenge/Reference/RoughHeatKernel/Kernel.lean",
+      "sha256": "8edaa7668b7e7cafa5a9a7a045576e4c33bad1b648f0076f8cb5dc55ac38b8cf"
+    },
+    "Challenge.Reference.RoughHeatKernel.Lq": {
+      "path": "Challenge/Reference/RoughHeatKernel/Lq.lean",
+      "sha256": "aa60197426f260634e9e44a8b284cc968988a3836e9daae39a960fa4d37a9bc2"
+    },
+    "Challenge.Reference.RoughHeatKernel.RoughMeasure": {
+      "path": "Challenge/Reference/RoughHeatKernel/RoughMeasure.lean",
+      "sha256": "95d30338c91bed7c8a6269b1cce112f055786cdcc76ee23784eb9dceb6ac9796"
+    },
+    "Challenge.Reference.RoughHeatKernel.Scaled": {
+      "path": "Challenge/Reference/RoughHeatKernel/Scaled.lean",
+      "sha256": "d51996c9e830dc6ce3ac732e987d1cf87024cad053a9b85026d61e6f7e01cdde"
+    },
+    "Challenge.Reference.RoughHeatKernel.SpatialEnvelope": {
+      "path": "Challenge/Reference/RoughHeatKernel/SpatialEnvelope.lean",
+      "sha256": "74c9e127da5b11808a4273ee7d15ff038927efb12f15600627acd23f2707d712"
+    },
+    "Challenge.Reference.RoughHeatKernel.SquareKernel": {
+      "path": "Challenge/Reference/RoughHeatKernel/SquareKernel.lean",
+      "sha256": "a8d53b08c55c8cd5cbd11215cf8bb9d85f5dde291a762dc7df3d343e99565cb3"
+    },
+    "Challenge.Reference.RoughHeatKernel.Tempered": {
+      "path": "Challenge/Reference/RoughHeatKernel/Tempered.lean",
+      "sha256": "476fc90c6682511453b516da7f2581e24ac774aa5f7d6388210043069d3f130f"
+    },
+    "Challenge.Reference.RoughHeatKernel.WeightedCausalHeatKernel": {
+      "path": "Challenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean",
+      "sha256": "c923bddcf813db55522bc00e7d903b925877062e1c3e3bb7994e58d3f502b773"
+    },
+    "RoughHeatKernel": {
+      "path": "RoughHeatKernel.lean",
+      "sha256": "7912891c471b0b05c6f520f1ee110873a7091d56f1407a6ffab7380619a97c45"
+    },
+    "RoughHeatKernel.Beta": {
+      "path": "RoughHeatKernel/Beta.lean",
+      "sha256": "6c4e0c19e44f0c8d8bd389244960dc0012db7d3eb7d6ce9691cfbd6964e1945b"
+    },
+    "RoughHeatKernel.CausalHeatKernel": {
+      "path": "RoughHeatKernel/CausalHeatKernel.lean",
+      "sha256": "d5a7e23862b4063a7fbd92429772818a6e9f141e0e43bdb7d2b860cf3355775d"
+    },
+    "RoughHeatKernel.ChenDalang": {
+      "path": "RoughHeatKernel/ChenDalang.lean",
+      "sha256": "2dec26bf248563c77970f5bbb2024cd45173a699b312070d33e184a5fb02faa8"
+    },
+    "RoughHeatKernel.Doubled": {
+      "path": "RoughHeatKernel/Doubled.lean",
+      "sha256": "fb02207ef7e1d011992861ea7db9dcdc443c0ce3707b7ff53ffdf2aff743d0b5"
+    },
+    "RoughHeatKernel.Erf": {
+      "path": "RoughHeatKernel/Erf.lean",
+      "sha256": "b00b93ccc9d04d11444c6a79a737ad9362e4399508c7cf435bbc6a74b9f889b1"
+    },
+    "RoughHeatKernel.Finite": {
+      "path": "RoughHeatKernel/Finite.lean",
+      "sha256": "a97cc99531afbec89b9b515eb1cc99d49d273083d53e3b715c033c54829b6f38"
+    },
+    "RoughHeatKernel.FlowSemigroup": {
+      "path": "RoughHeatKernel/FlowSemigroup.lean",
+      "sha256": "617bfc0e40654a3d9b12d43f0c93ce98dc2e2597ab5aeea3bf2ad4a90efb0ca2"
+    },
+    "RoughHeatKernel.Gaussian": {
+      "path": "RoughHeatKernel/Gaussian.lean",
+      "sha256": "33b8e397c69758c9967f56d558dde643272e507c64fa06e8618155b7fc04eb85"
+    },
+    "RoughHeatKernel.Increments": {
+      "path": "RoughHeatKernel/Increments.lean",
+      "sha256": "6eed1aff3761f6a5b4deb6fcd24d9dab6d979873c958a3b749a51a4f9d8a27d6"
+    },
+    "RoughHeatKernel.Kernel": {
+      "path": "RoughHeatKernel/Kernel.lean",
+      "sha256": "8edaa7668b7e7cafa5a9a7a045576e4c33bad1b648f0076f8cb5dc55ac38b8cf"
+    },
+    "RoughHeatKernel.Lq": {
+      "path": "RoughHeatKernel/Lq.lean",
+      "sha256": "c16106863d68620d3eabb8a601baca75e291db2550a6e1ef541cb294853eb22d"
+    },
+    "RoughHeatKernel.RoughMeasure": {
+      "path": "RoughHeatKernel/RoughMeasure.lean",
+      "sha256": "0970c3b31837b6d4e38eab5a37593b1b1f4eb73857e7e5f3a4c7a5974cb94ccf"
+    },
+    "RoughHeatKernel.Scaled": {
+      "path": "RoughHeatKernel/Scaled.lean",
+      "sha256": "1bdbed2f385caf41d373ac2884542c502cc27762be57ff0e3205455aee17fd1f"
+    },
+    "RoughHeatKernel.SpatialEnvelope": {
+      "path": "RoughHeatKernel/SpatialEnvelope.lean",
+      "sha256": "ef4c41fa0228fd99b699f30af57d6e5674e1616ef7fd10f8d04dc07b0a179c39"
+    },
+    "RoughHeatKernel.SquareKernel": {
+      "path": "RoughHeatKernel/SquareKernel.lean",
+      "sha256": "fcbc3cad4017e775c9ffa2e9a36f7a41685b0807130fd954a7eef813fff2092f"
+    },
+    "RoughHeatKernel.Tempered": {
+      "path": "RoughHeatKernel/Tempered.lean",
+      "sha256": "a2e36dbf27c83ca13ad0bd42028f120c97ce2b40642d7697d6c4d8e802923c8b"
+    },
+    "RoughHeatKernel.WeightedCausalHeatKernel": {
+      "path": "RoughHeatKernel/WeightedCausalHeatKernel.lean",
+      "sha256": "63a7d9539a584b8c16ee8c4024c58e9af5ed4668a6672b42bf3b0929dbb02d0c"
+    },
+    "RoughHeatKernelTest": {
+      "path": "RoughHeatKernelTest.lean",
+      "sha256": "02c9095c54a13b3c6a668648b575d03e2b3df4a7d820657a7f66edc9a8a3e445"
+    },
+    "RoughHeatKernelTest.AxiomCheck": {
+      "path": "RoughHeatKernelTest/AxiomCheck.lean",
+      "sha256": "95ada4034cafe560a6ee89132c855d980351e47da15db60bb78278ceddea3c21"
+    },
+    "RoughHeatKernelTest.Counterexamples": {
+      "path": "RoughHeatKernelTest/Counterexamples.lean",
+      "sha256": "6ae9b4e288c37a79d1e54019e7aa6e1614f5a45793f0a1c13cf283b7b808b427"
+    },
+    "RoughHeatKernelTest.Examples": {
+      "path": "RoughHeatKernelTest/Examples.lean",
+      "sha256": "a6edf4db0073ea74aab912848d1b6149d60fe7241e54c76dae965b4c8768cb08"
+    },
+    "RoughHeatKernelTest.NegArcsineWitness": {
+      "path": "RoughHeatKernelTest/NegArcsineWitness.lean",
+      "sha256": "c8ce2dec4bd0e08409d3a250ae8e67242c2009e460c9a4427a5d43fb27889abf"
+    },
+    "RoughHeatKernelTest.NegDoubledSemigroupWitness": {
+      "path": "RoughHeatKernelTest/NegDoubledSemigroupWitness.lean",
+      "sha256": "792ac3b36e58d1ce65ef4cf5ddad6ba6ea52db123d9a6f18edb8959b9310a8a8"
+    },
+    "RoughHeatKernelTest.NegFlowSemigroupWitness": {
+      "path": "RoughHeatKernelTest/NegFlowSemigroupWitness.lean",
+      "sha256": "7be3646177a23858ff36bb95f3d97283f7cd06b8b3448fa8d371ae49fdacb920"
+    },
+    "RoughHeatKernelTest.NegGaussianMeanWitness": {
+      "path": "RoughHeatKernelTest/NegGaussianMeanWitness.lean",
+      "sha256": "e0bb1c17324d76faee2d1b1c533fffe171fc4f7eb7c97c5f78628467d0fb4e88"
+    },
+    "RoughHeatKernelTest.NegIncrementWitness": {
+      "path": "RoughHeatKernelTest/NegIncrementWitness.lean",
+      "sha256": "a2d0e02ed9fb49ebc9111edb845b9a61a4846cdf2aa6c9557167aeafe2b285b3"
+    },
+    "RoughHeatKernelTest.NegJointTimeConstancyWitness": {
+      "path": "RoughHeatKernelTest/NegJointTimeConstancyWitness.lean",
+      "sha256": "8965caeeca79987b72528fc0277f842e3e20276f5577a213594f7a78935c064d"
+    },
+    "RoughHeatKernelTest.NegMassWitness": {
+      "path": "RoughHeatKernelTest/NegMassWitness.lean",
+      "sha256": "f548fbd5a52e3d378535a60f66878653ea4ac7835eca0407a6dd961eca98dac5"
+    },
+    "RoughHeatKernelTest.NegProductIdentityWitness": {
+      "path": "RoughHeatKernelTest/NegProductIdentityWitness.lean",
+      "sha256": "a7051d202fe1e0f78076baac18b038320415abe929e012bd773eb99d7a49e90e"
+    },
+    "RoughHeatKernelTest.NegSemigroupProductWitness": {
+      "path": "RoughHeatKernelTest/NegSemigroupProductWitness.lean",
+      "sha256": "c4ccd1a4c0370ecb1a280705aad842aad8b1b3edea0bcd3a058b7a33b7aaed47"
+    },
+    "RoughHeatKernelTest.NegSignedFlowAbsoluteWitness": {
+      "path": "RoughHeatKernelTest/NegSignedFlowAbsoluteWitness.lean",
+      "sha256": "a304aef899a21d8d8dc8ad5bf904d0df82662dc740cec49a21eb375eb0f32349"
+    },
+    "RoughHeatKernelTest.NegTemperedWitness": {
+      "path": "RoughHeatKernelTest/NegTemperedWitness.lean",
+      "sha256": "cf2ed580c9fcf6d1e2bd3ebcfbe92cf9a13ae79f46099c0f507a2aca85e0e757"
+    },
+    "RoughHeatKernelTest.TypeCheck": {
+      "path": "RoughHeatKernelTest/TypeCheck.lean",
+      "sha256": "120db3d398a51380005a296de7d218de66fedb0108b84f52e090fc539f92e252"
+    },
+    "Solution": {
+      "path": "Solution.lean",
+      "sha256": "ddf680cefca47f44a16bfcd3829012bd91f44019371afe37aef391d80a001eeb"
+    },
+    "control:EscapeNative": {
+      "path": "tests/EscapeNative.lean",
+      "sha256": "e621bb434c41ecf7af3c68f8c8a81473d00a3d5db3b62dd55a74a14ebb981b70"
+    },
+    "control:EscapeNegative": {
+      "path": "tests/EscapeNegative.lean",
+      "sha256": "a6a3c9c85be9f1d29e15d9921634c486b060f0ef4ab9ca3dc0016abe44372df5"
+    },
+    "control:EscapePositive": {
+      "path": "tests/EscapePositive.lean",
+      "sha256": "86faf27af929ae8f5dc9b51b980d743e1e525871017f54babad5abce66625302"
+    }
+  }
+}
