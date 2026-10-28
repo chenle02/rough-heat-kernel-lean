@@ -2,8 +2,7 @@ schema: coverage/1
 package: rough-heat-kernel
 kind: library
 summary: Deterministic one-dimensional Gaussian heat kernels, positive and signed Gaussian-tempered initial
-  measures, kernel increments and rough-data convolution bounds. Candidate statements; release verification
-  pending.
+  measures, kernel increments and rough-data convolution bounds. Causal and weighted continuity retain the explicit hypotheses in their declarations.
 rows:
 - title: Heat-kernel convolution semigroup
   claims:
@@ -238,3 +237,27 @@ rows:
   claims:
   - rough-heat-kernel/erf-has-deriv
   statement: "erf has derivative (2/sqrt pi) e^(-x^2) at every x."
+- title: Causal kernel squared norm
+  claims:
+  - rough-heat-kernel/lintegral-heatk-sq
+  statement: For positive diffusivity, every real output time has the exact causal-kernel squared L2 norm, including
+    zero norm at nonpositive time.
+- title: Square-integrable causal sections
+  claims:
+  - rough-heat-kernel/memlp-heatk
+  statement: Every causal heat-kernel section belongs to L2 over positive-time space for positive diffusivity.
+- title: Joint causal kernel L2 continuity
+  claims:
+  - rough-heat-kernel/tendsto-heatk-sq
+  statement: Causal heat-kernel sections vary jointly continuously in output time and space in L2, including nonpositive
+    output time.
+- title: Sufficient far-space Gaussian margin
+  claims:
+  - rough-heat-kernel/heatkernel-sq-le-future-of-far
+  statement: A fixed later-output Gaussian dominates nearby-output kernels outside the stated explicit spatial radius,
+    at unchanged positive diffusivity.
+- title: Weighted causal kernel continuity
+  claims:
+  - rough-heat-kernel/tendsto-weighted-sq-difference
+  statement: At positive output time, finite future weighted variance and a finite compact input-weight bound imply
+    weighted squared-difference convergence; infinity is allowed outside the active region.
