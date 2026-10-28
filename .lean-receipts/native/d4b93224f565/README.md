@@ -1,0 +1,3 @@
+Native ownership evidence for rough-heat-kernel at d4b93224f565606f4c55681f232cc90d2efbb796.
+
+Complete original compressed production/reference kernel-type and axiom records, exact replay logs, and compiled escape controls are retained. The manifest binds every payload by exact SHA-256 and bytes, plus decompressed hashes/counts. Operational provider bindings remain private and are hash-bound, not silently redacted. Only diagnostic build-log checkout prefixes were explicitly normalized to module-relative source paths; theorem/type records are byte-identical. This capsule is not a comparator certificate or release authorization.
