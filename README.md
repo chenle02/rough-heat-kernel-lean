@@ -96,7 +96,7 @@ Deterministic one-dimensional Gaussian heat kernels, positive and signed Gaussia
 Semigroup identity p_t * p_s = p_{t+s} for the 1-d heat kernel, as functions via Mathlib's convolution, for s,t > 0.
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_convolution_heatKernel` in [Challenge/Reference/RoughHeatKernel/Kernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Kernel.lean#L152): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_convolution_heatKernel` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Kernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Kernel.lean#L152): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_convolution_heatKernel {s t : ℝ} (hs : 0 < s) (ht : 0 < t) :
@@ -116,7 +116,7 @@ theorem heatKernel_convolution_heatKernel {s t : ℝ} (hs : 0 < s) (ht : 0 < t) 
 Exact L^q norm of the heat kernel for every q in [1, infinity]: C_q t^{-(1-1/q)/2} with an explicit constant.
 ```
 
-**In Lean.** `RoughHeatKernel.eLpNorm_heatKernel` in [Challenge/Reference/RoughHeatKernel/Lq.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Lq.lean#L170): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.eLpNorm_heatKernel` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Lq.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Lq.lean#L170): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem eLpNorm_heatKernel {q : ℝ≥0∞} (hq : 1 ≤ q) {t : ℝ} (ht : 0 < t) :
@@ -136,7 +136,7 @@ theorem eLpNorm_heatKernel {q : ℝ≥0∞} (hq : 1 ≤ q) {t : ℝ} (ht : 0 < t
 For a Gaussian-tempered positive measure (possibly of infinite mass) and t > 0, the heat flow x -> int p_t(x-y) nu(dy) is continuous.
 ```
 
-**In Lean.** `RoughHeatKernel.continuous_heatFlow` in [Challenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Tempered.lean#L144): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.continuous_heatFlow` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean#L144): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem continuous_heatFlow {ν : Measure ℝ} (hν : IsGaussianTempered ν) {t : ℝ}
@@ -155,7 +155,7 @@ theorem continuous_heatFlow {ν : Measure ℝ} (hν : IsGaussianTempered ν) {t 
 Weighted bound for the heat flow of a Gaussian-tempered measure: e^{-a x^2} (heat flow)^p is integrable for a, t > 0, p >= 1.
 ```
 
-**In Lean.** `RoughHeatKernel.integrable_exp_mul_heatFlow_rpow` in [Challenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Tempered.lean#L283): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integrable_exp_mul_heatFlow_rpow` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean#L283): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integrable_exp_mul_heatFlow_rpow {ν : Measure ℝ} (hν : IsGaussianTempered ν)
@@ -175,7 +175,7 @@ theorem integrable_exp_mul_heatFlow_rpow {ν : Measure ℝ} (hν : IsGaussianTem
 Local small-time bound: sqrt(s) times the heat flow of a Gaussian-tempered measure is bounded uniformly on s in (0,T], |y| <= R.
 ```
 
-**In Lean.** `RoughHeatKernel.exists_sqrt_mul_heatFlow_le` in [Challenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Tempered.lean#L395): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.exists_sqrt_mul_heatFlow_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean#L395): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem exists_sqrt_mul_heatFlow_le {ν : Measure ℝ} (hν : IsGaussianTempered ν) {T : ℝ}
@@ -195,7 +195,7 @@ theorem exists_sqrt_mul_heatFlow_le {ν : Measure ℝ} (hν : IsGaussianTempered
 For a Gaussian-tempered measure and t > 0, the extended-real heat flow lheatFlow equals ofReal of the real heat flow (and is finite).
 ```
 
-**In Lean.** `RoughHeatKernel.ofReal_heatFlow` in [Challenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Tempered.lean#L194): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.ofReal_heatFlow` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean#L194): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem ofReal_heatFlow {ν : Measure ℝ} (hν : IsGaussianTempered ν) {t : ℝ} (ht : 0 < t)
@@ -214,7 +214,7 @@ theorem ofReal_heatFlow {ν : Measure ℝ} (hν : IsGaussianTempered ν) {t : �
 For a signed measure with Gaussian-tempered total variation (Jordan pair), |heat flow of mu| <= heat flow of |mu|.
 ```
 
-**In Lean.** `RoughHeatKernel.RoughMeasure.abs_heatFlow_le` in [Challenge/Reference/RoughHeatKernel/RoughMeasure.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/RoughMeasure.lean#L73): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.RoughMeasure.abs_heatFlow_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/RoughMeasure.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/RoughMeasure.lean#L73): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem abs_heatFlow_le (μ : RoughMeasure) {t : ℝ} (ht : 0 < t) (x : ℝ) :
@@ -233,7 +233,7 @@ theorem abs_heatFlow_le (μ : RoughMeasure) {t : ℝ} (ht : 0 < t) (x : ℝ) :
 For a finite signed measure, |heat flow| <= (2 pi t)^{-1/2} |mu|(R) at every point.
 ```
 
-**In Lean.** `RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure` in [Challenge/Reference/RoughHeatKernel/Finite.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Finite.lean#L47): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Finite.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Finite.lean#L47): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem abs_heatFlow_le_of_isFiniteMeasure (μ : RoughMeasure)
@@ -253,7 +253,7 @@ theorem abs_heatFlow_le_of_isFiniteMeasure (μ : RoughMeasure)
 The heat kernel is Mathlib's centred Gaussian density: heatKernel t = gaussianPDFReal 0 t.toNNReal for every real t.
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_eq_gaussianPDFReal` in [Challenge/Reference/RoughHeatKernel/Gaussian.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Gaussian.lean#L30): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_eq_gaussianPDFReal` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Gaussian.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Gaussian.lean#L30): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_eq_gaussianPDFReal (t x : ℝ) :
@@ -272,7 +272,7 @@ theorem heatKernel_eq_gaussianPDFReal (t x : ℝ) :
 Integration against the normal law gaussianReal x t equals integration against heatKernel t (x - y), for t != 0.
 ```
 
-**In Lean.** `RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel` in [Challenge/Reference/RoughHeatKernel/Gaussian.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Gaussian.lean#L53): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Gaussian.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Gaussian.lean#L53): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_gaussianReal_eq_integral_heatKernel {t : NNReal} (ht : t ≠ 0) (x : ℝ)
@@ -292,7 +292,7 @@ theorem integral_gaussianReal_eq_integral_heatKernel {t : NNReal} (ht : t ≠ 0)
 A Mathlib SignedMeasure on R becomes a RoughMeasure via its Jordan decomposition; positive minus negative part recovers s, and the total variation is s.totalVariation.
 ```
 
-**In Lean.** `RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure` in [Challenge/Reference/RoughHeatKernel/Finite.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Finite.lean#L121): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Finite.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Finite.lean#L121): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem toSignedMeasure_ofSignedMeasure (s : SignedMeasure ℝ) :
@@ -311,7 +311,7 @@ theorem toSignedMeasure_ofSignedMeasure (s : SignedMeasure ℝ) :
 For every measure and every real t, the extended-real heat flow equals ofReal((2 pi t)^{-1/2}) times the lower integral of exp(-(x-y)^2/(2t)).
 ```
 
-**In Lean.** `RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral` in [Challenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Tempered.lean#L206): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean#L206): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lheatFlow_eq_ofReal_mul_lintegral (ν : Measure ℝ) (t x : ℝ) :
@@ -332,7 +332,7 @@ theorem lheatFlow_eq_ofReal_mul_lintegral (ν : Measure ℝ) (t x : ℝ) :
 A Jordan pair whose total variation pos + neg is Gaussian-tempered is a RoughMeasure (single-condition form of the class), with that total variation.
 ```
 
-**In Lean.** `RoughHeatKernel.RoughMeasure.totalVariation_ofTempered` in [Challenge/Reference/RoughHeatKernel/RoughMeasure.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/RoughMeasure.lean#L92): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.RoughMeasure.totalVariation_ofTempered` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/RoughMeasure.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/RoughMeasure.lean#L92): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem totalVariation_ofTempered (pos neg : Measure ℝ) (h : pos ⟂ₘ neg)
@@ -352,7 +352,7 @@ theorem totalVariation_ofTempered (pos neg : Measure ℝ) (h : pos ⟂ₘ neg)
 Spatial L^1 increment of the 1-d heat kernel: int |p_t(x-y) - p_t(z-y)| dy <= min(2, |x-z|/sqrt t) for t > 0.
 ```
 
-**In Lean.** `RoughHeatKernel.integral_abs_heatKernel_sub_sub_le` in [Challenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Increments.lean#L330): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_abs_heatKernel_sub_sub_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean#L330): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_abs_heatKernel_sub_sub_le {t : ℝ} (ht : 0 < t) (x z : ℝ) :
@@ -371,7 +371,7 @@ theorem integral_abs_heatKernel_sub_sub_le {t : ℝ} (ht : 0 < t) (x z : ℝ) :
 Time L^1 increment of the 1-d heat kernel: int |p_{t+e}(x-y) - p_t(x-y)| dy <= min(2, e/t) for t > 0, e >= 0.
 ```
 
-**In Lean.** `RoughHeatKernel.integral_abs_heatKernel_add_sub_le` in [Challenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Increments.lean#L345): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_abs_heatKernel_add_sub_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean#L345): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_abs_heatKernel_add_sub_le {t ε : ℝ} (ht : 0 < t) (hε : 0 ≤ ε) (x : ℝ) :
@@ -390,7 +390,7 @@ theorem integral_abs_heatKernel_add_sub_le {t ε : ℝ} (ht : 0 < t) (hε : 0 �
 Time derivative of the heat kernel: d/dt p_t(x) = (x^2 - t)/(2 t^2) p_t(x) for t > 0 (the spatial one, -(x/t) p_t(x), is hasDerivAt_heatKernel).
 ```
 
-**In Lean.** `RoughHeatKernel.hasDerivAt_heatKernel_time` in [Challenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Increments.lean#L59): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.hasDerivAt_heatKernel_time` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean#L59): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem hasDerivAt_heatKernel_time {t : ℝ} (ht : 0 < t) (x : ℝ) :
@@ -409,7 +409,7 @@ theorem hasDerivAt_heatKernel_time {t : ℝ} (ht : 0 < t) (x : ℝ) :
 L^1 mean-value inequality: if F has derivative F' in theta on [a,b], F' is continuous in theta for each y and jointly measurable, then int |F(b,y)-F(a,y)| dy <= int_a^b int |F'(theta,y)| dy dtheta (lower integrals).
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_enorm_sub_le_lintegral` in [Challenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Increments.lean#L157): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_enorm_sub_le_lintegral` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean#L157): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_enorm_sub_le_lintegral {F F' : ℝ → ℝ → ℝ} {a b : ℝ} (hab : a ≤ b)
@@ -431,7 +431,7 @@ theorem lintegral_enorm_sub_le_lintegral {F F' : ℝ → ℝ → ℝ} {a b : ℝ
 Gaussian moments of the heat kernel: int x^2 p_t(x) dx = t, and int |x| p_t(x) dx <= sqrt t (integral_abs_mul_heatKernel_le), for t > 0.
 ```
 
-**In Lean.** `RoughHeatKernel.integral_sq_mul_heatKernel` in [Challenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Increments.lean#L103): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_sq_mul_heatKernel` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Increments.lean#L103): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_sq_mul_heatKernel {t : ℝ} (ht : 0 < t) :
@@ -450,7 +450,7 @@ theorem integral_sq_mul_heatKernel {t : ℝ} (ht : 0 < t) :
 Chen-Dalang estimate (Gaussian case): for s-finite nu, t > 0, measurable h >= 0, int_0^t int J(s,y)^2 p_{(t-s)/2}(x-y) h(t-s) dy ds <= 2 sqrt t J(2t,x)^2 int_0^t h(t-s)/sqrt s ds, J = lheatFlow nu (lower integrals).
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_sq_lheatFlow_conv_le` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L233): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_sq_lheatFlow_conv_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L233): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_sq_lheatFlow_conv_le (ν : Measure ℝ) [SFinite ν] {t : ℝ} (ht : 0 < t)
@@ -473,7 +473,7 @@ theorem lintegral_sq_lheatFlow_conv_le (ν : Measure ℝ) [SFinite ν] {t : ℝ}
 Gaussian product identity: p_t(y-z1) p_t(y-z2) = p_{2t}(z1-z2) p_{t/2}(y-(z1+z2)/2) for t > 0.
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_mul_heatKernel_eq` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L72): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_mul_heatKernel_eq` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L72): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_mul_heatKernel_eq {t : ℝ} (ht : 0 < t) (y z₁ z₂ : ℝ) :
@@ -493,7 +493,7 @@ theorem heatKernel_mul_heatKernel_eq {t : ℝ} (ht : 0 < t) (y z₁ z₂ : ℝ) 
 Heat-kernel comparison across times: p_a(x) <= sqrt(b/a) p_b(x) for 0 < a <= b.
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_le_sqrt_div_mul` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L49): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_le_sqrt_div_mul` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L49): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_le_sqrt_div_mul {a b : ℝ} (ha : 0 < a) (hab : a ≤ b) (x : ℝ) :
@@ -512,7 +512,7 @@ theorem heatKernel_le_sqrt_div_mul {a b : ℝ} (ha : 0 < a) (hab : a ≤ b) (x :
 A Gaussian-tempered measure on R is locally finite (finite on bounded sets), hence sigma-finite.
 ```
 
-**In Lean.** `RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L288): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L288): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem IsGaussianTempered.isLocallyFiniteMeasure {ν : Measure ℝ} (hν : IsGaussianTempered ν) :
@@ -531,7 +531,7 @@ theorem IsGaussianTempered.isLocallyFiniteMeasure {ν : Measure ℝ} (hν : IsGa
 White-noise Chen-Dalang bound: for s-finite nu and t > 0, int_0^t int J(s,y)^2 p_{t-s}(x-y)^2 dy ds <= sqrt(pi) sqrt(t) J(2t,x)^2 with J = lheatFlow nu, as lower integrals.
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le` in [Challenge/Reference/RoughHeatKernel/SquareKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/SquareKernel.lean#L146): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/SquareKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/SquareKernel.lean#L146): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_sq_lheatFlow_mul_heatKernel_sq_le (ν : Measure ℝ) [SFinite ν] {t : ℝ}
@@ -553,7 +553,7 @@ theorem lintegral_sq_lheatFlow_mul_heatKernel_sq_le (ν : Measure ℝ) [SFinite 
 Squared heat kernel: p_r(z)^2 = p_{r/2}(z) (4 pi r)^{-1/2} for r > 0; hence int p_r^2 = (4 pi r)^{-1/2} (integral_heatKernel_sq).
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_sq_eq` in [Challenge/Reference/RoughHeatKernel/SquareKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/SquareKernel.lean#L41): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_sq_eq` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/SquareKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/SquareKernel.lean#L41): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_sq_eq {r : ℝ} (hr : 0 < r) (z : ℝ) :
@@ -572,7 +572,7 @@ theorem heatKernel_sq_eq {r : ℝ} (hr : 0 < r) (z : ℝ) :
 The arcsine integral: int_0^t ds / sqrt(s (t - s)) = pi for t > 0, as a lower Lebesgue integral.
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_arcsine` in [Challenge/Reference/RoughHeatKernel/SquareKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/SquareKernel.lean#L88): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_arcsine` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/SquareKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/SquareKernel.lean#L88): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_arcsine {t : ℝ} (ht : 0 < t) :
@@ -591,7 +591,7 @@ theorem lintegral_arcsine {t : ℝ} (ht : 0 < t) :
 Heat-flow semigroup: for s-finite nu and 0 < s < t, int p_{t-s}(x-y) J(s,y) dy = J(t,x) with J = lheatFlow nu, as a lower integral.
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow` in [Challenge/Reference/RoughHeatKernel/FlowSemigroup.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/FlowSemigroup.lean#L62): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/FlowSemigroup.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/FlowSemigroup.lean#L62): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_heatKernel_mul_lheatFlow (ν : Measure ℝ) [SFinite ν] {s t : ℝ}
@@ -612,7 +612,7 @@ theorem lintegral_heatKernel_mul_lheatFlow (ν : Measure ℝ) [SFinite ν] {s t 
 Time-integrated heat-flow semigroup: for s-finite nu, int_0^t int p_{t-s}(x-y) J(s,y) dy ds = t J(t,x) with J = lheatFlow nu, as lower integrals.
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow` in [Challenge/Reference/RoughHeatKernel/FlowSemigroup.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/FlowSemigroup.lean#L92): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/FlowSemigroup.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/FlowSemigroup.lean#L92): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_lintegral_heatKernel_mul_lheatFlow (ν : Measure ℝ) [SFinite ν] (t x : ℝ) :
@@ -632,7 +632,7 @@ theorem lintegral_lintegral_heatKernel_mul_lheatFlow (ν : Measure ℝ) [SFinite
 For t > 0 and 0 <= s <= t, p_(t+s)(x) <= sqrt(2) p_(2t)(x).
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_add_le_sqrt_two_mul` in [Challenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Doubled.lean#L42): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_add_le_sqrt_two_mul` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean#L42): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_add_le_sqrt_two_mul {s t : ℝ} (ht : 0 < t) (hs : 0 ≤ s) (hst : s ≤ t)
@@ -651,7 +651,7 @@ theorem heatKernel_add_le_sqrt_two_mul {s t : ℝ} (ht : 0 < t) (hs : 0 ≤ s) (
 For every positive measure nu, t > 0 and 0 <= s <= t, J(t+s,x) <= sqrt(2) J(2t,x), with J = lheatFlow nu.
 ```
 
-**In Lean.** `RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul` in [Challenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Doubled.lean#L51): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean#L51): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lheatFlow_add_le_sqrt_two_mul (ν : Measure ℝ) {s t : ℝ} (ht : 0 < t) (hs : 0 ≤ s)
@@ -671,7 +671,7 @@ theorem lheatFlow_add_le_sqrt_two_mul (ν : Measure ℝ) {s t : ℝ} (ht : 0 < t
 For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y) J(2s,y) equals J(t+s,x).
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul` in [Challenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Doubled.lean#L63): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean#L63): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_heatKernel_mul_lheatFlow_two_mul (ν : Measure ℝ) [SFinite ν] {s t : ℝ}
@@ -692,7 +692,7 @@ theorem lintegral_heatKernel_mul_lheatFlow_two_mul (ν : Measure ℝ) [SFinite �
 For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y) J(2s,y) is at most sqrt(2) J(2t,x).
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le` in [Challenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Doubled.lean#L73): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean#L73): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_heatKernel_mul_lheatFlow_two_mul_le (ν : Measure ℝ) [SFinite ν] {s t : ℝ}
@@ -713,7 +713,7 @@ theorem lintegral_heatKernel_mul_lheatFlow_two_mul_le (ν : Measure ℝ) [SFinit
 For 0 < s < t, the lower integral of p_(2s)(y-z1) p_(2s)(y-z2) p_((t-s)/2)(x-y) is at most sqrt(2t/s) p_(2t)(x-z1) p_(2t)(x-z2).
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le` in [Challenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Doubled.lean#L103): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean#L103): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_heatKernel_two_mul_mul_le {s t : ℝ} (hs : 0 < s) (hst : s < t)
@@ -738,7 +738,7 @@ theorem lintegral_heatKernel_two_mul_mul_le {s t : ℝ} (hs : 0 < s) (hst : s < 
 For every s-finite nu and 0 < s < t, the lower integral of p_(t-s)(x-y)^2 J(2s,y)^2 is at most sqrt(t)/(sqrt(2*pi)*sqrt(s*(t-s))) J(2t,x)^2.
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le` in [Challenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Doubled.lean#L187): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Doubled.lean#L187): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le (ν : Measure ℝ) [SFinite ν]
@@ -760,7 +760,7 @@ theorem lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le (ν : Measure ℝ) [
 Local Gaussian-square domination on a positive-time neighborhood with bounded output displacement; an explicit integrable envelope for continuity arguments.
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_sq_le_local` in [Challenge/Reference/RoughHeatKernel/Kernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Kernel.lean#L170): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_sq_le_local` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Kernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Kernel.lean#L170): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_sq_le_local {t u s x z y : ℝ}
@@ -782,7 +782,7 @@ theorem heatKernel_sq_le_local {t u s x z y : ℝ}
 Joint time-space continuity of the heat flow at every positive time for any Gaussian-tempered positive measure, including infinite mass.
 ```
 
-**In Lean.** `RoughHeatKernel.continuousAt_heatFlow_joint` in [Challenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Tempered.lean#L172): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.continuousAt_heatFlow_joint` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Tempered.lean#L172): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem continuousAt_heatFlow_joint {ν : Measure ℝ}
@@ -802,7 +802,7 @@ theorem continuousAt_heatFlow_joint {ν : Measure ℝ}
 Joint time-space continuity at every positive time for signed Jordan data with Gaussian-tempered total variation; no finite-total-variation assumption.
 ```
 
-**In Lean.** `RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint` in [Challenge/Reference/RoughHeatKernel/RoughMeasure.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/RoughMeasure.lean#L61): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/RoughMeasure.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/RoughMeasure.lean#L61): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem continuousAt_heatFlow_joint (μ : RoughMeasure) (a : ℝ × ℝ) (ha : 0 < a.1) :
@@ -821,7 +821,7 @@ theorem continuousAt_heatFlow_joint (μ : RoughMeasure) (a : ℝ × ℝ) (ha : 0
 For all r>0 and u,v, |p_r(u)-p_r(v)| <= 2 exp(1) |u-v|^(1/4) r^(-1/8) (p_(2r)(u)+p_(2r)(v)); one numerical constant precedes all variables.
 ```
 
-**In Lean.** `RoughHeatKernel.SpatialEnvelope.quarter_increment` in [Challenge/Reference/RoughHeatKernel/SpatialEnvelope.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/SpatialEnvelope.lean#L180): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.SpatialEnvelope.quarter_increment` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/SpatialEnvelope.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/SpatialEnvelope.lean#L180): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem quarter_increment {r : ℝ} (hr : 0<r) (u v : ℝ) :
@@ -842,7 +842,7 @@ theorem quarter_increment {r : ℝ} (hr : 0<r) (u v : ℝ) :
 int_0^t s^(a-1) (t-s)^(b-1) ds = t^(a+b-1) Gamma(a) Gamma(b)/Gamma(a+b) for a, b, t > 0 (DLMF 5.12.1, scaled).
 ```
 
-**In Lean.** `RoughHeatKernel.integral_rpow_mul_sub_rpow` in [Challenge/Reference/RoughHeatKernel/Beta.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Beta.lean#L34): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_rpow_mul_sub_rpow` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Beta.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Beta.lean#L34): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_rpow_mul_sub_rpow {a b t : ℝ} (ha : 0 < a) (hb : 0 < b) (ht : 0 < t) :
@@ -862,7 +862,7 @@ theorem integral_rpow_mul_sub_rpow {a b t : ℝ} (ha : 0 < a) (hb : 0 < b) (ht :
 p_(nu t)(x)^2 = p_((nu/2) t)(x) (4 pi nu)^(-1/2) t^(-1/2) for nu, t > 0.
 ```
 
-**In Lean.** `RoughHeatKernel.heatKernel_mul_sq_eq` in [Challenge/Reference/RoughHeatKernel/Scaled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Scaled.lean#L33): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.heatKernel_mul_sq_eq` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Scaled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Scaled.lean#L33): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_mul_sq_eq {ν t : ℝ} (hν : 0 < ν) (ht : 0 < t) (x : ℝ) :
@@ -882,7 +882,7 @@ theorem heatKernel_mul_sq_eq {ν t : ℝ} (hν : 0 < ν) (ht : 0 < t) (x : ℝ) 
 int p_(nu(t-s))(x-y) p_(nu s)(y) dy = p_(nu t)(x) for nu > 0 and 0 < s < t.
 ```
 
-**In Lean.** `RoughHeatKernel.integral_heatKernel_mul_sub_mul` in [Challenge/Reference/RoughHeatKernel/Scaled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Scaled.lean#L45): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_heatKernel_mul_sub_mul` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Scaled.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Scaled.lean#L45): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_heatKernel_mul_sub_mul {ν s t : ℝ} (hν : 0 < ν) (hs : 0 < s) (hst : s < t)
@@ -902,7 +902,7 @@ theorem integral_heatKernel_mul_sub_mul {ν s t : ℝ} (hν : 0 < ν) (hs : 0 < 
 The standard normal distribution function equals 1/2 at 0.
 ```
 
-**In Lean.** `RoughHeatKernel.normalCDF_zero` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L112): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.normalCDF_zero` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L112): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem normalCDF_zero : normalCDF 0 = 1 / 2
@@ -920,7 +920,7 @@ theorem normalCDF_zero : normalCDF 0 = 1 / 2
 The standard normal distribution function has derivative (2 pi)^(-1/2) e^(-x^2/2) at every x.
 ```
 
-**In Lean.** `RoughHeatKernel.hasDerivAt_normalCDF` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L127): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.hasDerivAt_normalCDF` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L127): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem hasDerivAt_normalCDF (x : ℝ) : HasDerivAt normalCDF (normalDensity x) x
@@ -938,7 +938,7 @@ theorem hasDerivAt_normalCDF (x : ℝ) : HasDerivAt normalCDF (normalDensity x) 
 normalCDF x = (1 + erf(x/sqrt 2))/2, with erf x = (2/sqrt pi) int_0^x e^(-t^2) dt.
 ```
 
-**In Lean.** `RoughHeatKernel.normalCDF_eq_erf` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L162): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.normalCDF_eq_erf` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L162): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem normalCDF_eq_erf (x : ℝ) : normalCDF x = (1 + erf (x / Real.sqrt 2)) / 2
@@ -956,7 +956,7 @@ theorem normalCDF_eq_erf (x : ℝ) : normalCDF x = (1 + erf (x / Real.sqrt 2)) /
 For z >= 0, sum_k z^k / Gamma(k/2 + 1) = e^(z^2) (1 + erf z) (DLMF 7.6.2, reindexed).
 ```
 
-**In Lean.** `RoughHeatKernel.hasSum_pow_div_Gamma` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L299): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.hasSum_pow_div_Gamma` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L299): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem hasSum_pow_div_Gamma {z : ℝ} (hz : 0 ≤ z) :
@@ -976,7 +976,7 @@ theorem hasSum_pow_div_Gamma {z : ℝ} (hz : 0 ≤ z) :
 For 0 < r < R and s-finite nu, int J(r,y)^2 p_((R-r)/2)(x-y) dy <= 2 sqrt(R/r) J(2R,x)^2, with J = lheatFlow nu.
 ```
 
-**In Lean.** `RoughHeatKernel.lintegral_sq_lheatFlow_mul_le` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L187): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.lintegral_sq_lheatFlow_mul_le` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L187): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_sq_lheatFlow_mul_le (ν : Measure ℝ) [SFinite ν] {r R : ℝ} (hr : 0 < r)
@@ -997,7 +997,7 @@ theorem lintegral_sq_lheatFlow_mul_le (ν : Measure ℝ) [SFinite ν] {r R : ℝ
 int p_a(y-m) p_b(x-y) dy = p_(a+b)(x-m) for a, b > 0.
 ```
 
-**In Lean.** `RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L110): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L110): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem integral_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0 < a)
@@ -1017,7 +1017,7 @@ theorem integral_heatKernel_sub_mul_heatKernel_sub {a b : ℝ} (ha : 0 < a)
 For nonnegative f, ofReal(int f dmu) <= int^- ofReal(f) dmu, with no integrability hypothesis.
 ```
 
-**In Lean.** `RoughHeatKernel.ofReal_integral_le_lintegral` in [Challenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/ChenDalang.lean#L220): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.ofReal_integral_le_lintegral` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/ChenDalang.lean#L220): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem ofReal_integral_le_lintegral {α : Type*} [MeasurableSpace α] {μ : Measure α}
@@ -1037,7 +1037,7 @@ theorem ofReal_integral_le_lintegral {α : Type*} [MeasurableSpace α] {μ : Mea
 The standard normal distribution function is at most 1.
 ```
 
-**In Lean.** `RoughHeatKernel.normalCDF_le_one` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L393): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.normalCDF_le_one` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L393): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem normalCDF_le_one (x : ℝ) : normalCDF x ≤ 1
@@ -1055,7 +1055,7 @@ theorem normalCDF_le_one (x : ℝ) : normalCDF x ≤ 1
 The standard normal distribution function is monotone.
 ```
 
-**In Lean.** `RoughHeatKernel.normalCDF_monotone` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L398): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.normalCDF_monotone` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L398): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem normalCDF_monotone : Monotone normalCDF
@@ -1073,7 +1073,7 @@ theorem normalCDF_monotone : Monotone normalCDF
 erf x tends to 1 as x tends to infinity.
 ```
 
-**In Lean.** `RoughHeatKernel.tendsto_erf_atTop` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L350): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.tendsto_erf_atTop` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L350): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem tendsto_erf_atTop : Filter.Tendsto erf Filter.atTop (nhds 1)
@@ -1091,7 +1091,7 @@ theorem tendsto_erf_atTop : Filter.Tendsto erf Filter.atTop (nhds 1)
 erf has derivative (2/sqrt pi) e^(-x^2) at every x.
 ```
 
-**In Lean.** `RoughHeatKernel.hasDerivAt_erf` in [Challenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/Erf.lean#L314): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.hasDerivAt_erf` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/Erf.lean#L314): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem hasDerivAt_erf (x : ℝ) : HasDerivAt erf (2 / √π * exp (-x ^ 2)) x
@@ -1109,7 +1109,7 @@ theorem hasDerivAt_erf (x : ℝ) : HasDerivAt erf (2 / √π * exp (-x ^ 2)) x
 For positive diffusivity, every real output time has the exact causal-kernel squared L2 norm, including zero norm at nonpositive time.
 ```
 
-**In Lean.** `RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq` in [Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean#L159): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/CausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/CausalHeatKernel.lean#L159): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem lintegral_heatK_sq {ν : ℝ} (hν : 0 < ν) (t x : ℝ) :
@@ -1129,7 +1129,7 @@ theorem lintegral_heatK_sq {ν : ℝ} (hν : 0 < ν) (t x : ℝ) :
 Every causal heat-kernel section belongs to L2 over positive-time space for positive diffusivity.
 ```
 
-**In Lean.** `RoughHeatKernel.CausalHeatKernel.memLp_heatK` in [Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean#L178): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.CausalHeatKernel.memLp_heatK` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/CausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/CausalHeatKernel.lean#L178): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem memLp_heatK {ν : ℝ} (hν : 0 < ν) (t x : ℝ) :
@@ -1148,7 +1148,7 @@ theorem memLp_heatK {ν : ℝ} (hν : 0 < ν) (t x : ℝ) :
 Causal heat-kernel sections vary jointly continuously in output time and space in L2, including nonpositive output time.
 ```
 
-**In Lean.** `RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq` in [Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/CausalHeatKernel.lean#L323): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/CausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/CausalHeatKernel.lean#L323): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem tendsto_heatK_sq {ν : ℝ} (hν : 0 < ν) (z : ℝ × ℝ) :
@@ -1169,7 +1169,7 @@ theorem tendsto_heatK_sq {ν : ℝ} (hν : 0 < ν) (z : ℝ × ℝ) :
 A fixed later-output Gaussian dominates nearby-output kernels outside the stated explicit spatial radius, at unchanged positive diffusivity.
 ```
 
-**In Lean.** `RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far` in [Challenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean#L87): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean#L87): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem heatKernel_sq_le_future_of_far {ν t t' x x' s y : ℝ}
@@ -1193,7 +1193,7 @@ theorem heatKernel_sq_le_future_of_far {ν t t' x x' s y : ℝ}
 At positive output time, finite future weighted variance and a finite compact input-weight bound imply weighted squared-difference convergence; infinity is allowed outside the active region.
 ```
 
-**In Lean.** `RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference` in [Challenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/00b39962d3328088133a0b75c9f710b6834a463a/Challenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean#L172): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
+**In Lean.** `RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference` in [RoughHeatKernelChallenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean](https://github.com/chenle02/rough-heat-kernel-lean/blob/16946e1488812abfd844833d462b645e19a4794d/RoughHeatKernelChallenge/Reference/RoughHeatKernel/WeightedCausalHeatKernel.lean#L172): the statement the proof was checked against (the proof is in a separate file, and a second checker confirmed it proves exactly this).
 
 ```lean
 theorem tendsto_weighted_sq_difference {ν t x : ℝ}
@@ -1220,22 +1220,24 @@ The full account of what each check covers and what it takes on trust is lean-pk
 
 ## How this was checked
 
-- lean-pkg's claims ledger: **ready**, every required claim is closed by the recorded receipts; 56 of 56 required claim(s) verified (`sha256:d935b7df69404558…`).
-- Build check (`lean-pkg gate`) at commit `00b39962d332`: `sorry` count 0; axioms used: `Classical.choice`, `Quot.sound`, `propext`.
+- lean-pkg's claims ledger: **ready**, every required claim is closed by the recorded receipts; 56 of 56 required claim(s) verified (`sha256:00e361457e114be6…`).
+- Build check (`lean-pkg gate`) at commit `16946e148881`: `sorry` count 0; axioms used: `Classical.choice`, `Quot.sound`, `propext`.
 - Axioms of every claim: read from the built environment (Lean's `collectAxioms`) for all 56 claim(s) in `claims.yaml`, not only the theorems the build prints; none uses an axiom beyond `propext`, `Quot.sound` and `Classical.choice`.
-- Statement comparison (comparator) at commit `00b39962d332`: 1 configuration(s), 56 theorem(s) compared (each Challenge statement against its Solution proof); permitted axioms: `Classical.choice`, `Quot.sound`, `propext`; definitions compared by name only: none.
+- Statement comparison (comparator) at commit `16946e148881`: 1 configuration(s), 56 theorem(s) compared (each Challenge statement against its Solution proof); permitted axioms: `Classical.choice`, `Quot.sound`, `propext`; definitions compared by name only: none.
 
 ### Receipts
 
 | Receipt | Check | Commit | Date | Job | SHA-256 |
 |---|---|---|---|---|---|
 | `.lean-receipts/00b3996-official-native.json` | build | `00b39962d332` | 2026-10-28 | — | `672036d51b0ae0911f99f290653b0482d7fe7ef337e06e6a2e515bdf7faac90f` |
-| `.lean-receipts/00b39962d332-comparator.json` (used here) | statement comparison | `00b39962d332` | 2026-10-28 | — | `f61af29c140377bf4a008ebbeec8db153a575e5291b59282e540adddf0993b96` |
-| `.lean-receipts/00b39962d332-systemd-user-rough-heat-kernel-coverage-20261028.service-e74e226401ba430eb1cdd5394138c0fa-h-2db2e0fa6029.json` (used here) | build | `00b39962d332` | 2026-10-28 | — | `672036d51b0ae0911f99f290653b0482d7fe7ef337e06e6a2e515bdf7faac90f` |
+| `.lean-receipts/00b39962d332-comparator.json` | statement comparison | `00b39962d332` | 2026-10-28 | — | `f61af29c140377bf4a008ebbeec8db153a575e5291b59282e540adddf0993b96` |
+| `.lean-receipts/00b39962d332-systemd-user-rough-heat-kernel-coverage-20261028.service-e74e226401ba430eb1cdd5394138c0fa-h-2db2e0fa6029.json` | build | `00b39962d332` | 2026-10-28 | — | `672036d51b0ae0911f99f290653b0482d7fe7ef337e06e6a2e515bdf7faac90f` |
 | `.lean-receipts/0ca762dbce91-comparator.json` | statement comparison | `0ca762dbce91` | 2026-10-26 | — | `073809f696e8928f11eae593d01fb7a8f96666366ed20f0c5b4fb8f9dd05290c` |
 | `.lean-receipts/0ca762dbce91-systemd-user-rough-heat-kernel-v0100-p14s.service-01e3aee066f0489b8c9ee3ebdf69e091-h-2db2e0fa6029.json` | build | `0ca762dbce91` | 2026-10-26 | — | `a7622d63fc16b8c437fce5e72898d79cbd6c731e20eba8455b01259eb3c56da3` |
 | `.lean-receipts/133f3aec2c12-comparator.json` | statement comparison | `133f3aec2c12` | 2026-10-19 | — | `30db14b96309aba3cf42554fe727add3521f099c42094160a3cba5eb2a2994a3` |
 | `.lean-receipts/133f3aec2c12-systemd-user-rough-heat-kernel-v080-local2-20261019.service-d4ab772670254edebd6c0c1b12db247f-h-24e00fc5da6c.json` | build | `133f3aec2c12` | 2026-10-19 | — | `1f09392e95b179555ed4daaedcc30eff77a93c1255e6f5f000db010cd9c68463` |
+| `.lean-receipts/16946e148881-comparator.json` (used here) | statement comparison | `16946e148881` | 2026-10-29 | — | `5017ebcaafa7aac30b04c667a550032e549913a73893e942ac92f749fff92f21` |
+| `.lean-receipts/16946e148881-systemd-user-rough-heat-kernel-v0120-homedell-202610290916.service-d9b06d8fc3ab4e169da229130db6f040-h-f985343177f7.json` (used here) | build | `16946e148881` | 2026-10-29 | — | `dfac2bde772957145d8036cd2f40e7e0d115391e226e2662092fd1fcb516de97` |
 | `.lean-receipts/3b16158a4974-comparator.json` | statement comparison | `3b16158a4974` | 2026-10-26 | — | `d8f17a81964ecacd8e709a6d066410955df914fea8c629f439fb575d22a0b038` |
 | `.lean-receipts/3b16158a4974-systemd-user-rough-heat-kernel-v090-p14s-3.service-97086d43063c40a88fa4bbd3c083eb85-h-2db2e0fa6029.json` | build | `3b16158a4974` | 2026-10-26 | — | `760a848212ed328613a40a4ddf13b377ceac5cb2f7a83e84ce4a0f6ac25b3e9a` |
 | `.lean-receipts/6a35f44f2d51-comparator.json` | statement comparison | `6a35f44f2d51` | 2026-10-26 | — | `a00616b5676d685e5a002d7ad7260ee53f3ff5c7ff896c5e27bab1816aeede15` |
@@ -1256,7 +1258,7 @@ The full account of what each check covers and what it takes on trust is lean-pk
 ```bash
 git clone https://github.com/chenle02/rough-heat-kernel-lean
 cd rough-heat-kernel-lean
-git checkout 00b39962d3328088133a0b75c9f710b6834a463a   # the commit the build check binds
+git checkout 16946e1488812abfd844833d462b645e19a4794d   # the commit the build check binds
 lake exe cache get
 lake build
 ```
@@ -1265,7 +1267,7 @@ Expected: `#print axioms` on any declaration above reports a subset of {`Classic
 
 ## Citation
 
-Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.11.0.
+Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.12.0.
 
 See [CITATION.cff](CITATION.cff).
 
