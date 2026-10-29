@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.ChenDalang
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.ChenDalang
 public import Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv
 
 public section

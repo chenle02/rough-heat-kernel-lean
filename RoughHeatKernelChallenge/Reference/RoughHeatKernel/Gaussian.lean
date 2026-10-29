@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.Kernel
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.Kernel
 public import Mathlib.Probability.Distributions.Gaussian.Real
 
 public section

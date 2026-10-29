@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.SquareKernel
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.SquareKernel
 
 public section
 

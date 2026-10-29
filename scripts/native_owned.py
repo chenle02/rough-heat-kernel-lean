@@ -40,7 +40,7 @@ with tempfile.TemporaryDirectory(prefix='compiled-escape-') as td:
 
 import re
 
-IMPORT_ONLY_ROOTS = {'RoughHeatKernel', 'RoughHeatKernelTest', 'Challenge', 'Solution'}
+IMPORT_ONLY_ROOTS = {'RoughHeatKernel', 'RoughHeatKernelTest', 'RoughHeatKernelChallenge', 'RoughHeatKernelSolution'}
 def import_only_source(source):
     # Same nested block/line-comment rules as the established strict fixture guard.
     # Strings are retained so a declaration or evaluator cannot masquerade as an import.
@@ -65,9 +65,9 @@ def import_only_source(source):
     return bool(lines) and all(re.fullmatch(r'(?:public )?import [A-Za-z_][A-Za-z0-9_.]*', line) for line in lines)
 
 # Two cones deliberately define the same declaration names. Never import them into one environment.
-prod = ['RoughHeatKernel', 'RoughHeatKernelTest', 'Solution']
+prod = ['RoughHeatKernel', 'RoughHeatKernelTest', 'RoughHeatKernelSolution']
 cones = {'production': [], 'reference': []}
-for cone, prefixes in [('production', prod), ('reference', ['Challenge'])]:
+for cone, prefixes in [('production', prod), ('reference', ['RoughHeatKernelChallenge'])]:
     for prefix in prefixes:
         paths = [root/(prefix+'.lean'), *sorted((root/prefix).rglob('*.lean'))]
         for source in paths:

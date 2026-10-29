@@ -39,208 +39,208 @@ status:
   main_results:
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_convolution_heatKernel
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.eLpNorm_heatKernel
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.continuous_heatFlow
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integrable_exp_mul_heatFlow_rpow
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.exists_sqrt_mul_heatFlow_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.ofReal_heatFlow
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.RoughMeasure.abs_heatFlow_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.RoughMeasure.abs_heatFlow_le_of_isFiniteMeasure
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_eq_gaussianPDFReal
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_gaussianReal_eq_integral_heatKernel
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.RoughMeasure.toSignedMeasure_ofSignedMeasure
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lheatFlow_eq_ofReal_mul_lintegral
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.RoughMeasure.totalVariation_ofTempered
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_abs_heatKernel_sub_sub_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_abs_heatKernel_add_sub_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.hasDerivAt_heatKernel_time
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_enorm_sub_le_lintegral
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_sq_mul_heatKernel
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_sq_lheatFlow_conv_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_mul_heatKernel_eq
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_le_sqrt_div_mul
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.IsGaussianTempered.isLocallyFiniteMeasure
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_sq_lheatFlow_mul_heatKernel_sq_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_sq_eq
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_arcsine
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_lintegral_heatKernel_mul_lheatFlow
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_add_le_sqrt_two_mul
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lheatFlow_add_le_sqrt_two_mul
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_heatKernel_mul_lheatFlow_two_mul_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_heatKernel_two_mul_mul_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_heatKernel_sq_mul_lheatFlow_two_mul_sq_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_sq_le_local
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.continuousAt_heatFlow_joint
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.RoughMeasure.continuousAt_heatFlow_joint
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.SpatialEnvelope.quarter_increment
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_rpow_mul_sub_rpow
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_mul_sq_eq
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_heatKernel_mul_sub_mul
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.normalCDF_zero
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.hasDerivAt_normalCDF
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.normalCDF_eq_erf
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.hasSum_pow_div_Gamma
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.lintegral_sq_lheatFlow_mul_le
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.integral_heatKernel_sub_mul_heatKernel_sub
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.ofReal_integral_le_lintegral
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.normalCDF_le_one
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.normalCDF_monotone
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.tendsto_erf_atTop
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.hasDerivAt_erf
-    file: Solution.lean
-    challenge_file: Challenge.lean
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
 automation:
   methods:
   - method: other

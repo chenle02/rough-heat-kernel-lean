@@ -5,8 +5,8 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.SquareKernel
-public import Challenge.Reference.RoughHeatKernel.FlowSemigroup
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.SquareKernel
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.FlowSemigroup
 
 public section
 /-!

@@ -1,5 +1,5 @@
 name = "RoughHeatKernel"
-version = "0.11.0"
+version = "0.12.0"
 description = "The one-dimensional heat kernel and the heat flow of rough (possibly infinite-mass) initial measures."
 keywords = ["heat kernel", "heat equation", "measure", "SPDE", "Gaussian"]
 license = "Apache-2.0"
@@ -17,7 +17,7 @@ name = "RoughHeatKernel"
 name = "RoughHeatKernelTest"
 
 [[lean_lib]]
-name = "Challenge"
+name = "RoughHeatKernelChallenge"
 
 [[lean_lib]]
-name = "Solution"
+name = "RoughHeatKernelSolution"

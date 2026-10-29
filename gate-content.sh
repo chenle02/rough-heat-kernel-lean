@@ -15,8 +15,8 @@ fi
 echo "placeholder audit: PASS"
 
 # References are fully proved snapshots; test witnesses also contain no holes.
-reference_sources=(Challenge.lean Solution.lean)
-while IFS= read -r source; do reference_sources+=("$source"); done < <(find Challenge -name '*.lean' | LC_ALL=C sort)
+reference_sources=(RoughHeatKernelChallenge.lean RoughHeatKernelSolution.lean)
+while IFS= read -r source; do reference_sources+=("$source"); done < <(find RoughHeatKernelChallenge -name '*.lean' | LC_ALL=C sort)
 if grep -n -w -E 'sorry|admit|axiom|opaque|unsafe|native_decide|implemented_by|skipKernelTC|trustLevel|include_str|include_bytes|run_io|run_cmd|run_elab' "${reference_sources[@]}"; then
   echo "reference proof escape found" >&2; exit 1
 fi
@@ -45,7 +45,7 @@ build_scoped() {
 }
 echo "lean-pkg-build: begin"
 build_scoped RoughHeatKernel
-build_scoped Challenge
+build_scoped RoughHeatKernelChallenge
 # Serialize test modules explicitly; Lean threads alone do not limit Lake jobs.
 build_scoped RoughHeatKernelTest.Counterexamples
 for source in RoughHeatKernelTest/*.lean; do
@@ -54,10 +54,10 @@ for source in RoughHeatKernelTest/*.lean; do
   build_scoped "${module//\//.}"
 done
 build_scoped RoughHeatKernelTest
-build_scoped Solution
+build_scoped RoughHeatKernelSolution
 echo "lean-pkg-build: end"
-bash scripts/lake_guard.sh fresh "$artifacts/all-build.log" RoughHeatKernel RoughHeatKernelTest Challenge Solution
-bash scripts/lake_guard.sh shadow "$(lake env printenv LEAN_PATH)" "$PWD/.lake/build/lib/lean" RoughHeatKernel RoughHeatKernelTest Challenge Solution
+bash scripts/lake_guard.sh fresh "$artifacts/all-build.log" RoughHeatKernel RoughHeatKernelTest RoughHeatKernelChallenge RoughHeatKernelSolution
+bash scripts/lake_guard.sh shadow "$(lake env printenv LEAN_PATH)" "$PWD/.lake/build/lib/lean" RoughHeatKernel RoughHeatKernelTest RoughHeatKernelChallenge RoughHeatKernelSolution
 
 # 3. Exact inventory: source theorems == inventory == #check list == #print axioms list.
 tmp="$artifacts"

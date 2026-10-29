@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.ChenDalang
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.ChenDalang
 
 public section
 /-!

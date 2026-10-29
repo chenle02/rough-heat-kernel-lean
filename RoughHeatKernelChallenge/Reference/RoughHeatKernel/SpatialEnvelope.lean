@@ -2,8 +2,8 @@
 Known uniform quarter-Hölder Gaussian envelope with an explicit universal constant. -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.Increments
-public import Challenge.Reference.RoughHeatKernel.ChenDalang
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.Increments
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.ChenDalang
 public import Mathlib.Analysis.Calculus.MeanValue
 public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 

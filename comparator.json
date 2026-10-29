@@ -1,6 +1,6 @@
 {
-  "challenge_module": "Challenge",
-  "solution_module": "Solution",
+  "challenge_module": "RoughHeatKernelChallenge",
+  "solution_module": "RoughHeatKernelSolution",
   "theorem_names": [
     "RoughHeatKernel.heatKernel_convolution_heatKernel",
     "RoughHeatKernel.eLpNorm_heatKernel",

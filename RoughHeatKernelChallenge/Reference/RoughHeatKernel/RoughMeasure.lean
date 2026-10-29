@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.Tempered
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.Tempered
 
 @[expose] public section
 

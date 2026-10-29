@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.Gaussian
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.Gaussian
 public import Mathlib.Probability.Moments.Variance
 import Mathlib.Analysis.SpecialFunctions.Sqrt
 

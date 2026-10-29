@@ -5,7 +5,7 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.Scaled
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.Scaled
 public import Mathlib.MeasureTheory.Integral.Lebesgue.DominatedConvergence
 public import Mathlib.MeasureTheory.Function.L2Space
 public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic

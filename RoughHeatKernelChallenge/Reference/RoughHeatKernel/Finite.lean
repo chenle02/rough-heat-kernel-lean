@@ -5,8 +5,8 @@ Authors: Le Chen
 -/
 module
 
-public import Challenge.Reference.RoughHeatKernel.RoughMeasure
-public import Challenge.Reference.RoughHeatKernel.Lq
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.RoughMeasure
+public import RoughHeatKernelChallenge.Reference.RoughHeatKernel.Lq
 public import Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan
 
 @[expose] public section
