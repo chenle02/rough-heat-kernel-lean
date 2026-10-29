@@ -33,9 +33,9 @@ status:
   - Quot.sound
   - propext
   evidence:
-    commit: 6a35f44f2d517811cbb08688814c8edd304a400a
-    gate_receipt: .lean-receipts/6a35f44f2d51-systemd-user-rough-heat-kernel-v0110-p14s.service-11a0d698f32d4a27a624903fe1acdfb1-h-2db2e0fa6029.json
-    comparator_receipt: .lean-receipts/6a35f44f2d51-comparator.json
+    commit: 16946e1488812abfd844833d462b645e19a4794d
+    gate_receipt: .lean-receipts/16946e148881-systemd-user-rough-heat-kernel-v0120-homedell-202610290916.service-d9b06d8fc3ab4e169da229130db6f040-h-f985343177f7.json
+    comparator_receipt: .lean-receipts/16946e148881-comparator.json
   main_results:
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.heatKernel_convolution_heatKernel
@@ -239,6 +239,26 @@ status:
     challenge_file: RoughHeatKernelChallenge.lean
   - comparator_config: comparator.json
     declaration: RoughHeatKernel.hasDerivAt_erf
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.CausalHeatKernel.memLp_heatK
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far
+    file: RoughHeatKernelSolution.lean
+    challenge_file: RoughHeatKernelChallenge.lean
+  - comparator_config: comparator.json
+    declaration: RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference
     file: RoughHeatKernelSolution.lean
     challenge_file: RoughHeatKernelChallenge.lean
 automation:
@@ -654,6 +674,44 @@ alignment:
     status: reusable
     note: 'Derivative of the error function: erf''(x) = (2/sqrt pi) e^(-x^2); also erfc'' = -erf'', continuity,
       parity and signs of erf.'
+  - source: null
+    lean: RoughHeatKernel.CausalHeatKernel.lintegral_heatK_sq
+    module: RoughHeatKernel/CausalHeatKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/lintegral-heatk-sq
+    status: reusable
+    note: Exact squared L2 norm of every causal heat-kernel section, including nonpositive output times.
+  - source: null
+    lean: RoughHeatKernel.CausalHeatKernel.memLp_heatK
+    module: RoughHeatKernel/CausalHeatKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/memlp-heatk
+    status: reusable
+    note: Every causal heat-kernel section belongs to L2 for positive diffusivity.
+  - source: null
+    lean: RoughHeatKernel.CausalHeatKernel.tendsto_heatK_sq
+    module: RoughHeatKernel/CausalHeatKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/tendsto-heatk-sq
+    status: reusable
+    note: Joint output-time and output-space L2 continuity of causal heat-kernel sections, including nonpositive
+      output times.
+  - source: null
+    lean: RoughHeatKernel.WeightedCausalHeatKernel.heatKernel_sq_le_future_of_far
+    module: RoughHeatKernel/WeightedCausalHeatKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/heatkernel-sq-le-future-of-far
+    status: reusable
+    note: Far-space Gaussian domination at unchanged positive diffusivity, with an explicit sufficient
+      radius and later output time.
+  - source: null
+    lean: RoughHeatKernel.WeightedCausalHeatKernel.tendsto_weighted_sq_difference
+    module: RoughHeatKernel/WeightedCausalHeatKernel.lean
+    kind: theorem
+    claim: rough-heat-kernel/tendsto-weighted-sq-difference
+    status: reusable
+    note: Joint weighted causal-kernel L2 continuity at positive output time, from finite future variance
+      and a finite compact weight bound; weights may be infinite outside the active region.
 acknowledgements: Developed and verified with lean-pkg (https://github.com/lean-pkg/lean-pkg, doi:10.5281/zenodo.23272098).
   This work was completed in part with resources provided by the Auburn University Easley Cluster (https://hpc.auburn.edu/hpc/docs/hpcdocs/build/html/easley/intro.html).
   Historical verification used Easley; current release execution is identified by its own receipts.
