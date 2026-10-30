@@ -1268,7 +1268,7 @@ Expected: `#print axioms` on any declaration above reports a subset of {`Classic
 
 ## Citation
 
-Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.12.0. [doi:10.5281/zenodo.23668758](https://doi.org/10.5281/zenodo.23668758).
+Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.12.0. [doi:10.5281/zenodo.23770189](https://doi.org/10.5281/zenodo.23770189).
 
 See [CITATION.cff](CITATION.cff).
 
