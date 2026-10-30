@@ -1236,6 +1236,7 @@ The full account of what each check covers and what it takes on trust is lean-pk
 | `.lean-receipts/0ca762dbce91-systemd-user-rough-heat-kernel-v0100-p14s.service-01e3aee066f0489b8c9ee3ebdf69e091-h-2db2e0fa6029.json` | build | `0ca762dbce91` | 2026-10-26 | — | `a7622d63fc16b8c437fce5e72898d79cbd6c731e20eba8455b01259eb3c56da3` |
 | `.lean-receipts/133f3aec2c12-comparator.json` | statement comparison | `133f3aec2c12` | 2026-10-19 | — | `30db14b96309aba3cf42554fe727add3521f099c42094160a3cba5eb2a2994a3` |
 | `.lean-receipts/133f3aec2c12-systemd-user-rough-heat-kernel-v080-local2-20261019.service-d4ab772670254edebd6c0c1b12db247f-h-24e00fc5da6c.json` | build | `133f3aec2c12` | 2026-10-19 | — | `1f09392e95b179555ed4daaedcc30eff77a93c1255e6f5f000db010cd9c68463` |
+| `.lean-receipts/16946e1-official-native.json` | build | `16946e148881` | 2026-10-29 | — | `dfac2bde772957145d8036cd2f40e7e0d115391e226e2662092fd1fcb516de97` |
 | `.lean-receipts/16946e148881-comparator.json` (used here) | statement comparison | `16946e148881` | 2026-10-29 | — | `5017ebcaafa7aac30b04c667a550032e549913a73893e942ac92f749fff92f21` |
 | `.lean-receipts/16946e148881-systemd-user-rough-heat-kernel-v0120-homedell-202610290916.service-d9b06d8fc3ab4e169da229130db6f040-h-f985343177f7.json` (used here) | build | `16946e148881` | 2026-10-29 | — | `dfac2bde772957145d8036cd2f40e7e0d115391e226e2662092fd1fcb516de97` |
 | `.lean-receipts/3b16158a4974-comparator.json` | statement comparison | `3b16158a4974` | 2026-10-26 | — | `d8f17a81964ecacd8e709a6d066410955df914fea8c629f439fb575d22a0b038` |
@@ -1267,7 +1268,7 @@ Expected: `#print axioms` on any declaration above reports a subset of {`Classic
 
 ## Citation
 
-Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.12.0.
+Le Chen. *RoughHeatKernel: the heat kernel and the heat flow of rough initial measures in Lean 4*. Version 0.12.0. [doi:10.5281/zenodo.23668758](https://doi.org/10.5281/zenodo.23668758).
 
 See [CITATION.cff](CITATION.cff).
 
